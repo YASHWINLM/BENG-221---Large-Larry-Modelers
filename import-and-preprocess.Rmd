@@ -1,0 +1,315 @@
+---
+title: "Import and preprocess Larry's data"
+output: html_document
+date: "2025-10-9"
+---
+
+# Libraries, deps, & setup
+```{r Libraries}
+source('scripts/preprocessing.R')
+library('data.table')
+library('magrittr')
+library('stringr')
+library('caret')
+
+## Read in files.
+raw_biomarkers = fread('Data/LLM_Biomarkers_Wide.csv', sep = ',')
+biomarker_metadata = fread('Data/biomarker-metadata.txt.xls', sep='\t')
+
+raw_matrix = fread('Data/LS Gut Microbiome.csv', sep = ',', skip = 6, header=FALSE)
+
+## Read in GTDB taxonomy
+gtdb_taxonomy = lapply(
+  c('resources/bac120_taxonomy_r226.tsv.gz'
+   ,'resources/ar53_taxonomy_r226.tsv.gz' ),
+  fread, sep='\t', header=FALSE) %>%
+  do.call('rbind',.)
+
+## Create dir for output
+dir.create('sanitized-data')
+
+## set a seed here; there might be randomness incorporated later
+set.seed(42)
+```
+# Processing
+## 1. Sanitize sparse panel data.
+```{r}
+biomarkers = raw_biomarkers %>%
+  melt(id.vars = 'Date') %>%
+  as.data.table() %>%
+  na.omit() %>%
+  setkey(variable)
+
+fwrite(amplicon_matrix, 'sanitized-data/biomarker-matrix.txt.xls', sep='\t', row.names = TRUE)
+
+```
+
+## 2. Parse heading for microbiome samples and define metadata
+```{r}
+
+## Simple function to make a sample code from a datestring.
+make_code_from_date = function(x) x %>% 
+  as.Date(format='%Y-%m-%d') %>%
+  paste0('LLM.',.) %>%
+  make.names()
+
+## Get header and parse out datestrings
+raw_matrix_header = fread('Data/LS Gut Microbiome.csv'
+                         , sep = ',', skip = 2, nrows = 1, header = FALSE) %>%
+  as.matrix() %>%
+  as.vector()
+microbiome_sample_header_entries = which(!is.na(raw_matrix_header))
+microbiome_sample_datestrings = raw_matrix_header[microbiome_sample_header_entries][-c(1:3)]
+
+microbiome_sample_dates = microbiome_sample_datestrings %>% as.Date(format = '%m/%d/%y')
+
+## Do the same for the biomarker dataset -- parse dates
+biomarker_sample_datestrings = biomarkers[, as.character(Date)]
+biomarker_sample_dates = biomarker_sample_datestrings %>% as.Date(format = '%Y-%m-%d')
+
+## I ran this to check to see if we could salvage any biomarker samples
+## with <1wk time diffs vs the microbiome data. It turns out that all
+## biomarker collection is contemporanous with stool collection, and so
+## it's not necessary, and we can just move forward.
+
+## Generate pairwise grid of differences in time
+event_date_grid = expand.grid(microbiome_sample_dates, biomarker_sample_dates) %>% as.data.table()
+colnames(event_date_grid) = c('msam','bsam')
+event_date_grid[,td := difftime(msam, bsam, units = 'days') %>% abs()]
+
+## Identify best matches.
+best_match_events = event_date_grid[order(td),][
+  ,.(bsam, td, i=1:length(td)), by=(msam)][i==1,]
+
+## Match events together if difference in time is less than a week and make
+## a key that can be used to match one event to another.
+matched_events = best_match_events[td <= 7,]
+matched_events[,i := NULL]
+matched_events[,mid := msam %>% make_code_from_date()]
+matched_events[,bid := bsam %>% make_code_from_date()]
+event_match_key = matched_events[,setNames(mid, bid)]
+setkey(matched_events, mid)
+
+## Microbiome sample codes
+microbiome_sample_codes = make_code_from_date(microbiome_sample_dates)
+
+## Reassign sample codes in biomarkers
+biomarker_sample_codes = event_match_key[make_code_from_date(biomarker_sample_dates)]
+
+(biomarker_sample_codes %in% microbiome_sample_codes) %>% table()
+
+```
+
+## 3. Sanitize the amplicon dataset
+Here, I grab the 16S portion of the dataset and sanitize it. Instead of a 
+big, awful single table, I transform it into a taxonomy and abundance matrix.
+
+```{r SanitizeAmpliconMatrix}
+## Get amplicon data
+amplicon_tabs = raw_matrix[1:52,]
+## Subset out entries where the header is NA.
+## Sanitize taxonomy strings
+amplicon_taxstrings = amplicon_tabs[,1] %>% unlist() %>% as.character()
+
+amplicon_tabs = amplicon_tabs[,..microbiome_sample_header_entries][,-c(1:3)]
+
+## Apply names.
+colnames(amplicon_tabs) = microbiome_sample_codes
+
+## Here, we create identifiers for the taxa.
+zero_pad = function(n)
+{
+  padn = floor(log10(max(n)) + 1)
+  str_pad(as.character(n), padn, pad = "0")
+}
+taxon_codes = paste0('T',1:length(amplicon_taxstrings) %>% zero_pad())
+
+## Extract the full taxonomy
+splitref = strsplit(amplicon_taxstrings, ';') %>%
+  lapply(strsplit, '__') %>% lapply(unlist) %>%
+  lapply(matrix, ncol = 2, byrow = TRUE)
+
+ranks = c('p','f','g')
+
+amplicon_taxonomy = lapply(1:length(amplicon_taxstrings),
+    function(x) setNames(splitref[[x]][,2]
+                       , splitref[[x]][,1]
+                        )[c('p', 'f', 'g')]) %>%
+  do.call('rbind',.) %>%
+  as.data.table()
+
+## We need to clean up the taxon labels because the way that I parsed them
+## may be fast, but it is also quite shitty.
+colnames(amplicon_taxonomy) = c('Phylum', 'Family','Genus')
+amplicon_taxonomy[is.na(Family), c('Family','Genus') := paste0('Unclassified ', Phylum),]
+amplicon_taxonomy[Family == 'g', c('Family','Genus') := paste0('Unclassified ', Phylum),]
+amplicon_taxonomy[Genus  == 'p', c('Genus') := paste0('Unclassified ', Family),]
+amplicon_taxonomy[is.na(Genus), c('Genus') := paste0('Unclassified ', Family),]
+
+## Amplicon taxonomy
+amplicon_taxonomy = amplicon_taxonomy %>% as.matrix()
+
+## Finish the amplicon taxonomy table
+rownames(amplicon_taxonomy) = taxon_codes
+
+## Remove max, average, and taxon columns
+amplicon_matrix = amplicon_tabs[,-c(1:3)] %>% as.matrix()
+rownames(amplicon_matrix) = taxon_codes
+
+## Write tables to files.
+fwrite(amplicon_taxonomy, 'sanitized-data/amplicon-taxonomy.txt.xls', sep='\t', row.names = TRUE)
+fwrite(amplicon_matrix, 'sanitized-data/amplicon-matrix.txt.xls', sep='\t', row.names = TRUE)
+
+```
+## 4. Sanitize the metagenome (except not?) dataset (MetaPhlan2? seriously? what year is this?)
+
+First, we read the GTDB taxonomy from the file. We're going to do our best to convert the batshit metaphlan taxonomy into something that isn't quite as batshit.
+```{r OrganizeTaxonomy}
+## Generate seven-rank taxonomy for metagenome data.
+splitref = strsplit(gtdb_taxonomy[,V2], ';') %>%
+  lapply(strsplit, '__') %>%
+  lapply(unlist) %>%
+  lapply(matrix, ncol = 2, byrow = TRUE)
+
+## Parse GTDB
+gtdb_reference_taxonomy = lapply(1:length(splitref),
+    function(x) setNames(splitref[[x]][,2], splitref[[x]][,1])[c('d', 'p', 'c', 'o', 'f', 'g', 's')]
+) %>%
+do.call('rbind', .) %>%
+as.data.table()
+
+gtdb_reference_taxonomy[,g := gsub('_.*','',g)]
+
+fwrite(gtdb_reference_taxonomy, 'resources/gtdb-reference-taxonomy.txt.xls.gz', sep='\t')
+
+```
+
+Parse out the metagenome matrix and update the taxonomy to try to match GTDB + ICTV. We do this because the existing taxonomy is poor-quality. There's no way to fix it. I might just give up on using the metagenomic data at all.
+```{r FindUnionMetagenomeTables}
+metageno_tabs = raw_matrix[56:233,]
+metageno_taxa = metageno_tabs[,1] %>% unlist()
+
+## Make metagenome matrix
+metagenome_matrix = metageno_tabs[,..microbiome_sample_header_entries][,-c(1:3)] %>%
+setNames(microbiome_sample_codes) %>%
+as.matrix() %>%
+t() %>%
+na.omit() %>%
+t()
+
+microbiome_sample_dates = setNames(microbiome_sample_datestrings,microbiome_sample_codes)[colnames(metagenome_matrix)] %>% as.Date(format = '%m/%d/%y')
+
+## Do the same for the biomarker dataset -- parse dates
+biomarker_sample_datestrings = biomarkers[, as.character(Date)]
+biomarker_sample_dates = biomarker_sample_datestrings %>% as.Date(format = '%Y-%m-%d')
+
+## I ran this to check to see if we could salvage any biomarker samples
+## with <1wk time diffs vs the microbiome data. It turns out that all
+## biomarker collection is contemporanous with stool collection, and so
+## it's not necessary, and we can just move forward.
+
+## Generate pairwise grid of differences in time
+event_date_grid = expand.grid(microbiome_sample_dates, biomarker_sample_dates) %>% as.data.table()
+colnames(event_date_grid) = c('msam','bsam')
+event_date_grid[,td := difftime(msam, bsam, units = 'days') %>% abs()]
+
+## Identify best matches.
+best_match_events = event_date_grid[order(td),][
+  ,.(bsam, td, i=1:length(td)), by=(msam)][i==1,]
+
+## Match events together if difference in time is less than a week and make
+## a key that can be used to match one event to another.
+matched_events = best_match_events[td <= 7,]
+matched_events[,i := NULL]
+matched_events[,mid := msam %>% make_code_from_date()]
+matched_events[,bid := bsam %>% make_code_from_date()]
+event_match_key = matched_events[,setNames(mid, bid)]
+setkey(matched_events, mid)
+
+## Microbiome sample codes
+microbiome_sample_codes = make_code_from_date(microbiome_sample_dates)
+
+## Reassign sample codes in biomarkers
+biomarker_sample_codes = event_match_key[make_code_from_date(biomarker_sample_dates)]
+
+(biomarker_sample_codes %in% microbiome_sample_codes) %>% table()
+
+## Get the union once more
+union_codes = intersect(biomarker_sample_codes, microbiome_sample_codes)
+```
+
+```{r SanitizeMetagenomeMatrix}
+## Update the taxonomy
+metageno_genera = metageno_taxa %>% gsub('_.*','',.)
+metageno_genera[metageno_genera == 'Shigella'] = 'Escherichia'
+metageno_genera[metageno_genera == 'Methanobrevibacter'] = 'Methanocatella'
+
+gtdb_reference_taxonomy %>% setkey(g)
+
+tax_dt = setkey(gtdb_reference_taxonomy[!duplicated(g), .(d, p, c, o, f, g)],g)[metageno_genera,]
+
+tax_dt$s = metageno_taxa
+setkey(tax_dt, g)
+
+
+gtdb_reference_taxonomy %>% setkey(f)
+family_taxonomy = gtdb_reference_taxonomy[tax_dt[is.na(f), g], .(d, p, c, o, f)] %>% unique() %>% na.omit() %>% setkey(f)
+
+setkey(family_taxonomy, f)
+setkey(tax_dt, g)
+
+tax_dt[family_taxonomy,
+  c('d', 'p','c','o','f', 'g') := list(i.d, i.p, i.c, i.o, i.f, g = paste('Unclassified',i.f))]
+
+gtdb_reference_taxonomy %>% setkey(o)
+order_taxonomy = gtdb_reference_taxonomy[tax_dt[is.na(f), g], .(d, p, c, o, f)] %>% unique() %>% na.omit() %>% setkey(o)
+
+setkey(order_taxonomy, o)
+setkey(tax_dt, g)
+
+tax_dt[order_taxonomy,
+  c('d', 'p','c','o','f', 'g') := list(i.d, i.p, i.c, i.o, i.f = paste('Unclassified',i.o), g = paste('Unclassified',i.o))]
+
+## reassign ranks manually
+tax_dt[g == 'Subdoligranulum',
+  c('d','p','c','o','f', 'g') := 
+  list('Bacteria', 'Bacillota', 'Clostridia', 'Oscillospirales', 'Ruminococcaceae', '[Subdoligranulum]')]
+
+tax_dt[g == 'Solobacterium',
+  c('d','p','c','o','f', 'g') := 
+  list('Bacteria', 'Bacillota', 'Bacilli', 'Erysipelotrichales', 'Erysipelotrichaceae', '[Solobacterium]')]
+
+tax_dt[s == 'T5likevirus_unclassified',
+  c('d','p','c','o','f', 'g') := 
+  list('Viruses', 'Uroviricota', 'Caudoviricetes', 'Caudoviricetes i.s.', 'Demerecviridae','Tequintavirus')]
+
+tax_dt[s == 'C2likevirus_unclassified',
+  c('d','p','c','o','f', 'g') := 
+  list('Viruses', 'Uroviricota', 'Caudoviricetes', 'Caudoviricetes i.s.', 'Caudoviricetes i.s.','Ceduovirus')]
+
+tax_dt[s == 'Torque_teno_virus',
+  c('d','p','c','o','f', 'g') := 
+  list('Viruses', 'Commensaviricota', 'Cardeaviricetes', 'Sanitavirales', 'Anelloviridae','Alphatorquevirus')]
+
+tax_dt[s == 'Enterobacteria_phage_HK97',
+  c('d','p','c','o','f', 'g') := 
+  list('Viruses', 'Uroviricota', 'Caudoviricetes', 'Caudoviricetes i.s.', 'Caudoviricetes i.s.', 'Byrnievirus')]
+
+tax_dt[is.na(f),]
+
+## Build output tables
+setkey(tax_dt, s)
+taxon_codes = paste0('T',1:length(metageno_taxa) %>% zero_pad())
+rownames(metagenome_matrix) = taxon_codes
+
+metagenome_taxonomy = tax_dt[metageno_taxa,] %>% as.matrix()
+rownames(metagenome_taxonomy) = taxon_codes
+
+fwrite(metagenome_taxonomy, 'sanitized-data/metagenome-taxonomy.txt.xls', sep='\t', row.names = TRUE)
+fwrite(metagenome_matrix, 'sanitized-data/metagenome-matrix.txt.xls', sep='\t', row.names = TRUE)
+```
+
+# Exit
+```{r}
+sessionInfo()
+```

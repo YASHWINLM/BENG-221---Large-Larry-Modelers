@@ -1,0 +1,185 @@
+Biomarker	Panel	Unit	Range
+Weight	Vitals	lbs	None
+237	LIPID Panel	mg/dL	<129
+'HDL (High Density Lipoprotein) "good"'	LIPID Panel	mg/dL	40 to 59
+VLDL Cholesterol	LIPID Panel	mg/dL	<30
+IDL Chloresterol	LIPID Panel	None	<20
+Sum Total Cholesterol	LIPID Panel	mg/dL	<199
+Triglycerides	LIPID Panel	mg/dL	30 to 159
+UCSD LDL Particle # by NMR	LIPID Panel	nmol/L	<1135
+UCSD HDL Particle #	LIPID Panel	µmol/L	>33
+UCSD Large VLDL Particle #	LIPID Panel	nmol/L	<2.7
+UCSD Small LDL Particle #	LIPID Panel	nmol/L	<634
+UCSD Large HDL Particle #	LIPID Panel	µmol/L	>4.2
+UCSD VLDL Particle Size	LIPID Panel	nm	<46.7
+UCSD LDL Particle Size	LIPID Panel	nm	>20.7
+UCSD HDL Particle Size	LIPID Panel	nm	>8.9
+Real-LDL Size Pattern	LIPID Panel	None	A
+TG/HDL	LIPID Panel	None	<2
+Chol/HDL	LIPID Panel	None	<4.5
+Lp(a) Chloresterol	LIPID Panel	None	<10
+APO A1	LIPID Panel	mg/dL	94 to 178
+APOLIPOPROTEIN-(B100)	LIPID Panel	mg/dL	55 to 140
+Ratio APO B100/AI	LIPID Panel	None	None
+Sodium	Comprehensive Metabolic Panel	mmol/L	136 to 145
+Potassium	Comprehensive Metabolic Panel	mmol/L	3.5 to 5.1
+Chloride	Comprehensive Metabolic Panel	mmol/L	98 to 107
+Calcium	Comprehensive Metabolic Panel	mg/dL	8.5 to 10.6
+Phosporus	Comprehensive Metabolic Panel	mg/dL	2.7 to 4.5
+Magnesium	Comprehensive Metabolic Panel	mg/dL	1.6 to 2.4
+Zinc	Comprehensive Metabolic Panel	µg/dL	56-134
+Tot CO2	Comprehensive Metabolic Panel	None	23-29
+Bicarbonate	Comprehensive Metabolic Panel	mmol/L	22 to 29
+Anion Gap	Comprehensive Metabolic Panel	mmol/L	7 to 15
+Total Protein	Comprehensive Metabolic Panel	g/dL	6 to 8
+Albumin	Comprehensive Metabolic Panel	g/dL	3.5 to 5.2
+Globulin	Comprehensive Metabolic Panel	None	2.0-4.5
+A/G ratio	Comprehensive Metabolic Panel	None	1.1-2.3
+GGTP	Comprehensive Metabolic Panel	U/L	<60
+LDH	Comprehensive Metabolic Panel	U/L	135 to 225
+ALT	Comprehensive Metabolic Panel	U/L	0 to 41
+AST	Comprehensive Metabolic Panel	U/L	0-40
+AST/ALT ratio	Comprehensive Metabolic Panel	None	None
+Alkaline phosphatase	Comprehensive Metabolic Panel	U/L	40 to 120
+Total Bilirubin	Comprehensive Metabolic Panel	mg/dL	<1.2
+Direct Bilirubin	Comprehensive Metabolic Panel	None	<0.2
+Blood Urea Nitrogen (BUN)	Kidney	mg/dL	8 to 23
+Creatinine	Kidney	mg/dL	0.67 to 1.17
+BUN/Creatinine Ratio	Kidney	None	10 to 20
+Uric Acid	Kidney	None	4.0-8.5
+Fasting Glucose	Glucose/Insulin Panel	mg/dL	70 to 99
+Insulin	Glucose/Insulin Panel	µIU/mL	3 to 19
+Hemoglobin A1C	Glucose/Insulin Panel	%	4.8 to 5.8
+HOMA-IR (insulin resistance)	Glucose/Insulin Panel	None	<2.8
+Free Testosterone	Hormone Panel	pg/mL	47-244
+Testosterone % Free	Hormone Panel	%	None
+Total Testosterone	Hormone Panel	ng/mL	2.8-8
+Sex Hormone Binding Globulin (SHBG)	Hormone Panel	nmol/L	15-100
+Estradiol	Hormone Panel	pg/mL	<43
+DHEA-blood	Hormone Panel	µg/dL	34 to 249
+Cortisol Random	Hormone Panel	None	6 to 23
+TSH	Hormone Panel	µIU/mL	0.27 to 4.2
+Total T3	Hormone Panel	ng/mL	0.8 to 2.0
+Thyroxine (T4)	Hormone Panel	µg/dL	4.5 to 10.9
+PSA Screen	Cancer Panel	None	<3.99
+CA-19-9 (Pancreatic Cancer)	Cancer Panel	U/mL	30 to 42
+CEA	Cancer Panel	ng/mL	<3.8
+Iron	Iron Panel	µg/dL	59 to 158
+Ferritin	Iron Panel	ng/mL	30 to 400
+Fibrinogen	Iron Panel	None	<460
+TIBC	Iron Panel	µg/dL	148 to 506
+UIBC	Iron Panel	µg/dL	112 to 346
+Iron saturation	Iron Panel	%	?
+RBC-	CBC : Red Blood Cell Details	10**6/mL	4.6 to 6.1
+HGB-	CBC : Red Blood Cell Details	g/dL	13.7 to 17.5
+HCT	CBC : Red Blood Cell Details	%	40 to 50
+PLT-	CBC : Red Blood Cell Details	10**3/mL	140 to 370
+MCV-	CBC : Red Blood Cell Details	fL	79 to 95
+MCH	CBC : Red Blood Cell Details	pg/cell	26 to 32
+MCHC-	CBC : Red Blood Cell Details	g/dL	32 to 36
+RDW	CBC : Red Blood Cell Details	%	12 to 14
+MPV	CBC : Red Blood Cell Details	fL	9.4-12.4
+WBC-	CBC : White Blood Cell Details	10**3/mL	4 to 10
+NEU %	CBC : White Blood Cell Details	%	41 to 80
+LYM %	CBC : White Blood Cell Details	%	19 to 53
+EOS %	CBC : White Blood Cell Details	%	1 to 7
+MONO %	CBC : White Blood Cell Details	%	5 to 12
+BASO %	CBC : White Blood Cell Details	%	0 to 2
+Neutrophil Count	CBC : White Blood Cell Details	10**3/mL	1.6 to 7
+Lymphocyte Count	CBC : White Blood Cell Details	10**3/mL	0.8 to 3.1
+Monocyte Count	CBC : White Blood Cell Details	10**3/mL	0.2 to 0.8
+Esoinophil Count	CBC : White Blood Cell Details	10**3/mL	0.1 to 0.5
+Basophil Count	CBC : White Blood Cell Details	10**3/mL	<0.1
+High Sensitivity CRP (mg/L)	Inflammation Panel	mg/L	<4.9
+Lp-PLA2	Inflammation Panel	None	<200
+IgG	Inflammation Panel	None	700-1600
+IgA	Inflammation Panel	None	70-400
+IgM	Inflammation Panel	None	40-230
+Homocysteine	Vitamins, Antioxidants, Amino Acid Panel	µmol/L	0 to 14
+CoQ10	Vitamins, Antioxidants, Amino Acid Panel	None	0.44-1.64
+Selenium	Vitamins, Antioxidants, Amino Acid Panel	None	None
+Vitamin E Alpha-Tocopherol	Vitamins, Antioxidants, Amino Acid Panel	mg/L	5.5-18
+Vitamin E Gamma-Tocopherol	Vitamins, Antioxidants, Amino Acid Panel	mg/L	0-6
+Alpha Lipoic Acid	Vitamins, Antioxidants, Amino Acid Panel	None	None
+Vitamin D, 25-Hydroxy	Vitamins, Antioxidants, Amino Acid Panel	ng/mL	30-80
+Vitamin B12	Vitamins, Antioxidants, Amino Acid Panel	pg/mL	232 to 1245
+Niacin (Vit B3)	Vitamins, Antioxidants, Amino Acid Panel	None	None
+pH	Stool tests	None	5.8 to 7
+Bifidobacerium family	Expected/Beneficial flora	None	None
+E. coli spp.	Expected/Beneficial flora	None	None
+Lactobacillus spp	Expected/Beneficial flora	None	None
+Enterococcus spp.	Expected/Beneficial flora	None	None
+Bacteroides fraglis group	Expected/Beneficial flora	None	None
+Clostridium spp	Expected/Beneficial flora	None	None
+Bacteroides family	Expected/Beneficial flora	None	None
+Alpha hemolytic strep	Commensal (Imbalanced) flora	None	None
+Hemolytic Escherichia coli	Commensal (Imbalanced) flora	None	None
+Pseudomonas chlororaphis group	Commensal (Imbalanced) flora	None	None
+Gamma Hemolytic Streptococcus	Commensal (Imbalanced) flora	None	None
+Hafnia alvei	Commensal (Imbalanced) flora	None	None
+Mucoid Escherichia coli	Commensal (Imbalanced) flora	None	None
+Beta strep, group B, strep. Agalactiae	Commensal (Imbalanced) flora	None	None
+Klebsiella oxytoca	Commensal (Imbalanced) flora	None	None
+Bacillus spp, pumilus	Commensal (Imbalanced) flora	None	None
+Comamonas testosteroni	Commensal (Imbalanced) flora	None	None
+Streptococcus anginosus	Commensal (Imbalanced) flora	None	None
+Cellulosimicrobium cellulans/funkeil/marinum	Commensal (Imbalanced) flora	None	None
+Lactococcus lactis	Commensal (Imbalanced) flora	None	None
+Staphylococcus aureus	Commensal (Imbalanced) flora	None	None
+Streptococcus salivarius	Commensal (Imbalanced) flora	None	None
+Streptococcus parasanguinis	Commensal (Imbalanced) flora	None	None
+Pseudomonas mendocina 	Commensal (Imbalanced) flora	None	None
+Actinomyces turicensis	Commensal (Imbalanced) flora	None	None
+Lysinibacillus spp	Commensal (Imbalanced) flora	None	None
+Streptococcus mutans	Commensal (Imbalanced) flora	None	None
+Streptococcus australis	Commensal (Imbalanced) flora	None	None
+Enterobacter asburiae	Commensal (Imbalanced) flora	None	None
+Pseudomonas stutzeri	Commensal (Imbalanced) flora	None	None
+Kocuria spp, salsicia, rhizophila, kristinae	Commensal (Imbalanced) flora	None	None
+Rothia dentocariosa/mucliaginosa	Commensal (Imbalanced) flora	None	None
+Pantoea spp	Commensal (Imbalanced) flora	None	None
+Pseudomonas citronellolis	Commensal (Imbalanced) flora	None	None
+Streptococcus mitis/oralis/cristatus	Commensal (Imbalanced) flora	None	None
+Staphylococcus haemolyticus	Commensal (Imbalanced) flora	None	None
+Serratia marcescens	Commensal (Imbalanced) flora	None	None
+Staphylococcus lugdunensis	Commensal (Imbalanced) flora	None	None
+Staphylococcus epidermidis	Commensal (Imbalanced) flora	None	None
+Actinomyces neuii	Commensal (Imbalanced) flora	None	None
+Streptomyces	Commensal (Imbalanced) flora	None	None
+Bacillus licheniformis	Commensal (Imbalanced) flora	None	None
+Corynebacterium falsenii	Commensal (Imbalanced) flora	None	None
+Morganellla morganii	Dysbiotic bacteria	None	None
+Providencia stuartii	Dysbiotic bacteria	None	None
+Klebsiella pneumonia	Dysbiotic bacteria	None	None
+Providencia rettgeri	Dysbiotic bacteria	None	None
+Enterobacter cloacae	Dysbiotic bacteria	None	None
+Pseudomonas aeruginosa	Dysbiotic bacteria	None	None
+Bacillus cereus	Dysbiotic bacteria	None	None
+Citrobacter freundii complex	Dysbiotic bacteria	None	None
+Arcobacter butzieri	Dysbiotic bacteria	None	None
+Candida parapsilosis	Yeast	None	None
+Rhodotorula glutinis/mucilaginosa	Yeast	None	None
+Candida krusei/inconspicua/lambica	Yeast	None	None
+Saccharomyces cerevisiae/boulardi	Yeast	None	None
+Geotrichum spp.	Yeast	None	None
+Candida pararugosa	Yeast	None	None
+Candida lusitaniae	Yeast	None	None
+Candida zeylanoides	Yeast	None	None
+Trichosporon asahii	Yeast	None	None
+Trichosporon ovoides	Yeast	None	None
+Trichosporon montevideense	Yeast	None	None
+Exophiala dermatitidis	Yeast	None	None
+Cryptococcus spp, not neoformans	Yeast	None	None
+Cryptococcus diffuens	Yeast	None	None
+Candida orthopsilosis	Yeast	None	None
+Stool Calprotectin UCSD	Gut Inflammation	µg/g	<50
+Stool Calprotectin YFH	Gut Inflammation	None	<80
+Stool Lysozyme	Gut Inflammation	None	<500
+Stool Lactoferrin	Gut Inflammation	None	<7.3
+Stool SIgA	Gut Inflammation	None	30-275
+% SCFA Acetate	Short Chain Fatty Acids	%	50 to 72
+% SCFA Propionate	Short Chain Fatty Acids	%	11 to 25
+% SCFA Valerate	Short Chain Fatty Acids	%	1 to 5
+% SCFA Butyrate	Short Chain Fatty Acids	%	11 to 32
+Total SCFA	Short Chain Fatty Acids	mg/mL	5 to 16
+Butyrate	Short Chain Fatty Acids	mg/mL	0.8-4

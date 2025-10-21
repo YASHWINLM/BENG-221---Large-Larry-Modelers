@@ -1,0 +1,195 @@
+2025-10-20 13:15:30.784768 INFO::Writing function arguments to log file
+2025-10-20 13:15:30.786623 DEBUG::Function arguments
+2025-10-20 13:15:30.787796 DEBUG::Output folder: .tmp.phylum.amplicon_dmm_output
+2025-10-20 13:15:30.788875 DEBUG::Formula: ~ DMM
+2025-10-20 13:15:30.789913 DEBUG::Fixed effects:
+2025-10-20 13:15:30.790983 DEBUG::Reference:
+2025-10-20 13:15:30.792409 DEBUG::Random effects:
+2025-10-20 13:15:30.793931 DEBUG::Group effects:
+2025-10-20 13:15:30.79543 DEBUG::Ordered effects:
+2025-10-20 13:15:30.796991 DEBUG::Strata effects:
+2025-10-20 13:15:30.798601 DEBUG::Min Abundance: 0.000000
+2025-10-20 13:15:30.800188 DEBUG::Min Prevalence: 0.000000
+2025-10-20 13:15:30.801398 DEBUG::Zero Threshold: 0.000000
+2025-10-20 13:15:30.809791 DEBUG::Min variance: 0.000000
+2025-10-20 13:15:30.811025 DEBUG::Max significance: 0.100000
+2025-10-20 13:15:30.812032 DEBUG::Normalization: TSS
+2025-10-20 13:15:30.813007 DEBUG::Transform: LOG
+2025-10-20 13:15:30.813992 DEBUG::Correction method: BH
+2025-10-20 13:15:30.815032 DEBUG::Standardize: TRUE
+2025-10-20 13:15:30.816039 DEBUG::Abundance median comparison: TRUE
+2025-10-20 13:15:30.817088 DEBUG::Prevalence median comparison: FALSE
+2025-10-20 13:15:30.818264 DEBUG::Abundance median comparison threshold: 0
+2025-10-20 13:15:30.819379 DEBUG::Prevalence median comparison threshold: 0
+2025-10-20 13:15:30.820414 DEBUG::Subtract median: FALSE
+2025-10-20 13:15:30.82146 DEBUG::Warn prevalence: TRUE
+2025-10-20 13:15:30.822503 DEBUG::Small random effects: FALSE
+2025-10-20 13:15:30.823506 DEBUG::Augment: TRUE
+2025-10-20 13:15:30.824485 DEBUG::Evaluate only:
+2025-10-20 13:15:30.826156 DEBUG::Cores: 1
+2025-10-20 13:15:30.827636 DEBUG::Balanced Summary plot: FALSE
+2025-10-20 13:15:30.828831 INFO::Verifying options selected are valid
+2025-10-20 13:15:30.830871 WARNING::Input is a matrix,
+                        passing through as.data.frame() .
+2025-10-20 13:15:30.833314 INFO::Determining format of input files
+2025-10-20 13:15:30.835203 INFO::Input format is data samples as columns and metadata samples as rows
+2025-10-20 13:15:30.837739 DEBUG::Transformed data so samples are rows
+2025-10-20 13:15:30.839024 DEBUG::A total of 156 samples were found in both the data and metadata
+2025-10-20 13:15:30.840211 DEBUG::Reordering data/metadata to use same sample ordering
+2025-10-20 13:15:30.842018 INFO::Running selected normalization method: TSS
+2025-10-20 13:15:30.8448 INFO::Creating output feature tables folder
+2025-10-20 13:15:30.846837 INFO::Writing normalized data to file .tmp.phylum.amplicon_dmm_output/features/data_norm.tsv
+2025-10-20 13:15:30.856725 INFO::Filter data based on min abundance and min prevalence
+2025-10-20 13:15:30.859477 INFO::Total samples in data: 156
+2025-10-20 13:15:30.862089 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
+2025-10-20 13:15:30.866809 INFO::Total filtered features: 0
+2025-10-20 13:15:30.869525 INFO::Filtered feature names from abundance and prevalence filtering:
+2025-10-20 13:15:30.872646 INFO::Total features filtered by non-zero variance filtering: 0
+2025-10-20 13:15:30.875634 INFO::Filtered feature names from variance filtering:
+2025-10-20 13:15:30.878393 INFO::Writing filtered data to file .tmp.phylum.amplicon_dmm_output/features/filtered_data.tsv
+2025-10-20 13:15:30.889024 INFO::Running selected transform method: LOG
+2025-10-20 13:15:30.891679 INFO::Writing normalized, filtered, transformed data to file .tmp.phylum.amplicon_dmm_output/features/data_transformed.tsv
+2025-10-20 13:15:30.900966 INFO::Factor detected for categorial metadata 'DMM'. Using as-is.
+2025-10-20 13:15:30.902779 INFO::Applying z-score to standardize continuous metadata
+2025-10-20 13:15:30.907728 INFO::Running the linear model component
+2025-10-20 13:15:30.916409 DEBUG::Object: augment, Size: 56
+2025-10-20 13:15:30.917617 DEBUG::Object: cluster, Size: 0
+2025-10-20 13:15:30.918696 DEBUG::Object: cores, Size: 56
+2025-10-20 13:15:30.919716 DEBUG::Object: correction, Size: 112
+2025-10-20 13:15:30.920714 DEBUG::Object: extract_out, Size: 1136
+2025-10-20 13:15:30.921765 DEBUG::Object: feature_specific_covariate, Size: 0
+2025-10-20 13:15:30.922773 DEBUG::Object: feature_specific_covariate_name, Size: 0
+2025-10-20 13:15:30.923795 DEBUG::Object: feature_specific_covariate_record, Size: 0
+2025-10-20 13:15:30.924858 DEBUG::Object: features, Size: 25688
+2025-10-20 13:15:30.925943 DEBUG::Object: formula, Size: 728
+2025-10-20 13:15:30.927233 DEBUG::Object: fun_list, Size: 58768
+2025-10-20 13:15:30.928559 DEBUG::Object: func_to_run, Size: 435336
+2025-10-20 13:15:30.929696 DEBUG::Object: groups, Size: 48
+2025-10-20 13:15:30.930788 DEBUG::Object: median_comparison, Size: 56
+2025-10-20 13:15:30.931857 DEBUG::Object: median_comparison_threshold, Size: 56
+2025-10-20 13:15:30.932884 DEBUG::Object: metadata, Size: 21688
+2025-10-20 13:15:30.933908 DEBUG::Object: model, Size: 112
+2025-10-20 13:15:30.934967 DEBUG::Object: model_function, Size: 8864
+2025-10-20 13:15:30.936001 DEBUG::Object: ordereds, Size: 48
+2025-10-20 13:15:30.937029 DEBUG::Object: random_effects_formula, Size: 0
+2025-10-20 13:15:30.938076 DEBUG::Object: ranef_function, Size: 0
+2025-10-20 13:15:30.939214 DEBUG::Object: save_models, Size: 56
+2025-10-20 13:15:30.940422 DEBUG::Object: small_random_effects, Size: 56
+2025-10-20 13:15:30.941723 DEBUG::Object: strata, Size: 48
+2025-10-20 13:15:30.942817 DEBUG::Object: subtract_median, Size: 56
+2025-10-20 13:15:30.943903 DEBUG::Object: summary_function, Size: 49424
+2025-10-20 13:15:30.945026 DEBUG::Object: func_to_run, Size: 435336
+2025-10-20 13:15:30.946116 INFO::Fitting model to feature number 1, Actinobacteria
+2025-10-20 13:15:30.953038 INFO::Fitting model to feature number 2, Bacteroidetes
+2025-10-20 13:15:30.958874 INFO::Fitting model to feature number 3, Cyanobacteria
+2025-10-20 13:15:30.964837 INFO::Fitting model to feature number 4, Euryarchaeota
+2025-10-20 13:15:30.971057 INFO::Fitting model to feature number 5, Firmicutes
+2025-10-20 13:15:30.976759 INFO::Fitting model to feature number 6, Fusobacteria
+2025-10-20 13:15:30.982876 INFO::Fitting model to feature number 7, Proteobacteria
+2025-10-20 13:15:30.988503 INFO::Fitting model to feature number 8, Synergistetes
+2025-10-20 13:15:30.994764 INFO::Fitting model to feature number 9, Tenericutes
+2025-10-20 13:15:31.002273 INFO::Fitting model to feature number 10, Verrucomicrobia
+2025-10-20 13:15:31.009514 INFO::Performing tests against medians
+2025-10-20 13:15:32.554244 INFO::Counting total values for each feature
+2025-10-20 13:15:32.558713 INFO::Running the logistic model component
+2025-10-20 13:15:32.566311 DEBUG::Object: augment, Size: 56
+2025-10-20 13:15:32.567476 DEBUG::Object: cluster, Size: 0
+2025-10-20 13:15:32.568436 DEBUG::Object: cores, Size: 56
+2025-10-20 13:15:32.569393 DEBUG::Object: correction, Size: 112
+2025-10-20 13:15:32.570307 DEBUG::Object: extract_out, Size: 1136
+2025-10-20 13:15:32.571269 DEBUG::Object: feature_specific_covariate, Size: 0
+2025-10-20 13:15:32.572213 DEBUG::Object: feature_specific_covariate_name, Size: 0
+2025-10-20 13:15:32.573318 DEBUG::Object: feature_specific_covariate_record, Size: 0
+2025-10-20 13:15:32.574747 DEBUG::Object: features, Size: 24968
+2025-10-20 13:15:32.576555 DEBUG::Object: formula, Size: 728
+2025-10-20 13:15:32.577962 DEBUG::Object: fun_list, Size: 70920
+2025-10-20 13:15:32.579112 DEBUG::Object: func_to_run, Size: 435336
+2025-10-20 13:15:32.580135 DEBUG::Object: groups, Size: 48
+2025-10-20 13:15:32.581118 DEBUG::Object: median_comparison, Size: 56
+2025-10-20 13:15:32.582074 DEBUG::Object: median_comparison_threshold, Size: 56
+2025-10-20 13:15:32.583025 DEBUG::Object: metadata, Size: 21688
+2025-10-20 13:15:32.583971 DEBUG::Object: model, Size: 120
+2025-10-20 13:15:32.584972 DEBUG::Object: model_function, Size: 21016
+2025-10-20 13:15:32.585917 DEBUG::Object: ordereds, Size: 48
+2025-10-20 13:15:32.586844 DEBUG::Object: random_effects_formula, Size: 0
+2025-10-20 13:15:32.587749 DEBUG::Object: ranef_function, Size: 0
+2025-10-20 13:15:32.58871 DEBUG::Object: save_models, Size: 56
+2025-10-20 13:15:32.589711 DEBUG::Object: small_random_effects, Size: 56
+2025-10-20 13:15:32.590798 DEBUG::Object: strata, Size: 48
+2025-10-20 13:15:32.592365 DEBUG::Object: subtract_median, Size: 56
+2025-10-20 13:15:32.593865 DEBUG::Object: summary_function, Size: 49424
+2025-10-20 13:15:32.59514 DEBUG::Object: func_to_run, Size: 435336
+2025-10-20 13:15:32.596293 INFO::Fitting model to feature number 1, Actinobacteria
+2025-10-20 13:15:32.605001 INFO::Fitting model to feature number 2, Bacteroidetes
+2025-10-20 13:15:32.608376 INFO::Fitting model to feature number 3, Cyanobacteria
+2025-10-20 13:15:32.617166 INFO::Fitting model to feature number 4, Euryarchaeota
+2025-10-20 13:15:32.627101 INFO::Fitting model to feature number 5, Firmicutes
+2025-10-20 13:15:32.630057 INFO::Fitting model to feature number 6, Fusobacteria
+2025-10-20 13:15:32.639014 INFO::Fitting model to feature number 7, Proteobacteria
+2025-10-20 13:15:32.64209 INFO::Fitting model to feature number 8, Synergistetes
+2025-10-20 13:15:32.651179 INFO::Fitting model to feature number 9, Tenericutes
+2025-10-20 13:15:32.660657 INFO::Fitting model to feature number 10, Verrucomicrobia
+2025-10-20 13:15:32.668048 INFO::Counting total values for each feature
+2025-10-20 13:15:32.673277 INFO::Re-running abundances for warn_prevalence
+2025-10-20 13:15:32.67586 INFO::Running selected normalization method: TSS
+2025-10-20 13:15:32.678592 INFO::Running selected transform method: LOG
+2025-10-20 13:15:32.68632 DEBUG::Object: augment, Size: 56
+2025-10-20 13:15:32.688699 DEBUG::Object: cluster, Size: 0
+2025-10-20 13:15:32.690528 DEBUG::Object: cores, Size: 56
+2025-10-20 13:15:32.692327 DEBUG::Object: correction, Size: 112
+2025-10-20 13:15:32.694372 DEBUG::Object: extract_out, Size: 1136
+2025-10-20 13:15:32.696232 DEBUG::Object: feature_specific_covariate, Size: 0
+2025-10-20 13:15:32.698102 DEBUG::Object: feature_specific_covariate_name, Size: 0
+2025-10-20 13:15:32.700111 DEBUG::Object: feature_specific_covariate_record, Size: 0
+2025-10-20 13:15:32.70208 DEBUG::Object: features, Size: 25688
+2025-10-20 13:15:32.704091 DEBUG::Object: formula, Size: 728
+2025-10-20 13:15:32.705887 DEBUG::Object: fun_list, Size: 58768
+2025-10-20 13:15:32.708085 DEBUG::Object: func_to_run, Size: 435336
+2025-10-20 13:15:32.70981 DEBUG::Object: groups, Size: 48
+2025-10-20 13:15:32.710965 DEBUG::Object: median_comparison, Size: 56
+2025-10-20 13:15:32.712018 DEBUG::Object: median_comparison_threshold, Size: 56
+2025-10-20 13:15:32.713039 DEBUG::Object: metadata, Size: 21688
+2025-10-20 13:15:32.714074 DEBUG::Object: model, Size: 112
+2025-10-20 13:15:32.715055 DEBUG::Object: model_function, Size: 8864
+2025-10-20 13:15:32.716062 DEBUG::Object: ordereds, Size: 48
+2025-10-20 13:15:32.717097 DEBUG::Object: random_effects_formula, Size: 0
+2025-10-20 13:15:32.718169 DEBUG::Object: ranef_function, Size: 0
+2025-10-20 13:15:32.719346 DEBUG::Object: save_models, Size: 56
+2025-10-20 13:15:32.720586 DEBUG::Object: small_random_effects, Size: 56
+2025-10-20 13:15:32.721693 DEBUG::Object: strata, Size: 48
+2025-10-20 13:15:32.72387 DEBUG::Object: subtract_median, Size: 56
+2025-10-20 13:15:32.725536 DEBUG::Object: summary_function, Size: 49424
+2025-10-20 13:15:32.727135 DEBUG::Object: func_to_run, Size: 435336
+2025-10-20 13:15:32.728751 INFO::Fitting model to feature number 1, Actinobacteria
+2025-10-20 13:15:32.736802 INFO::Fitting model to feature number 2, Bacteroidetes
+2025-10-20 13:15:32.742807 INFO::Fitting model to feature number 3, Cyanobacteria
+2025-10-20 13:15:32.748761 INFO::Fitting model to feature number 4, Euryarchaeota
+2025-10-20 13:15:32.755607 INFO::Fitting model to feature number 5, Firmicutes
+2025-10-20 13:15:32.761271 INFO::Fitting model to feature number 6, Fusobacteria
+2025-10-20 13:15:32.767214 INFO::Fitting model to feature number 7, Proteobacteria
+2025-10-20 13:15:32.773049 INFO::Fitting model to feature number 8, Synergistetes
+2025-10-20 13:15:32.77931 INFO::Fitting model to feature number 9, Tenericutes
+2025-10-20 13:15:32.785117 INFO::Fitting model to feature number 10, Verrucomicrobia
+2025-10-20 13:15:32.826088 INFO::Creating fits folder
+2025-10-20 13:15:32.829126 INFO::Writing residuals to file .tmp.phylum.amplicon_dmm_output/fits/residuals_linear.rds
+2025-10-20 13:15:32.832538 INFO::Writing fitted values to file .tmp.phylum.amplicon_dmm_output/fits/fitted_linear.rds
+2025-10-20 13:15:32.835638 INFO::Writing residuals to file .tmp.phylum.amplicon_dmm_output/fits/residuals_logistic.rds
+2025-10-20 13:15:32.847319 INFO::Writing fitted values to file .tmp.phylum.amplicon_dmm_output/fits/fitted_logistic.rds
+2025-10-20 13:15:32.853963 INFO::Writing all the results to file (ordered 
+            by increasing individual q-values): .tmp.phylum.amplicon_dmm_output/all_results.tsv
+2025-10-20 13:15:32.863611 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): .tmp.phylum.amplicon_dmm_output/significant_results.tsv
+2025-10-20 13:15:32.867912 INFO::Creating output figures folder
+2025-10-20 13:15:32.871626 INFO::Writing summary plot of significant
+                        results to file: .tmp.phylum.amplicon_dmm_output/figures/summary_plot.pdf
+2025-10-20 13:15:35.544499 INFO::Writing association plots (one for each significant association) to output folder: .tmp.phylum.amplicon_dmm_output/figures
+2025-10-20 13:15:35.549851 INFO::Plotting associations from most to least significant, grouped by metadata
+2025-10-20 13:15:35.55712 INFO::Creating tile plot for categorical data (logistic), DMM vs Fusobacteria
+2025-10-20 13:15:35.635942 INFO::Creating box plot for categorical data (linear), 
+                        DMM vs Proteobacteria
+2025-10-20 13:15:35.705656 INFO::Creating box plot for categorical data (linear), 
+                        DMM vs Actinobacteria
+2025-10-20 13:15:35.772987 INFO::Creating tile plot for categorical data (logistic), DMM vs Euryarchaeota
+2025-10-20 13:15:35.866445 INFO::Creating box plot for categorical data (linear), 
+                        DMM vs Cyanobacteria
+2025-10-20 13:15:35.939958 INFO::Creating box plot for categorical data (linear), 
+                        DMM vs Euryarchaeota

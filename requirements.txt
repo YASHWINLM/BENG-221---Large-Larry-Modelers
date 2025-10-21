@@ -1,0 +1,15 @@
+# --- Core numeric/data ---
+numpy
+pandas
+scipy
+statsmodels
+pingouin       # handy stats (corrs, t-tests, effect sizes, etc.)
+
+# --- Plotting ---
+matplotlib
+seaborn
+plotly
+
+# --- Machine Learning ---
+scikit-learn
+tqdm # data loading 

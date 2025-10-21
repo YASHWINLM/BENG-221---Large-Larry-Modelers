@@ -1,0 +1,241 @@
+---
+title: "Beta diversity plots of bacteria in Larry's data"
+output: html_document
+date: "2025-10-9"
+---
+
+
+```{r}
+library('vegan')
+library('data.table')
+library('magrittr')
+library('maaslin3')
+library('ggh4x')
+library('ggrepel')
+load('sanitized-data/diversity.RData')
+
+```
+
+```{r}
+## Define dates for amplicon data
+amplicon_dates = amplicon_matrix %>%
+  colnames() %>%
+  strsplit('\\.') %>%
+  do.call('rbind',.) %>%
+  as.data.table() %>%
+  setNames(c('N','Year','Month','Day'))
+```
+
+```{r AitcPCoA}
+##Aitchison
+amplicon_pcoa_aitc = ape::pcoa(amplicon_aitc)
+amplicon_pcoa_aitc_xy = amplicon_pcoa_aitc$vectors
+
+amplicon_dmms_aitc_pcoa = data.frame(DMM = amplicon_dmms_samples[rownames(amplicon_pcoa_aitc_xy)]
+                             , amplicon_pcoa_aitc_xy
+                             , amplicon_dates)
+
+## Plot amplicon pcoa
+amplicon_aitc_pcoa_plot = ggplot(data = amplicon_dmms_aitc_pcoa, aes(x = Axis.1, y = Axis.2)) +
+  stat_centroid(funx = median, funy = median, aes(group = Year)) +
+  stat_centroid(geom = 'text',funx = median, funy = median, aes(group = Year, label = Year)) +
+  geom_point(aes(color = DMM)) +
+  stat_ellipse(geom='polygon',fill = 'gray', alpha = 0.2, aes(group = Year)) +
+  theme_bw()
+
+plot(amplicon_aitc_pcoa_plot)
+
+## Run Adonis2 to tease apart the relationship between DMMs over time
+adonis2(amplicon_aitc ~ DMM
+      , data = amplicon_dmms_aitc_pcoa
+      , by = 'terms')
+
+adonis2(amplicon_aitc ~ Year + DMM
+      , data = amplicon_dmms_aitc_pcoa
+      , by = 'terms')
+
+adonis2(amplicon_aitc ~ interaction(Year, Month) + DMM
+      , data = amplicon_dmms_aitc_pcoa
+      , by = 'terms')
+
+```
+
+```{r BrayPCoA}
+## Bray
+amplicon_pcoa_bray = ape::pcoa(amplicon_bray)
+amplicon_pcoa_bray_xy = amplicon_pcoa_bray$vectors
+
+amplicon_dates = amplicon_pcoa_bray_xy %>%
+  rownames() %>%
+  strsplit('\\.') %>%
+  do.call('rbind',.) %>%
+  as.data.table() %>%
+  setNames(c('N','Year','Month','Day'))
+
+amplicon_dmms_bray_pcoa = data.frame(DMM = amplicon_dmms_samples[rownames(amplicon_pcoa_bray_xy)]
+                             , amplicon_pcoa_bray_xy
+                             , amplicon_dates)
+amplicon_bray_pcoa_plot = ggplot(data = amplicon_dmms_bray_pcoa, aes(x = Axis.1, y = Axis.2)) +
+  stat_centroid(funx = median, funy = median, aes(group = Year)) +
+  stat_centroid(geom = 'text',funx = median, funy = median, aes(group = Year, label = Year)) +
+  geom_point(aes(color = DMM)) +
+  stat_ellipse(geom='polygon',fill = 'gray', alpha = 0.2, aes(group = Year)) +
+  theme_bw()
+
+plot(amplicon_bray_pcoa_plot)
+
+
+## Run Adonis2 to tease apart the relationship between DMMs over time
+adonis2(amplicon_bray ~ DMM
+      , data = amplicon_dmms_aitc_pcoa
+      , by = 'terms')
+
+adonis2(amplicon_bray ~ DMM + Year
+      , data = amplicon_dmms_aitc_pcoa
+      , by = 'terms')
+
+adonis2(amplicon_bray ~ DMM + interaction(Year, Month)
+      , data = amplicon_dmms_aitc_pcoa
+      , by = 'terms')
+
+```
+
+```{r AMJaccPCoA}
+## Jaccard
+amplicon_pcoa_jacc = ape::pcoa(amplicon_jacc)
+amplicon_pcoa_jacc_xy = amplicon_pcoa_jacc$vectors
+
+amplicon_dates = amplicon_pcoa_jacc_xy %>%
+  rownames() %>%
+  strsplit('\\.') %>%
+  do.call('rbind',.) %>%
+  as.data.table() %>%
+  setNames(c('N','Year','Month','Day'))
+
+amplicon_dmms_jacc_pcoa = data.frame(DMM = amplicon_dmms_samples[rownames(amplicon_pcoa_jacc_xy)]
+                             , amplicon_pcoa_jacc_xy
+                             , amplicon_dates)
+jacc_amplicon_pcoa_plot = ggplot(data = amplicon_dmms_jacc_pcoa, aes(x = Axis.1, y = Axis.2)) +
+  stat_centroid(funx = median, funy = median, aes(group = Year)) +
+  stat_centroid(geom = 'text',funx = median, funy = median, aes(group = Year, label = Year)) +
+  geom_point(aes(color = DMM)) +
+  stat_ellipse(geom='polygon',fill = 'gray', alpha = 0.2, aes(group = Year)) +
+  theme_bw()
+
+plot(jacc_amplicon_pcoa_plot)
+```
+
+```{r}
+## Define dates for metagenome data
+metagenome_dates = metagenome_matrix %>%
+  colnames() %>%
+  strsplit('\\.') %>%
+  do.call('rbind',.) %>%
+  as.data.table() %>%
+  setNames(c('N','Year','Month','Day'))
+```
+
+```{r MGAitcPCoA, eval = FALSE}
+##Aitchison
+metagenome_pcoa_aitc = ape::pcoa(metagenome_aitc)
+metagenome_pcoa_aitc_xy = metagenome_pcoa_aitc$vectors
+
+metagenome_dmms_aitc_pcoa = data.frame(DMM = metagenome_dmms_samples[rownames(metagenome_pcoa_aitc_xy)]
+                             , metagenome_pcoa_aitc_xy
+                             , metagenome_dates)
+
+## Plot metagenome pcoa
+metagenome_aitc_pcoa_plot = ggplot(data = metagenome_dmms_aitc_pcoa, aes(x = Axis.1, y = Axis.2)) +
+  stat_centroid(funx = median, funy = median, aes(group = Year)) +
+  stat_centroid(geom = 'text',funx = median, funy = median, aes(group = Year, label = Year)) +
+  geom_point(aes(color = DMM)) +
+  stat_ellipse(geom='polygon',fill = 'gray', alpha = 0.2, aes(group = Year)) +
+  theme_bw()
+
+plot(metagenome_aitc_pcoa_plot)
+
+## Run Adonis2 to tease apart the relationship between DMMs over time
+adonis2(metagenome_aitc ~ DMM
+      , data = metagenome_dmms_aitc_pcoa
+      , by = 'terms')
+
+adonis2(metagenome_aitc ~ Year + DMM
+      , data = metagenome_dmms_aitc_pcoa
+      , by = 'terms')
+
+adonis2(metagenome_aitc ~ interaction(Year, Month) + DMM
+      , data = metagenome_dmms_aitc_pcoa
+      , by = 'terms')
+
+```
+
+```{r MGBrayPCoA, eval = FALSE}
+## Bray
+metagenome_pcoa_bray = ape::pcoa(metagenome_bray)
+metagenome_pcoa_bray_xy = metagenome_pcoa_bray$vectors
+
+metagenome_dates = metagenome_pcoa_bray_xy %>%
+  rownames() %>%
+  strsplit('\\.') %>%
+  do.call('rbind',.) %>%
+  as.data.table() %>%
+  setNames(c('N','Year','Month','Day'))
+
+metagenome_dmms_bray_pcoa = data.frame(DMM = metagenome_dmms_samples[rownames(metagenome_pcoa_bray_xy)]
+                             , metagenome_pcoa_bray_xy
+                             , metagenome_dates)
+metagenome_bray_pcoa_plot = ggplot(data = metagenome_dmms_bray_pcoa, aes(x = Axis.1, y = Axis.2)) +
+  stat_centroid(funx = median, funy = median, aes(group = Year)) +
+  stat_centroid(geom = 'text',funx = median, funy = median, aes(group = Year, label = Year)) +
+  geom_point(aes(color = DMM)) +
+  stat_ellipse(geom='polygon',fill = 'gray', alpha = 0.2, aes(group = Year)) +
+  theme_bw()
+
+plot(metagenome_bray_pcoa_plot)
+
+
+## Run Adonis2 to tease apart the relationship between DMMs over time
+adonis2(metagenome_bray ~ DMM
+      , data = metagenome_dmms_aitc_pcoa
+      , by = 'terms')
+
+adonis2(metagenome_bray ~ DMM + Year
+      , data = metagenome_dmms_aitc_pcoa
+      , by = 'terms')
+
+adonis2(metagenome_bray ~ DMM + interaction(Year, Month)
+      , data = metagenome_dmms_aitc_pcoa
+      , by = 'terms')
+
+```
+
+```{r MGJaccPCoA, eval = FALSE}
+## Jaccard
+metagenome_pcoa_jacc = ape::pcoa(metagenome_jacc)
+metagenome_pcoa_jacc_xy = metagenome_pcoa_jacc$vectors
+
+metagenome_dates = metagenome_pcoa_jacc_xy %>%
+  rownames() %>%
+  strsplit('\\.') %>%
+  do.call('rbind',.) %>%
+  as.data.table() %>%
+  setNames(c('N','Year','Month','Day'))
+
+metagenome_dmms_jacc_pcoa = data.frame(DMM = metagenome_dmms_samples[rownames(metagenome_pcoa_jacc_xy)]
+                             , metagenome_pcoa_jacc_xy
+                             , metagenome_dates)
+jacc_metagenome_pcoa_plot = ggplot(data = metagenome_dmms_jacc_pcoa, aes(x = Axis.1, y = Axis.2)) +
+  stat_centroid(funx = median, funy = median, aes(group = Year)) +
+  stat_centroid(geom = 'text',funx = median, funy = median, aes(group = Year, label = Year)) +
+  geom_point(aes(color = DMM)) +
+  stat_ellipse(geom='polygon',fill = 'gray', alpha = 0.2, aes(group = Year)) +
+  theme_bw()
+
+plot(jacc_metagenome_pcoa_plot)
+```
+
+# Exit
+```{r}
+save.image(file = 'sanitized-data/beta-diversity.RData')
+sessionInfo()
+```
