@@ -1,0 +1,53 @@
+,Phylum,Family,Genus
+T01,Proteobacteria,Unclassified Proteobacteria,Unclassified Proteobacteria
+T02,Proteobacteria,Enterobacteriaceae,Unclassified Enterobacteriaceae
+T03,Proteobacteria,Enterobacteriaceae,Unclassified Enterobacteriaceae
+T04,Bacteroidetes,Bacteroidaceae,Bacteroides
+T05,Firmicutes,Ruminococcaceae,Unclassified Ruminococcaceae
+T06,Verrucomicrobia,Verrucomicrobiaceae,Akkermansia
+T07,Firmicutes,Unclassified Firmicutes,Unclassified Firmicutes
+T08,Firmicutes,Lachnospiraceae,Coprococcus
+T09,Bacteroidetes,Prevotellaceae,Prevotella
+T10,Bacteroidetes,Rikenellaceae,Unclassified Rikenellaceae
+T11,Firmicutes,Ruminococcaceae,Faecalibacterium
+T12,Firmicutes,Lachnospiraceae,Unclassified Lachnospiraceae
+T13,Firmicutes,Lachnospiraceae,Lachnospira
+T14,Firmicutes,Lachnospiraceae,Blautia
+T15,Firmicutes,Christensenellaceae,Unclassified Christensenellaceae
+T16,Euryarchaeota,Methanobacteriaceae,Methanobrevibacter
+T17,Bacteroidetes,Porphyromonadaceae,Parabacteroides
+T18,Proteobacteria,Enterobacteriaceae,Providencia
+T19,Firmicutes,Ruminococcaceae,Ruminococcus
+T20,Bacteroidetes,[Paraprevotellaceae],[Prevotella]
+T21,Firmicutes,Lachnospiraceae,[Ruminococcus]
+T22,Proteobacteria,Enterobacteriaceae,Serratia
+T23,Firmicutes,Veillonellaceae,Dialister
+T24,Firmicutes,Lachnospiraceae,Dorea
+T25,Firmicutes,Lachnospiraceae,Roseburia
+T26,Firmicutes,Erysipelotrichaceae,Unclassified Erysipelotrichaceae
+T27,Bacteroidetes,S24-7,Unclassified S24-7
+T28,Proteobacteria,Pseudomonadaceae,Pseudomonas
+T29,Proteobacteria,Unclassified Proteobacteria,Unclassified Proteobacteria
+T30,Fusobacteria,Fusobacteriaceae,Fusobacterium
+T31,Bacteroidetes,[Barnesiellaceae],Unclassified [Barnesiellaceae]
+T32,Firmicutes,Veillonellaceae,Phascolarctobacterium
+T33,Proteobacteria,Enterobacteriaceae,Erwinia
+T34,Proteobacteria,Alcaligenaceae,Sutterella
+T35,Proteobacteria,Desulfovibrionaceae,Bilophila
+T36,Cyanobacteria,Unclassified Cyanobacteria,Unclassified Cyanobacteria
+T37,Firmicutes,Unclassified Firmicutes,Unclassified Firmicutes
+T38,Firmicutes,Ruminococcaceae,Oscillospira
+T39,Firmicutes,Erysipelotrichaceae,[Eubacterium]
+T40,Proteobacteria,Desulfovibrionaceae,Desulfovibrio
+T41,Firmicutes,Lachnospiraceae,Unclassified Lachnospiraceae
+T42,Tenericutes,Unclassified Tenericutes,Unclassified Tenericutes
+T43,Proteobacteria,Burkholderiaceae,Unclassified Burkholderiaceae
+T44,Synergistetes,Synergistaceae,Synergistes
+T45,Firmicutes,[Tissierellaceae],Parvimonas
+T46,Firmicutes,Clostridiaceae,Unclassified Clostridiaceae
+T47,Actinobacteria,Coriobacteriaceae,Unclassified Coriobacteriaceae
+T48,Firmicutes,Clostridiaceae,Clostridium
+T49,Firmicutes,Veillonellaceae,Veillonella
+T50,Proteobacteria,Pasteurellaceae,Aggregatibacter
+T51,Actinobacteria,Bifidobacteriaceae,Bifidobacterium
+T52,Firmicutes,Lachnospiraceae,Lachnobacterium

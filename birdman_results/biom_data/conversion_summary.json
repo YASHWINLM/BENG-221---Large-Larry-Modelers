@@ -1,0 +1,13 @@
+{
+  "microbiome": {
+    "samples": 74,
+    "features": 52,
+    "biom_path": "birdman_results/biom_data/microbiome_table.biom"
+  },
+  "metabolomics": {
+    "samples": 74,
+    "features": 12,
+    "biom_path": "birdman_results/biom_data/metabolomics_table.biom"
+  },
+  "metadata_path": "birdman_results/biom_data/metadata.tsv"
+}
