@@ -25,6 +25,8 @@ amplicon_matrix = fread('sanitized-data/amplicon-matrix.txt.xls', sep = '\t', he
 amplicon_matrix = amplicon_matrix / 100
 amplicon_taxonomy = fread('sanitized-data/amplicon-taxonomy.txt.xls', sep = '\t', header=TRUE) %>% setkey(V1)
 
+## reassign names in the matrix to reflect genera.
+rownames(amplicon_matrix) = paste0(amplicon_taxonomy[rownames(amplicon_matrix),Genus], ';', rownames(amplicon_matrix))
 dir.create('maaslin3')
 ```
 
@@ -54,7 +56,7 @@ f2 = paste0(fixed_effect_terms, collapse = ' + ') %>%
 lm(f2, data = amplicon_metadata, na.action = 'na.omit') %>% car::vif()
 
 
-maaslin3_out_cholesterol = maaslin3(input_data = agglomerate(amplicon_matrix, amplicon_taxonomy, rank = 'Genus'),
+maaslin3_out_cholesterol = maaslin3(input_data = amplicon_matrix,
                     input_metadata = amplicon_metadata,
                     reference = reference_levels,
                     output = paste0('maaslin3/', response, '.out'),
@@ -100,7 +102,7 @@ f2 = paste0(fixed_effect_terms, collapse = ' + ') %>%
 lm(f2, data = amplicon_metadata, na.action = 'na.omit') %>% car::vif()
 
 
-maaslin3_out_cholesterol = maaslin3(input_data = agglomerate(amplicon_matrix, amplicon_taxonomy, rank = 'Genus'),
+maaslin3_out_cholesterol = maaslin3(input_data = amplicon_matrix,
                     input_metadata = amplicon_metadata,
                     reference = reference_levels,
                     output = paste0('maaslin3/', response, '.out'),
@@ -144,7 +146,7 @@ f2 = paste0(fixed_effect_terms, collapse = ' + ') %>%
 
 lm(f2, data = amplicon_metadata, na.action = 'na.omit') %>% car::vif()
 
-maaslin3_out_acetate = maaslin3(input_data = agglomerate(amplicon_matrix, amplicon_taxonomy, rank = 'Genus'),
+maaslin3_out_acetate = maaslin3(input_data = amplicon_matrix,
                     input_metadata = amplicon_metadata,
                     reference = reference_levels,
                     output = paste0('maaslin3/', response, '.out'),
@@ -191,7 +193,7 @@ f2 = paste0(fixed_effect_terms, collapse = ' + ') %>%
 
 lm(f2, data = amplicon_metadata, na.action = 'na.omit') %>% car::vif()
 
-maaslin3_out_butyrate = maaslin3(input_data = agglomerate(amplicon_matrix, amplicon_taxonomy, rank = 'Genus'),
+maaslin3_out_butyrate = maaslin3(input_data = amplicon_matrix,
                     input_metadata = amplicon_metadata,
                     reference = reference_levels,
                     output = paste0('maaslin3/', response, '.out'),
@@ -238,7 +240,7 @@ f2 = paste0(fixed_effect_terms, collapse = ' + ') %>%
 
 lm(f2, data = amplicon_metadata, na.action = 'na.omit') %>% car::vif()
 
-maaslin3_out_propionoate = maaslin3(input_data = agglomerate(amplicon_matrix, amplicon_taxonomy, rank = 'Genus'),
+maaslin3_out_propionoate = maaslin3(input_data = amplicon_matrix,
                     input_metadata = amplicon_metadata,
                     reference = reference_levels,
                     output = paste0('maaslin3/', response, '.out'),
@@ -285,7 +287,7 @@ f2 = paste0(fixed_effect_terms, collapse = ' + ') %>%
 
 lm(f2, data = amplicon_metadata, na.action = 'na.omit') %>% car::vif()
 
-maaslin3_out_valerate = maaslin3(input_data = agglomerate(amplicon_matrix, amplicon_taxonomy, rank = 'Genus'),
+maaslin3_out_valerate = maaslin3(input_data = amplicon_matrix,
                     input_metadata = amplicon_metadata,
                     reference = reference_levels,
                     output = paste0('maaslin3/', response, '.out'),
