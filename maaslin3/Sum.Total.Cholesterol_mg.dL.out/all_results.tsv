@@ -1,283 +1,289 @@
 "feature"	"metadata"	"value"	"name"	"coef"	"null_hypothesis"	"stderr"	"pval_individual"	"qval_individual"	"pval_joint"	"qval_joint"	"error"	"model"	"N"	"N_not_zero"
-"[Eubacterium]"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	4.91561054040465	-0.0430229561145532	4.56052786161307	0.473112482870661	1	0.722389544293281	1	NA	"abundance"	77	19
-"[Eubacterium]"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-1.11200493646499	0.193163523346916	2.62044416459499	0.704871246061717	1	0.912899018598836	1	NA	"abundance"	77	19
-"[Eubacterium]"	"Year"	"Year"	"Year"	-3.63094610746015	0.0315144437349802	5.93614889295808	0.6472339161201	1	0.875556090064039	1	NA	"abundance"	77	19
-"[Ruminococcus]"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.00571091077325838	-0.0430229561145532	0.312262717119927	0.919369481186479	1	0.993498719435862	1	NA	"abundance"	77	76
-"[Ruminococcus]"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.118187929408845	0.193163523346916	0.54284113848305	0.892824670974475	1	0.98851344884827	1	NA	"abundance"	77	76
-"[Ruminococcus]"	"Year"	"Year"	"Year"	-0.668498287585901	0.0315144437349802	0.792986466196141	0.415237676633485	1	0.658053025170995	1	NA	"abundance"	77	76
-"Akkermansia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.71264614947184	-0.0430229561145532	0.331565429230809	0.0994079781281878	1	0.0994079781281878	1	NA	"abundance"	77	77
-"Akkermansia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.00842160451805	0.193163523346916	0.576397197671689	0.192457571207688	1	0.192457571207688	1	NA	"abundance"	77	77
-"Akkermansia"	"Year"	"Year"	"Year"	1.71026088237068	0.0315144437349802	0.8420054128254	0.0827064681064171	1	0.0827064681064171	1	NA	"abundance"	77	77
-"Bacteroides"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.237147141250361	-0.0430229561145532	0.219530022578866	0.50198312761603	1	0.50198312761603	1	NA	"abundance"	77	77
-"Bacteroides"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.606453078689933	0.193163523346916	0.381633543981983	0.326490025158968	1	0.326490025158968	1	NA	"abundance"	77	77
-"Bacteroides"	"Year"	"Year"	"Year"	0.878100812778381	0.0315144437349802	0.557493185335716	0.202400700770706	1	0.202400700770706	1	NA	"abundance"	77	77
-"Bifidobacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.0881417861297505	-0.0430229561145532	1.26740029243398	0.92415847021132	1	0.181103371040987	1	NA	"abundance"	77	35
-"Bifidobacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.70165709311592	0.193163523346916	2.24284142551296	0.547941884305688	1	0.210965537363609	1	NA	"abundance"	77	35
-"Bifidobacterium"	"Year"	"Year"	"Year"	3.54381230180231	0.0315144437349802	1.67087391560217	0.129953158558136	1	0.243018493697036	1	NA	"abundance"	77	35
-"Bilophila"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.0079783343261606	-0.0430229561145532	0.286504529486942	0.919600165898649	1	0.993535866676475	1	NA	"abundance"	77	75
-"Bilophila"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.27804914271792	0.193163523346916	0.498062805581464	0.370263135180688	1	0.603431481087544	1	NA	"abundance"	77	75
-"Bilophila"	"Year"	"Year"	"Year"	0.263481723756665	0.0315144437349802	0.72757393672387	0.765575274767183	1	0.945045048199518	1	NA	"abundance"	77	75
-"Blautia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.139014563047597	-0.0430229561145532	0.172355082214581	0.472966793850492	1	0.722235999615771	1	NA	"abundance"	77	76
-"Blautia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.193163523346916	0.193163523346916	0.299624079094814	1	1	1	1	NA	"abundance"	77	76
-"Blautia"	"Year"	"Year"	"Year"	-0.404373356035912	0.0315144437349802	0.437693134924571	0.41465450115372	1	0.657370646980399	1	NA	"abundance"	77	76
-"Clostridium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.16560903087449	-0.0430229561145532	0.309728153193429	0.731941143927487	1	0.928144449681096	1	NA	"abundance"	77	74
-"Clostridium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.678770415773301	0.193163523346916	0.538435023080904	0.393933750655778	1	0.632683701405827	1	NA	"abundance"	77	74
-"Clostridium"	"Year"	"Year"	"Year"	0.952163341224709	0.0315144437349802	0.786549979285505	0.28805967733014	1	0.493140976956736	1	NA	"abundance"	77	74
-"Coprococcus"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.0165098069922192	-0.0430229561145532	0.332829308561198	0.878183926913079	1	0.985160844337682	1	NA	"abundance"	77	76
-"Coprococcus"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.720396342622386	0.193163523346916	0.578594340196231	0.147491900179503	1	0.273229939740446	1	NA	"abundance"	77	76
-"Coprococcus"	"Year"	"Year"	"Year"	-1.6866307457536	0.0315144437349802	0.845215015345827	0.0773095197000561	1	0.148642277563859	1	NA	"abundance"	77	76
-"Desulfovibrio"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.382817690550214	-0.0430229561145532	0.243244524875967	0.181654188591404	1	0.330310132950006	1	NA	"abundance"	77	75
-"Desulfovibrio"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.767390932362543	0.193163523346916	0.42285911053136	0.0515803200904454	1	0.100500110760258	1	NA	"abundance"	77	75
-"Desulfovibrio"	"Year"	"Year"	"Year"	-0.937352922715531	0.0315144437349802	0.61771580668361	0.178517663298547	1	0.32516677048752	1	NA	"abundance"	77	75
-"Dialister"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.1101607739648	-0.0430229561145532	0.18908398950246	0.796228794162751	1	0.958477295671634	1	NA	"abundance"	77	74
-"Dialister"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.250821350076958	0.193163523346916	0.328705806050524	0.870548005252089	1	0.983242181055787	1	NA	"abundance"	77	74
-"Dialister"	"Year"	"Year"	"Year"	0.320364389292645	0.0315144437349802	0.480175942977648	0.606661046847095	1	0.845284467932577	1	NA	"abundance"	77	74
-"Dorea"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.0873853263831688	-0.0430229561145532	0.156887937503627	0.588815699774524	1	0.830927471248086	1	NA	"abundance"	77	75
-"Dorea"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.42550583717816	0.193163523346916	0.272735814874812	0.462286053518631	1	0.710863711759431	1	NA	"abundance"	77	75
-"Dorea"	"Year"	"Year"	"Year"	0.475865392242946	0.0315144437349802	0.398414553928387	0.383270822631314	1	0.619645121782143	1	NA	"abundance"	77	75
-"Faecalibacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.192815213668858	-0.0430229561145532	0.143525626013992	0.525935550061637	1	0.775262897304638	1	NA	"abundance"	77	75
-"Faecalibacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.260442348442731	0.193163523346916	0.249506617202095	0.814876351497363	1	0.965729234765072	1	NA	"abundance"	77	75
-"Faecalibacterium"	"Year"	"Year"	"Year"	0.208048738276855	0.0315144437349802	0.364481165190506	0.706005823243903	1	0.913567424033505	1	NA	"abundance"	77	75
-"Lachnospira"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.419257296390591	-0.0430229561145532	0.271806541234898	0.267190095846029	1	0.462989644373847	1	NA	"abundance"	77	75
-"Lachnospira"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.584220745730269	0.193163523346916	0.472511651893508	0.437155453654811	1	0.683206016649478	1	NA	"abundance"	77	75
-"Lachnospira"	"Year"	"Year"	"Year"	1.31343919933018	0.0315144437349802	0.690248616968505	0.110898629356548	1	0.209498752719935	1	NA	"abundance"	77	75
-"Oscillospira"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.30140886973787	-0.0430229561145532	0.208153004709679	0.363030789425612	1	0.363030789425612	1	NA	"abundance"	77	77
-"Oscillospira"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.380697013498662	0.193163523346916	0.361855603824371	0.629130042789626	1	0.629130042789626	1	NA	"abundance"	77	77
-"Oscillospira"	"Year"	"Year"	"Year"	0.763288171358325	0.0315144437349802	0.528601419840472	0.245782504920689	1	0.245782504920689	1	NA	"abundance"	77	77
-"Parabacteroides"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.200175803195174	-0.0430229561145532	0.274251697306314	0.463983856207906	1	0.712686693594253	1	NA	"abundance"	77	75
-"Parabacteroides"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.12974298215669	0.193163523346916	0.47676233964073	0.897376409991711	1	0.989468398773811	1	NA	"abundance"	77	75
-"Parabacteroides"	"Year"	"Year"	"Year"	0.351071695882101	0.0315144437349802	0.696458053978	0.670643294101223	1	0.891524160279506	1	NA	"abundance"	77	75
-"Phascolarctobacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.186326792693841	-0.0430229561145532	0.43290917461227	0.627463453696524	1	0.861216521668278	1	NA	"abundance"	77	76
-"Phascolarctobacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.736116610357299	0.193163523346916	0.75257434308441	0.242466462195041	1	0.426142939100702	1	NA	"abundance"	77	76
-"Phascolarctobacterium"	"Year"	"Year"	"Year"	-1.63373678190406	0.0315144437349802	1.09936632757803	0.164651404823898	1	0.302192724537313	1	NA	"abundance"	77	76
-"Prevotella"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.525319868904071	-0.0430229561145532	0.615083492461053	0.460955869340173	1	0.709431425201191	1	NA	"abundance"	77	73
-"Prevotella"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-1.37339852360247	0.193163523346916	1.06926829558539	0.167680084747952	1	0.307243558674824	1	NA	"abundance"	77	73
-"Prevotella"	"Year"	"Year"	"Year"	-2.01456149755037	0.0315144437349802	1.56199526347856	0.217890068438572	1	0.388304054952978	1	NA	"abundance"	77	73
-"Providencia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.250230280594313	-0.0430229561145532	0.794007570745237	0.809469563516752	1	0.707353864408904	1	NA	"abundance"	77	25
-"Providencia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.938618585265314	0.193163523346916	1.74611556450019	0.550769896608139	1	0.59878853123184	1	NA	"abundance"	77	25
-"Providencia"	"Year"	"Year"	"Year"	-2.57448240349304	0.0315144437349802	2.77651920878993	0.400671906597605	1	0.64080583645865	1	NA	"abundance"	77	25
-"Pseudomonas"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.544518231447969	-0.0430229561145532	0.261572277951508	0.206348835000226	1	0.370117828294502	1	NA	"abundance"	77	38
-"Pseudomonas"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-1.04074710573363	0.193163523346916	0.238022479318684	0.0488520769014652	1	0.0953176283853438	1	NA	"abundance"	77	38
-"Pseudomonas"	"Year"	"Year"	"Year"	-0.306175460342443	0.0315144437349802	0.404235290642183	0.561360089537598	1	0.807595028949536	1	NA	"abundance"	77	38
-"Roseburia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.0426780673671342	-0.0430229561145532	0.396686549505964	0.99936993075307	1	0.800936898765747	1	NA	"abundance"	77	67
-"Roseburia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.49601926674314	0.193163523346916	0.751156873614989	0.695345974054081	1	0.767385688032199	1	NA	"abundance"	77	67
-"Roseburia"	"Year"	"Year"	"Year"	0.150718447897437	0.0315144437349802	1.05867365662289	0.913701378171521	1	0.959236892253768	1	NA	"abundance"	77	67
-"Ruminococcus"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.0325776247945314	-0.0430229561145532	0.187025608353227	0.770273241535973	1	0.94722561644561	1	NA	"abundance"	77	75
-"Ruminococcus"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.249923449557863	0.193163523346916	0.325127492325505	0.228024961370001	1	0.404054539732212	1	NA	"abundance"	77	75
-"Ruminococcus"	"Year"	"Year"	"Year"	-0.511148011819514	0.0315144437349802	0.474948715056653	0.343280122584076	1	0.568719002606814	1	NA	"abundance"	77	75
-"Sutterella"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.312266130787735	-0.0430229561145532	0.349766485360822	0.49896859225209	1	0.748967528450147	1	NA	"abundance"	77	75
-"Sutterella"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.244966042128314	0.193163523346916	0.60803812529295	0.933640047617089	1	0.995596356719738	1	NA	"abundance"	77	75
-"Sutterella"	"Year"	"Year"	"Year"	0.637408980754834	0.0315144437349802	0.888226720686605	0.518887850511211	1	0.768531099614277	1	NA	"abundance"	77	75
-"Synergistes"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.210689644887732	-0.0430229561145532	0.643442673148916	0.709150727592658	1	0.270596031691544	1	NA	"abundance"	77	62
-"Synergistes"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-1.09155967035059	0.193163523346916	1.26478622466788	0.338378536477086	1	0.320519729086965	1	NA	"abundance"	77	62
-"Synergistes"	"Year"	"Year"	"Year"	-1.57520433143344	0.0315144437349802	1.89773721620508	0.422596935563011	1	0.619914520312239	1	NA	"abundance"	77	62
-"Unclassified [Barnesiellaceae]"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.0701599447939146	-0.0430229561145532	0.400261240751098	0.95055943017946	1	0.790892566966148	1	NA	"abundance"	77	74
-"Unclassified [Barnesiellaceae]"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.279686668244385	0.193163523346916	0.728088601171156	0.907168081642258	1	0.539818217244898	1	NA	"abundance"	77	74
-"Unclassified [Barnesiellaceae]"	"Year"	"Year"	"Year"	-0.238657936335463	0.0315144437349802	1.03222151781994	0.80072088840736	1	0.83350090802652	1	NA	"abundance"	77	74
-"Unclassified Christensenellaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.539898342829521	-0.0430229561145532	0.317359178088508	0.133305443244033	1	0.248840545289579	1	NA	"abundance"	77	75
-"Unclassified Christensenellaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.203673560033713	0.193163523346916	0.55170088549331	0.489583831366819	1	0.739475334797824	1	NA	"abundance"	77	75
-"Unclassified Christensenellaceae"	"Year"	"Year"	"Year"	0.0226147914364601	0.0315144437349802	0.805928852052693	0.991932052889381	1	0.99993490822942	1	NA	"abundance"	77	75
-"Unclassified Clostridiaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.144995900168875	-0.0430229561145532	0.153602019046145	0.43848315412312	1	0.68469883179648	1	NA	"abundance"	77	76
-"Unclassified Clostridiaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.428328958766609	0.193163523346916	0.26702353601913	0.0611952843839021	1	0.118645705936978	1	NA	"abundance"	77	76
-"Unclassified Clostridiaceae"	"Year"	"Year"	"Year"	-0.939805431285671	0.0315144437349802	0.390070013504733	0.0702321087624831	1	0.135531668423741	1	NA	"abundance"	77	76
-"Unclassified Coriobacteriaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.0927533982548212	-0.0430229561145532	0.314389792556645	0.708710548630914	1	0.915150455521097	1	NA	"abundance"	77	72
-"Unclassified Coriobacteriaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.279830606416976	0.193163523346916	0.548433612697999	0.878123996950222	1	0.954967709261609	1	NA	"abundance"	77	72
-"Unclassified Coriobacteriaceae"	"Year"	"Year"	"Year"	0.416058009833032	0.0315144437349802	0.804193881551308	0.654398423967361	1	0.880559550643756	1	NA	"abundance"	77	72
-"Unclassified Cyanobacteria"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.316344245767858	-0.0430229561145532	0.4321077108444	0.561961087908007	1	0.808121911493264	1	NA	"abundance"	77	75
-"Unclassified Cyanobacteria"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.0862591689537337	0.193163523346916	0.751181069150792	0.714759731193834	1	0.918637989051386	1	NA	"abundance"	77	75
-"Unclassified Cyanobacteria"	"Year"	"Year"	"Year"	-0.307816471256171	0.0315144437349802	1.09733102241279	0.765201121648903	1	0.944869486725067	1	NA	"abundance"	77	75
-"Unclassified Enterobacteriaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.342774145722633	-0.0430229561145532	0.958573176811471	0.760858748906633	1	0.760858748906633	1	NA	"abundance"	77	77
-"Unclassified Enterobacteriaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-1.61127072485125	0.193163523346916	1.66639475701419	0.297811389138241	1	0.297811389138241	1	NA	"abundance"	77	77
-"Unclassified Enterobacteriaceae"	"Year"	"Year"	"Year"	-1.54186678076541	0.0315144437349802	2.43428214255306	0.528488705806563	1	0.528488705806563	1	NA	"abundance"	77	77
-"Unclassified Erysipelotrichaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.114384048238276	-0.0430229561145532	0.203395655249135	0.5643921946476	1	0.810245839916065	1	NA	"abundance"	77	76
-"Unclassified Erysipelotrichaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.292216053646093	0.193163523346916	0.353585372202925	0.79507567786009	1	0.958006022195498	1	NA	"abundance"	77	76
-"Unclassified Erysipelotrichaceae"	"Year"	"Year"	"Year"	0.299516531278664	0.0315144437349802	0.516520202550197	0.65058760501825	1	0.877910978233117	1	NA	"abundance"	77	76
-"Unclassified Firmicutes"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.38078454780987	-0.0430229561145532	0.127631895486322	0.155139184163505	1	0.155139184163505	1	NA	"abundance"	77	77
-"Unclassified Firmicutes"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.493296787897141	0.193163523346916	0.221876771237905	0.285125167287182	1	0.285125167287182	1	NA	"abundance"	77	77
-"Unclassified Firmicutes"	"Year"	"Year"	"Year"	0.961894053108223	0.0315144437349802	0.324119275938866	0.0563747868940225	1	0.0563747868940225	1	NA	"abundance"	77	77
-"Unclassified Lachnospiraceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.0433678448619721	-0.0430229561145532	0.0968415226175852	0.998667741737234	1	0.998667741737234	1	NA	"abundance"	77	77
-"Unclassified Lachnospiraceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.0189624673814976	0.193163523346916	0.168350429007419	0.346490974179146	1	0.346490974179146	1	NA	"abundance"	77	77
-"Unclassified Lachnospiraceae"	"Year"	"Year"	"Year"	-0.0876895604274764	0.0315144437349802	0.245927587865314	0.757147431222805	1	0.757147431222805	1	NA	"abundance"	77	77
-"Unclassified Proteobacteria"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.37583403292603	-0.0430229561145532	0.609873638692051	0.605045543859137	1	0.844010977574475	1	NA	"abundance"	77	76
-"Unclassified Proteobacteria"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	2.2571268195696	0.193163523346916	1.06021142521233	0.0757268643525846	1	0.145719170720494	1	NA	"abundance"	77	76
-"Unclassified Proteobacteria"	"Year"	"Year"	"Year"	4.89925434875101	0.0315144437349802	1.54876491831349	0.00862052503783106	1	0.0171667366237343	1	NA	"abundance"	77	76
-"Unclassified Rikenellaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.343229639444245	-0.0430229561145532	0.198438044538434	0.173862826216389	1	0.317497370092828	1	NA	"abundance"	77	75
-"Unclassified Rikenellaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.302917633532014	0.193163523346916	0.344967004095537	0.203133788703066	1	0.36500424129327	1	NA	"abundance"	77	75
-"Unclassified Rikenellaceae"	"Year"	"Year"	"Year"	-0.454329416571008	0.0315144437349802	0.503930424831889	0.409560517787114	1	0.651381217844179	1	NA	"abundance"	77	75
-"Unclassified Ruminococcaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.185885744978722	-0.0430229561145532	0.159666283722444	0.356562078435066	1	0.356562078435066	1	NA	"abundance"	77	77
-"Unclassified Ruminococcaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.110013306102595	0.193163523346916	0.277565724248667	0.336827012489866	1	0.336827012489866	1	NA	"abundance"	77	77
-"Unclassified Ruminococcaceae"	"Year"	"Year"	"Year"	-0.353144521213803	0.0315144437349802	0.405470122298028	0.448120573245621	1	0.448120573245621	1	NA	"abundance"	77	77
-"Unclassified S24-7"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.133513336081336	-0.0430229561145532	0.401144090266325	0.836989740336348	1	0.973427655244389	1	NA	"abundance"	77	74
-"Unclassified S24-7"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.242739451186544	0.193163523346916	0.69735355108784	0.944420481010461	1	0.996910917068891	1	NA	"abundance"	77	74
-"Unclassified S24-7"	"Year"	"Year"	"Year"	0.583054998457483	0.0315144437349802	1.01869937439118	0.605223229990367	1	0.844151301860761	1	NA	"abundance"	77	74
-"Unclassified Tenericutes"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.271395901133769	-0.0430229561145532	0.421749257241715	0.497344890297216	1	0.747337840689682	1	NA	"abundance"	77	75
-"Unclassified Tenericutes"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.329181534050542	0.193163523346916	0.733173812958099	0.855400508808936	1	0.979090987147285	1	NA	"abundance"	77	75
-"Unclassified Tenericutes"	"Year"	"Year"	"Year"	0.358109577836829	0.0315144437349802	1.07102588552866	0.768912675968913	1	0.946598648672151	1	NA	"abundance"	77	75
-"Veillonella"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.255937029600125	-0.0430229561145532	0.369414556108074	0.620728162992942	1	0.322844967016585	1	NA	"abundance"	77	35
-"Veillonella"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.259785490299466	0.193163523346916	0.47885736767547	0.896641206013896	1	0.730449235879226	1	NA	"abundance"	77	35
-"Veillonella"	"Year"	"Year"	"Year"	-0.715956565621408	0.0315144437349802	0.790547556527075	0.410163084892755	1	0.652092413576769	1	NA	"abundance"	77	35
-"[Eubacterium]"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.030158001458181	0	0.597414015137409	0.959739163851195	1	0.722389544293281	1	NA	"prevalence"	77	19
-"[Eubacterium]"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.282249274836934	0	1.06171090284785	0.790359498926967	1	0.912899018598836	1	NA	"prevalence"	77	19
-"[Eubacterium]"	"Year"	"Year"	"Year"	-0.661890121902155	0	1.60047528256696	0.679197487416617	1	0.875556090064039	1	NA	"prevalence"	77	19
-"[Prevotella]"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-2.85400953239697e-17	0	2.05653060265837	1	1	1	1	NA	"prevalence"	77	3
-"[Prevotella]"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	3.30781440253388e-16	0	3.57509671333434	1	1	1	1	NA	"prevalence"	77	3
-"[Prevotella]"	"Year"	"Year"	"Year"	6.46744201279575e-16	0	5.22252848584532	1	1	1	1	NA	"prevalence"	77	3
-"[Ruminococcus]"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.993498719435862	1	NA	"prevalence"	77	76
-"[Ruminococcus]"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.98851344884827	1	NA	"prevalence"	77	76
-"[Ruminococcus]"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.658053025170995	1	NA	"prevalence"	77	76
-"Aggregatibacter"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.22425222744804	0	1.95825234422472	0.531855598742033	1	0.531855598742033	1	NA	"prevalence"	77	4
-"Aggregatibacter"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-4.84644896418557	0	4.04833048450503	0.231249044968502	1	0.231249044968502	1	NA	"prevalence"	77	4
-"Aggregatibacter"	"Year"	"Year"	"Year"	-5.36473973148888	0	6.08862765573107	0.378259261425727	1	0.378259261425727	1	NA	"prevalence"	77	4
-"Bifidobacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	3.35620618118715	0	2.01062600220353	0.0950709260063456	1	0.181103371040987	1	NA	"prevalence"	77	35
-"Bifidobacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-8.76577021001786	0	5.51135660951359	0.111723881534356	1	0.210965537363609	1	NA	"prevalence"	77	35
-"Bifidobacterium"	"Year"	"Year"	"Year"	-6.87611585339249	0	5.08090823783725	0.17595209533391	1	0.243018493697036	1	NA	"prevalence"	77	35
-"Bilophila"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.993535866676475	1	NA	"prevalence"	77	75
-"Bilophila"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.603431481087544	1	NA	"prevalence"	77	75
-"Bilophila"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.945045048199518	1	NA	"prevalence"	77	75
-"Blautia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.722235999615771	1	NA	"prevalence"	77	76
-"Blautia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	1	1	NA	"prevalence"	77	76
-"Blautia"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.657370646980399	1	NA	"prevalence"	77	76
-"Clostridium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.928144449681096	1	NA	"prevalence"	77	74
-"Clostridium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.632683701405827	1	NA	"prevalence"	77	74
-"Clostridium"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.493140976956736	1	NA	"prevalence"	77	74
-"Coprococcus"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.985160844337682	1	NA	"prevalence"	77	76
-"Coprococcus"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.273229939740446	1	NA	"prevalence"	77	76
-"Coprococcus"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.148642277563859	1	NA	"prevalence"	77	76
-"Desulfovibrio"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.330310132950006	1	NA	"prevalence"	77	75
-"Desulfovibrio"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.100500110760258	1	NA	"prevalence"	77	75
-"Desulfovibrio"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.32516677048752	1	NA	"prevalence"	77	75
-"Dialister"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.958477295671634	1	NA	"prevalence"	77	74
-"Dialister"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.983242181055787	1	NA	"prevalence"	77	74
-"Dialister"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.845284467932577	1	NA	"prevalence"	77	74
-"Dorea"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.830927471248086	1	NA	"prevalence"	77	75
-"Dorea"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.710863711759431	1	NA	"prevalence"	77	75
-"Dorea"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.619645121782143	1	NA	"prevalence"	77	75
-"Erwinia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.0983674141270785	0	1.87159387020971	0.958084003715202	1	0.958084003715202	1	NA	"prevalence"	77	4
-"Erwinia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	4.8578004328052	0	3.62873890693857	0.180667668982608	1	0.180667668982608	1	NA	"prevalence"	77	4
-"Erwinia"	"Year"	"Year"	"Year"	5.14148767667474	0	5.2072163466429	0.323457665106496	1	0.323457665106496	1	NA	"prevalence"	77	4
-"Faecalibacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.775262897304638	1	NA	"prevalence"	77	75
-"Faecalibacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.965729234765072	1	NA	"prevalence"	77	75
-"Faecalibacterium"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.913567424033505	1	NA	"prevalence"	77	75
-"Fusobacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.682191666377608	0	1.35204534670719	0.613866005382383	1	0.613866005382383	1	NA	"prevalence"	77	16
-"Fusobacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-6.98651674098878	0	4.12122618217062	0.0900276348241406	1	0.0900276348241406	1	NA	"prevalence"	77	16
-"Fusobacterium"	"Year"	"Year"	"Year"	-7.19891254815067	0	5.98431318570525	0.228990302318571	1	0.228990302318571	1	NA	"prevalence"	77	16
-"Lachnobacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-2.85400953239697e-17	0	2.05653060265837	1	1	1	1	NA	"prevalence"	77	4
-"Lachnobacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	3.30781440253388e-16	0	3.57509671333434	1	1	1	1	NA	"prevalence"	77	4
-"Lachnobacterium"	"Year"	"Year"	"Year"	6.46744201279575e-16	0	5.22252848584532	1	1	1	1	NA	"prevalence"	77	4
-"Lachnospira"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.462989644373847	1	NA	"prevalence"	77	75
-"Lachnospira"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.683206016649478	1	NA	"prevalence"	77	75
-"Lachnospira"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.209498752719935	1	NA	"prevalence"	77	75
-"Methanobrevibacter"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.77453414301721	0	0.872930472234214	0.374927927868889	1	0.374927927868889	1	NA	"prevalence"	77	9
-"Methanobrevibacter"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-4.69040190205754	0	2.95281943730622	0.112184935108329	1	0.112184935108329	1	NA	"prevalence"	77	9
-"Methanobrevibacter"	"Year"	"Year"	"Year"	-6.84886627218238	0	4.90327113165182	0.162475123741253	1	0.162475123741253	1	NA	"prevalence"	77	9
-"Parabacteroides"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.712686693594253	1	NA	"prevalence"	77	75
-"Parabacteroides"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.989468398773811	1	NA	"prevalence"	77	75
-"Parabacteroides"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.891524160279506	1	NA	"prevalence"	77	75
-"Parvimonas"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.22425222744804	0	1.95825234422472	0.531855598742033	1	0.531855598742033	1	NA	"prevalence"	77	6
-"Parvimonas"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-4.84644896418557	0	4.04833048450503	0.231249044968502	1	0.231249044968502	1	NA	"prevalence"	77	6
-"Parvimonas"	"Year"	"Year"	"Year"	-5.36473973148888	0	6.08862765573107	0.378259261425727	1	0.378259261425727	1	NA	"prevalence"	77	6
-"Phascolarctobacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.861216521668278	1	NA	"prevalence"	77	76
-"Phascolarctobacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.426142939100702	1	NA	"prevalence"	77	76
-"Phascolarctobacterium"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.302192724537313	1	NA	"prevalence"	77	76
-"Prevotella"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.709431425201191	1	NA	"prevalence"	77	73
-"Prevotella"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.307243558674824	1	NA	"prevalence"	77	73
-"Prevotella"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.388304054952978	1	NA	"prevalence"	77	73
-"Providencia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-1.10627569810763	0	1.49407602047798	0.459032223149016	1	0.707353864408904	1	NA	"prevalence"	77	25
-"Providencia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	5.40099853890181	0	5.98194042496234	0.3665874418926	1	0.59878853123184	1	NA	"prevalence"	77	25
-"Providencia"	"Year"	"Year"	"Year"	1.15964232636086	0	5.66110645562304	0.837694197138954	1	0.64080583645865	1	NA	"prevalence"	77	25
-"Pseudomonas"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.30535028396963	0	0.597471884782901	0.609301657637888	1	0.370117828294502	1	NA	"prevalence"	77	38
-"Pseudomonas"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.209751688314232	0	1.02997111861667	0.838628481887616	1	0.0953176283853438	1	NA	"prevalence"	77	38
-"Pseudomonas"	"Year"	"Year"	"Year"	0.0613461435908778	0	1.47021021694959	0.966717044542774	1	0.807595028949536	1	NA	"prevalence"	77	38
-"Roseburia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.467521556175087	0	0.789701541715521	0.55383511877978	1	0.800936898765747	1	NA	"prevalence"	77	67
-"Roseburia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.875742222400178	0	1.35375943745288	0.517698940528013	1	0.767385688032199	1	NA	"prevalence"	77	67
-"Roseburia"	"Year"	"Year"	"Year"	0.449841041216843	0	1.7585295681683	0.798101243821978	1	0.959236892253768	1	NA	"prevalence"	77	67
-"Ruminococcus"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.94722561644561	1	NA	"prevalence"	77	75
-"Ruminococcus"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.404054539732212	1	NA	"prevalence"	77	75
-"Ruminococcus"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.568719002606814	1	NA	"prevalence"	77	75
-"Serratia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.444205595666237	0	0.670441855428086	0.507614650703748	1	0.507614650703748	1	NA	"prevalence"	77	23
-"Serratia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.0787858551339346	0	1.14883798831986	0.945324946591543	1	0.945324946591543	1	NA	"prevalence"	77	23
-"Serratia"	"Year"	"Year"	"Year"	0.137785457178703	0	1.61332867488696	0.931939851052404	1	0.931939851052404	1	NA	"prevalence"	77	23
-"Sutterella"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.748967528450147	1	NA	"prevalence"	77	75
-"Sutterella"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.995596356719738	1	NA	"prevalence"	77	75
-"Sutterella"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.768531099614277	1	NA	"prevalence"	77	75
-"Synergistes"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-1.18809021813368	0	0.81712288690174	0.145948497859494	1	0.270596031691544	1	NA	"prevalence"	77	62
-"Synergistes"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.90708052948401	0	1.40834101838457	0.175694067161327	1	0.320519729086965	1	NA	"prevalence"	77	62
-"Synergistes"	"Year"	"Year"	"Year"	1.48763837237948	0	1.7070150265268	0.383489270419597	1	0.619914520312239	1	NA	"prevalence"	77	62
-"Unclassified [Barnesiellaceae]"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.809306979448019	0	1.32954658854672	0.542717337925597	1	0.790892566966148	1	NA	"prevalence"	77	74
-"Unclassified [Barnesiellaceae]"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	2.73155185565675	0	2.75605961760507	0.321633002899535	1	0.539818217244898	1	NA	"prevalence"	77	74
-"Unclassified [Barnesiellaceae]"	"Year"	"Year"	"Year"	2.52617182635338	0	4.7129873797999	0.591956997396745	1	0.83350090802652	1	NA	"prevalence"	77	74
-"Unclassified Christensenellaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.248840545289579	1	NA	"prevalence"	77	75
-"Unclassified Christensenellaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.739475334797824	1	NA	"prevalence"	77	75
-"Unclassified Christensenellaceae"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.99993490822942	1	NA	"prevalence"	77	75
-"Unclassified Clostridiaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.68469883179648	1	NA	"prevalence"	77	76
-"Unclassified Clostridiaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.118645705936978	1	NA	"prevalence"	77	76
-"Unclassified Clostridiaceae"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.135531668423741	1	NA	"prevalence"	77	76
-"Unclassified Coriobacteriaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.0435174739818882	0	1.16072262813788	0.970092951462395	1	0.915150455521097	1	NA	"prevalence"	77	72
-"Unclassified Coriobacteriaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.524181014663395	0	1.94733183738333	0.787791869292454	1	0.954967709261609	1	NA	"prevalence"	77	72
-"Unclassified Coriobacteriaceae"	"Year"	"Year"	"Year"	-1.04744566085818	0	2.67210948605439	0.695064091869344	1	0.880559550643756	1	NA	"prevalence"	77	72
-"Unclassified Cyanobacteria"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.808121911493264	1	NA	"prevalence"	77	75
-"Unclassified Cyanobacteria"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.918637989051386	1	NA	"prevalence"	77	75
-"Unclassified Cyanobacteria"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.944869486725067	1	NA	"prevalence"	77	75
-"Unclassified Erysipelotrichaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.810245839916065	1	NA	"prevalence"	77	76
-"Unclassified Erysipelotrichaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.958006022195498	1	NA	"prevalence"	77	76
-"Unclassified Erysipelotrichaceae"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.877910978233117	1	NA	"prevalence"	77	76
-"Unclassified Proteobacteria"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.844010977574475	1	NA	"prevalence"	77	76
-"Unclassified Proteobacteria"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.145719170720494	1	NA	"prevalence"	77	76
-"Unclassified Proteobacteria"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.0171667366237343	1	NA	"prevalence"	77	76
-"Unclassified Rikenellaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.317497370092828	1	NA	"prevalence"	77	75
-"Unclassified Rikenellaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.36500424129327	1	NA	"prevalence"	77	75
-"Unclassified Rikenellaceae"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.651381217844179	1	NA	"prevalence"	77	75
-"Unclassified S24-7"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.973427655244389	1	NA	"prevalence"	77	74
-"Unclassified S24-7"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.996910917068891	1	NA	"prevalence"	77	74
-"Unclassified S24-7"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.844151301860761	1	NA	"prevalence"	77	74
-"Unclassified Tenericutes"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	2.85400953239695e-17	0	2.05653060265836	1	1	0.747337840689682	1	NA	"prevalence"	77	75
-"Unclassified Tenericutes"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.55999754904973e-15	0	3.57509671333432	1	1	0.979090987147285	1	NA	"prevalence"	77	75
-"Unclassified Tenericutes"	"Year"	"Year"	"Year"	3.31054198534272e-15	0	5.2225284858453	0.999999999999999	1	0.946598648672151	1	NA	"prevalence"	77	75
-"Veillonella"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-1.12085310588938	0	0.830433573799483	0.177105697562916	1	0.322844967016585	1	NA	"prevalence"	77	35
-"Veillonella"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.811146328639732	0	1.15058047050973	0.480817215115164	1	0.730449235879226	1	NA	"prevalence"	77	35
-"Veillonella"	"Year"	"Year"	"Year"	-0.976012161065316	0	1.72430154285406	0.571371116645893	1	0.652092413576769	1	NA	"prevalence"	77	35
-"[Prevotella]"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	NA	NA	NA	NA	1	1	"0 (non-NA) cases"	"abundance"	77	3
-"[Prevotella]"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	NA	NA	NA	NA	1	1	"0 (non-NA) cases"	"abundance"	77	3
-"[Prevotella]"	"Year"	"Year"	"Year"	NA	NA	NA	NA	NA	1	1	"0 (non-NA) cases"	"abundance"	77	3
-"Aggregatibacter"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	NA	NA	NA	NA	0.531855598742033	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	4
-"Aggregatibacter"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	NA	NA	NA	NA	0.231249044968502	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	4
-"Aggregatibacter"	"Year"	"Year"	"Year"	NA	NA	NA	NA	NA	0.378259261425727	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	4
-"Erwinia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	NA	NA	NA	NA	0.958084003715202	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	4
-"Erwinia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	NA	NA	NA	NA	0.180667668982608	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	4
-"Erwinia"	"Year"	"Year"	"Year"	NA	NA	NA	NA	NA	0.323457665106496	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	4
-"Fusobacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.816998109735987	NA	NA	NA	NA	0.613866005382383	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	16
-"Fusobacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-1.86080975347199	NA	NA	NA	NA	0.0900276348241406	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	16
-"Fusobacterium"	"Year"	"Year"	"Year"	NA	NA	NA	NA	NA	0.228990302318571	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	16
-"Lachnobacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	NA	NA	NA	NA	1	1	"0 (non-NA) cases"	"abundance"	77	4
-"Lachnobacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	NA	NA	NA	NA	1	1	"0 (non-NA) cases"	"abundance"	77	4
-"Lachnobacterium"	"Year"	"Year"	"Year"	NA	NA	NA	NA	NA	1	1	"0 (non-NA) cases"	"abundance"	77	4
-"Methanobrevibacter"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	NA	NA	NA	NA	0.374927927868889	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	9
-"Methanobrevibacter"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.81153864121228	NA	NA	NA	NA	0.112184935108329	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	9
-"Methanobrevibacter"	"Year"	"Year"	"Year"	3.82701487563272	NA	NA	NA	NA	0.162475123741253	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	9
-"Parvimonas"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	NA	NA	NA	NA	0.531855598742033	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	6
-"Parvimonas"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	NA	NA	NA	NA	0.231249044968502	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	6
-"Parvimonas"	"Year"	"Year"	"Year"	NA	NA	NA	NA	NA	0.378259261425727	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	6
-"Serratia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-2.25246733300521	NA	NA	NA	NA	0.507614650703748	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	23
-"Serratia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-2.33743003657549	NA	NA	NA	NA	0.945324946591543	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	23
-"Serratia"	"Year"	"Year"	"Year"	0.146489111596115	NA	NA	NA	NA	0.931939851052404	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	77	23
-"Akkermansia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	0	NA	NA	NA	0.0994079781281878	1	"All logistic values are the same"	"prevalence"	77	77
-"Akkermansia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	0	NA	NA	NA	0.192457571207688	1	"All logistic values are the same"	"prevalence"	77	77
-"Akkermansia"	"Year"	"Year"	"Year"	NA	0	NA	NA	NA	0.0827064681064171	1	"All logistic values are the same"	"prevalence"	77	77
-"Bacteroides"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	0	NA	NA	NA	0.50198312761603	1	"All logistic values are the same"	"prevalence"	77	77
-"Bacteroides"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	0	NA	NA	NA	0.326490025158968	1	"All logistic values are the same"	"prevalence"	77	77
-"Bacteroides"	"Year"	"Year"	"Year"	NA	0	NA	NA	NA	0.202400700770706	1	"All logistic values are the same"	"prevalence"	77	77
-"Oscillospira"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	0	NA	NA	NA	0.363030789425612	1	"All logistic values are the same"	"prevalence"	77	77
-"Oscillospira"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	0	NA	NA	NA	0.629130042789626	1	"All logistic values are the same"	"prevalence"	77	77
-"Oscillospira"	"Year"	"Year"	"Year"	NA	0	NA	NA	NA	0.245782504920689	1	"All logistic values are the same"	"prevalence"	77	77
-"Unclassified Enterobacteriaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	0	NA	NA	NA	0.760858748906633	1	"All logistic values are the same"	"prevalence"	77	77
-"Unclassified Enterobacteriaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	0	NA	NA	NA	0.297811389138241	1	"All logistic values are the same"	"prevalence"	77	77
-"Unclassified Enterobacteriaceae"	"Year"	"Year"	"Year"	NA	0	NA	NA	NA	0.528488705806563	1	"All logistic values are the same"	"prevalence"	77	77
-"Unclassified Firmicutes"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	0	NA	NA	NA	0.155139184163505	1	"All logistic values are the same"	"prevalence"	77	77
-"Unclassified Firmicutes"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	0	NA	NA	NA	0.285125167287182	1	"All logistic values are the same"	"prevalence"	77	77
-"Unclassified Firmicutes"	"Year"	"Year"	"Year"	NA	0	NA	NA	NA	0.0563747868940225	1	"All logistic values are the same"	"prevalence"	77	77
-"Unclassified Lachnospiraceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	0	NA	NA	NA	0.998667741737234	1	"All logistic values are the same"	"prevalence"	77	77
-"Unclassified Lachnospiraceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	0	NA	NA	NA	0.346490974179146	1	"All logistic values are the same"	"prevalence"	77	77
-"Unclassified Lachnospiraceae"	"Year"	"Year"	"Year"	NA	0	NA	NA	NA	0.757147431222805	1	"All logistic values are the same"	"prevalence"	77	77
-"Unclassified Ruminococcaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	0	NA	NA	NA	0.356562078435066	1	"All logistic values are the same"	"prevalence"	77	77
-"Unclassified Ruminococcaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	0	NA	NA	NA	0.336827012489866	1	"All logistic values are the same"	"prevalence"	77	77
-"Unclassified Ruminococcaceae"	"Year"	"Year"	"Year"	NA	0	NA	NA	NA	0.448120573245621	1	"All logistic values are the same"	"prevalence"	77	77
+"Faecalibacterium"	"Year"	"Year"	"Year"	-0.513240570865538	0.0386099934801893	0.0930818651693556	0.000526754527260698	0.123174667539629	0.00105323158418941	0.13904772085318	NA	"abundance"	156	154
+"Phascolarctobacterium"	"Year"	"Year"	"Year"	-0.978824353808394	0.0386099934801893	0.248684055769215	0.000966075823840229	0.123174667539629	0.00193121834518305	0.13904772085318	NA	"abundance"	156	155
+"Dorea"	"Year"	"Year"	"Year"	-0.637268639212586	0.0386099934801893	0.180532982140653	0.00346198606488124	0.294268815514905	0.00691198678224905	0.305180203958984	NA	"abundance"	156	154
+"Bifidobacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.80233433060481	-0.0860366788594384	0.588131406432581	0.0093208925443955	0.296674715238652	0.0185549060509668	0.305180203958984	NA	"abundance"	156	99
+"Bifidobacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-1.42578126440522	0.0669871765196889	0.486838805874203	0.0127977328142164	0.296674715238652	0.0254316836632487	0.305180203958984	NA	"abundance"	156	99
+"Coprococcus"	"Year"	"Year"	"Year"	0.808085797482157	0.0386099934801893	0.265098173217099	0.0124708407875902	0.296674715238652	0.024786159705231	0.305180203958984	NA	"abundance"	156	155
+"Lachnospira"	"Year"	"Year"	"Year"	0.64196570756193	0.0386099934801893	0.197495309755124	0.0121854879881194	0.296674715238652	0.0242224898587301	0.305180203958984	NA	"abundance"	156	154
+"Methanobrevibacter"	"Year"	"Year"	"Year"	-0.833405881501273	0.0386099934801893	0.158823974986777	0.00963730838267929	0.296674715238652	0.0191817390524957	0.305180203958984	NA	"abundance"	156	46
+"Parabacteroides"	"Year"	"Year"	"Year"	-0.523623895092185	0.0386099934801893	0.157165972404259	0.00649679560564742	0.296674715238652	0.0129513828581533	0.305180203958984	NA	"abundance"	156	154
+"Aggregatibacter"	"Year"	"Year"	"Year"	-1.36576501853757	0	0.544780965245884	0.0121761256325551	0.296674715238652	0.0242039932296904	0.305180203958984	NA	"prevalence"	156	52
+"Parvimonas"	"Year"	"Year"	"Year"	-1.65852238434418	0	0.595513343125628	0.00535228101072269	0.296674715238652	0.0106759151094276	0.305180203958984	NA	"prevalence"	156	74
+"Dialister"	"Year"	"Year"	"Year"	0.739750189265095	0.0386099934801893	0.245539493017401	0.0148243232539794	0.315016869147063	0.0294288859480204	0.325981505885764	NA	"abundance"	156	153
+"[Ruminococcus]"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.600167514988773	0.0669871765196889	0.171441203980115	0.0194596848597868	0.335737235657244	0.0194596848597868	0.305180203958984	NA	"abundance"	156	155
+"Coprococcus"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.757478015696952	0.0669871765196889	0.245497346656624	0.0197492491563085	0.335737235657244	0.039108465470379	0.402258501981041	NA	"abundance"	156	155
+"Bifidobacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-1.5446174293948	0	0.656370694029298	0.0186091188479915	0.335737235657244	0.0254316836632487	0.305180203958984	NA	"prevalence"	156	99
+"Prevotella"	"Year"	"Year"	"Year"	-0.816188381111836	0.0386099934801893	0.374052738671294	0.0377775864976613	0.602080284806477	0.0741280269537343	0.667152242583609	NA	"abundance"	156	149
+"Bilophila"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.386989492861532	0.0669871765196889	0.183550595916812	0.0521620100054445	0.614412043533592	0.101603144723081	0.703158686361191	NA	"abundance"	156	153
+"Blautia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.399618171140425	0.0669871765196889	0.0979553429838185	0.0464416443166904	0.614412043533592	0.0464416443166904	0.445839785440228	NA	"abundance"	156	155
+"Parabacteroides"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.347752791822082	-0.0860366788594384	0.178751318876721	0.0567377251502323	0.614412043533592	0.110256280845241	0.703158686361191	NA	"abundance"	156	154
+"Serratia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-2.2588556124733	-0.0860366788594384	0.124022825362251	0.0508898197197086	0.614412043533592	0.0991898656883128	0.703158686361191	NA	"abundance"	156	29
+"Serratia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-1.91444920389567	0.0669871765196889	0.0620569625658788	0.0443339926277911	0.614412043533592	0.0867024823532613	0.703158686361191	NA	"abundance"	156	29
+"Unclassified Christensenellaceae"	"Year"	"Year"	"Year"	0.507649538516481	0.0386099934801893	0.214156768617912	0.0578270158619851	0.614412043533592	0.112310067960468	0.703158686361191	NA	"abundance"	156	152
+"Veillonella"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.585208541217352	0.0669871765196889	0.212871932444822	0.0566912085282972	0.614412043533592	0.110168523932196	0.703158686361191	NA	"abundance"	156	91
+"Bifidobacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.26630880113519	0	0.6324243217604	0.0452515273719328	0.614412043533592	0.0185549060509668	0.305180203958984	NA	"prevalence"	156	99
+"Pseudomonas"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.56280611660899	0.0669871765196889	0.230673682840621	0.0611628697454487	0.623861271403577	0.118584842855399	0.711509057132392	NA	"abundance"	156	66
+"Prevotella"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.933935673501173	-0.0860366788594384	0.425425550735379	0.0681572285425176	0.648168086650593	0.131669049282438	0.722031469750483	NA	"abundance"	156	149
+"Synergistes"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.1266803870508	0	0.618765951592236	0.0686295621159452	0.648168086650593	0.132549107435664	0.722031469750483	NA	"prevalence"	156	123
+"Methanobrevibacter"	"Year"	"Year"	"Year"	-0.766447134381094	0	0.426047619648031	0.0720233342744433	0.655926794285109	0.0191817390524957	0.305180203958984	NA	"prevalence"	156	46
+"Clostridium"	"Year"	"Year"	"Year"	0.471451008588548	0.0386099934801893	0.224333466495909	0.0910074621254238	0.657190710530437	0.173732566088337	0.722031469750483	NA	"abundance"	156	146
+"Dorea"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.345582079288501	-0.0860366788594384	0.205327579276407	0.082513826067931	0.657190710530437	0.158219120643493	0.722031469750483	NA	"abundance"	156	154
+"Methanobrevibacter"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.872684518509891	-0.0860366788594384	0.38646417018778	0.0768304707061618	0.657190710530437	0.147758020183393	0.722031469750483	NA	"abundance"	156	46
+"Serratia"	"Year"	"Year"	"Year"	0.938838158567966	0.0386099934801893	0.0913891486170739	0.0949333697076977	0.657190710530437	0.180854394731337	0.722031469750483	NA	"abundance"	156	29
+"Unclassified Christensenellaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.379782085432415	-0.0860366788594384	0.243569293347821	0.0996582173275029	0.657190710530437	0.18938467437411	0.722031469750483	NA	"abundance"	156	152
+"Unclassified Lachnospiraceae"	"Year"	"Year"	"Year"	0.248712763592421	0.0386099934801893	0.0686694822701659	0.0980759616857756	0.657190710530437	0.0980759616857756	0.703158686361191	NA	"abundance"	156	156
+"Unclassified Rikenellaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.2458918097785	-0.0860366788594384	0.138196795392158	0.0834221696494555	0.657190710530437	0.159885080909888	0.722031469750483	NA	"abundance"	156	154
+"Unclassified Tenericutes"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.438583194995287	-0.0860366788594384	0.284470140551429	0.102550614955354	0.657190710530437	0.194584601282987	0.722031469750483	NA	"abundance"	156	149
+"[Prevotella]"	"Year"	"Year"	"Year"	-7.16828783873728	0	4.15778463474015	0.0846962453969835	0.657190710530437	0.162219036809621	0.722031469750483	NA	"prevalence"	156	82
+"Bifidobacterium"	"Year"	"Year"	"Year"	-1.12992157287149	0	0.693177746808824	0.103088738906735	0.657190710530437	0.195550189724089	0.722031469750483	NA	"prevalence"	156	99
+"Unclassified Cyanobacteria"	"Year"	"Year"	"Year"	2.98899222610045	0	1.74275392020107	0.0863274226170571	0.657190710530437	0.16520242133841	0.722031469750483	NA	"prevalence"	156	140
+"Veillonella"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.887776066700997	0	0.529272951265038	0.09347403033129	0.657190710530437	0.178210666316205	0.722031469750483	NA	"prevalence"	156	91
+"Pseudomonas"	"Year"	"Year"	"Year"	0.610197982318342	0.0386099934801893	0.277049007202059	0.10882642551166	0.676847280621301	0.205809660133676	0.740914776481233	NA	"abundance"	156	66
+"Unclassified Proteobacteria"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.715499992873159	0.0669871765196889	0.458527858848076	0.112293322912876	0.681780889113888	0.211976855454936	0.744504077695385	NA	"abundance"	156	152
+"Bifidobacterium"	"Year"	"Year"	"Year"	-0.560208968454636	0.0386099934801893	0.363924380915734	0.138763433286	0.822899429951861	0.195550189724089	0.722031469750483	NA	"abundance"	156	99
+"Methanobrevibacter"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.364507123599456	0.0669871765196889	0.208561142897646	0.148414129888676	0.860127343673007	0.274801505826739	0.879364818645564	NA	"abundance"	156	46
+"Providencia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.45342621072493	0	4.57059322399411	0.157966158789309	0.875681967201607	0.290979010255969	0.891510159082119	NA	"prevalence"	156	85
+"Unclassified Cyanobacteria"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	3.15325514322893	0	2.22893969568867	0.157159875467627	0.875681967201607	0.289620524478253	0.891510159082119	NA	"prevalence"	156	140
+"Unclassified [Barnesiellaceae]"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.435432750603179	0.0669871765196889	0.228180366635767	0.167602003238331	0.890385642203633	0.30711357498716	0.902537853023492	NA	"abundance"	156	153
+"Unclassified Ruminococcaceae"	"Year"	"Year"	"Year"	0.253350269048275	0.0386099934801893	0.113371621529411	0.165310282008736	0.890385642203633	0.165310282008736	0.722031469750483	NA	"abundance"	156	156
+"Lachnospira"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.228472726970596	0.0669871765196889	0.18289290315971	0.190855011606927	0.935923614610892	0.345284387758374	0.939497016200267	NA	"abundance"	156	154
+"Unclassified Enterobacteriaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.614345194401055	0.0669871765196889	0.490476553746599	0.18902905914175	0.935923614610892	0.18902905914175	0.722031469750483	NA	"abundance"	156	156
+"[Eubacterium]"	"Year"	"Year"	"Year"	-0.519998657401499	0	0.392299865914094	0.185000988552756	0.935923614610892	0.335776611340014	0.939497016200267	NA	"prevalence"	156	57
+"Synergistes"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.889851501618027	0	0.67489416327202	0.187334566692709	0.935923614610892	0.339574893507474	0.939497016200267	NA	"prevalence"	156	123
+"Aggregatibacter"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	2.39529282312356	0.0669871765196889	1.41446469947698	0.199272621867982	0.958764501440291	0.358835665909824	0.939497016200267	NA	"abundance"	156	52
+"Parabacteroides"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.173931280007042	0.0669871765196889	0.145545436023643	0.217139270044766	0.988759176096701	0.387129077493958	0.961148054467757	NA	"abundance"	156	154
+"Unclassified Coriobacteriaceae"	"Year"	"Year"	"Year"	-0.290772211892733	0.0386099934801893	0.238778506994736	0.211643354408266	0.988759176096701	0.378493799351349	0.961148054467757	NA	"abundance"	156	149
+"Providencia"	"Year"	"Year"	"Year"	2.04963429766987	0	1.65506419595985	0.215567154245818	0.988759176096701	0.384665110501995	0.961148054467757	NA	"prevalence"	156	85
+"Bacteroides"	"Year"	"Year"	"Year"	-0.165240765617652	0.0386099934801893	0.132169559315787	0.223246310966617	0.991176059699508	0.223246310966617	0.754975143694509	NA	"abundance"	156	156
+"Unclassified Firmicutes"	"Year"	"Year"	"Year"	0.224116495068288	0.0386099934801893	0.112771809527159	0.225443966519888	0.991176059699508	0.225443966519888	0.754975143694509	NA	"abundance"	156	156
+"[Eubacterium]"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.175267668825874	-0.0860366788594384	0.503369001897082	0.62685308639123	1	0.849360912394945	1	NA	"abundance"	156	57
+"[Eubacterium]"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.48531214033879	0.0669871765196889	0.302949188199288	0.244609322777949	1	0.429384924766011	0.966204351483763	NA	"abundance"	156	57
+"[Eubacterium]"	"Year"	"Year"	"Year"	-0.300837726934316	0.0386099934801893	0.324525675251002	0.347972517820685	1	0.335776611340014	0.939497016200267	NA	"abundance"	156	57
+"[Prevotella]"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.227402338642281	-0.0860366788594384	1.08635061329624	0.901445506916131	1	0.842296587174437	1	NA	"abundance"	156	82
+"[Prevotella]"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.264682237116912	0.0669871765196889	1.05456653931928	0.858520490940413	1	0.895144388387386	1	NA	"abundance"	156	82
+"[Prevotella]"	"Year"	"Year"	"Year"	-1.07319212311975	0.0386099934801893	2.43497709850381	0.666210329204425	1	0.162219036809621	0.722031469750483	NA	"abundance"	156	82
+"[Ruminococcus]"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.0948467787324594	-0.0860366788594384	0.210555151425568	0.970527885270027	1	0.999131394453343	1	NA	"abundance"	156	155
+"[Ruminococcus]"	"Year"	"Year"	"Year"	0.177314216258536	0.0386099934801893	0.185129292060486	0.504063543731051	1	0.754047031343397	1	NA	"abundance"	156	155
+"Aggregatibacter"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-2.26051238482406	-0.0860366788594384	1.67556943915725	0.285239758821932	1	0.489117797631069	0.992013561392592	NA	"abundance"	156	52
+"Aggregatibacter"	"Year"	"Year"	"Year"	0.202014629537969	0.0386099934801893	0.933095036937572	0.871450590221955	1	0.0242039932296904	0.305180203958984	NA	"abundance"	156	52
+"Akkermansia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.22597406571287	-0.0860366788594384	0.394947595939296	0.733367639672903	1	0.733367639672903	1	NA	"abundance"	156	156
+"Akkermansia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.358709905840169	0.0669871765196889	0.321579837389162	0.400510520153986	1	0.400510520153986	0.966204351483763	NA	"abundance"	156	156
+"Akkermansia"	"Year"	"Year"	"Year"	0.37341017611003	0.0386099934801893	0.347255188686653	0.357193327650767	1	0.357193327650767	0.939497016200267	NA	"abundance"	156	156
+"Bacteroides"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.0258606738868702	-0.0860366788594384	0.150321871087229	0.556405001050459	1	0.556405001050459	1	NA	"abundance"	156	156
+"Bacteroides"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.0776182882838752	0.0669871765196889	0.122397207521414	0.950244997522185	1	0.950244997522185	1	NA	"abundance"	156	156
+"Bilophila"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.121924450739591	-0.0860366788594384	0.225427275475739	0.415555261765911	1	0.658424347950487	1	NA	"abundance"	156	153
+"Bilophila"	"Year"	"Year"	"Year"	-0.120575428095582	0.0386099934801893	0.198205513554962	0.467575505819779	1	0.716524157996935	1	NA	"abundance"	156	153
+"Blautia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.0470146934054467	-0.0860366788594384	0.120303646941803	0.815117342789673	1	0.965818403062849	1	NA	"abundance"	156	155
+"Blautia"	"Year"	"Year"	"Year"	0.034095688819221	0.0386099934801893	0.105776224613074	0.974194686499926	1	0.999334085795163	1	NA	"abundance"	156	155
+"Clostridium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.366028424722907	-0.0860366788594384	0.255143670038107	0.325363913833414	1	0.54486615124183	1	NA	"abundance"	156	146
+"Clostridium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.0936432439430052	0.0669871765196889	0.207746700487169	0.910582503756	1	0.992004511365454	1	NA	"abundance"	156	146
+"Coprococcus"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.267256001959155	-0.0860366788594384	0.301507046146597	0.57642346876195	1	0.820582922184341	1	NA	"abundance"	156	155
+"Desulfovibrio"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.0730645890750331	-0.0860366788594384	0.201936747346844	0.494339741340246	1	0.744307702812151	1	NA	"abundance"	156	154
+"Desulfovibrio"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.0793215967580136	0.0669871765196889	0.164423804682877	0.472856052823514	1	0.722119258955194	1	NA	"abundance"	156	154
+"Desulfovibrio"	"Year"	"Year"	"Year"	0.0312780541405442	0.0386099934801893	0.177551614501979	0.970307079104881	1	0.999118330448716	1	NA	"abundance"	156	154
+"Dialister"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.425782026923519	-0.0860366788594384	0.279262155425651	0.271771101136574	1	0.469682670860163	0.966204351483763	NA	"abundance"	156	153
+"Dialister"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.0405919506034307	0.0669871765196889	0.227384795993368	0.917274890232034	1	0.993156556213878	1	NA	"abundance"	156	153
+"Dorea"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.078539926144621	0.0669871765196889	0.167184735985496	0.954661580766899	1	0.997944427741444	1	NA	"abundance"	156	154
+"Faecalibacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.164614121859862	-0.0860366788594384	0.105865830293915	0.624136038324713	1	0.858726282313759	1	NA	"abundance"	156	154
+"Faecalibacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.0044919112225075	0.0669871765196889	0.0861995789846978	0.682254247217885	1	0.899037636588927	1	NA	"abundance"	156	154
+"Fusobacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.20187767484217	-0.0860366788594384	1.3222703531766	0.932201304373513	1	0.932201304373513	1	NA	"abundance"	156	85
+"Fusobacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.528213172212147	0.0669871765196889	1.02263992180522	0.663894247888639	1	0.663894247888639	1	NA	"abundance"	156	85
+"Fusobacterium"	"Year"	"Year"	"Year"	-0.514457009129494	0.0386099934801893	0.679041152208069	0.439959945718319	1	0.439959945718319	0.966204351483763	NA	"abundance"	156	85
+"Lachnospira"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.392800662756144	-0.0860366788594384	0.224619531509597	0.239597038398438	1	0.421787335987574	0.966204351483763	NA	"abundance"	156	154
+"Oscillospira"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.120035560435489	-0.0860366788594384	0.155898478548439	0.860684851958143	1	0.860684851958143	1	NA	"abundance"	156	156
+"Oscillospira"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.0774393311649062	0.0669871765196889	0.126937872001961	0.414110040003343	1	0.414110040003343	0.966204351483763	NA	"abundance"	156	156
+"Oscillospira"	"Year"	"Year"	"Year"	0.163362756999404	0.0386099934801893	0.13707275633758	0.456168451636814	1	0.456168451636814	0.966204351483763	NA	"abundance"	156	156
+"Parvimonas"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.704271236730533	-0.0860366788594384	2.14912229188614	0.731136388158074	1	0.678087807639705	1	NA	"abundance"	156	74
+"Parvimonas"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.0597935228560422	0.0669871765196889	1.73060356286422	0.945277204196765	1	0.77615600619538	1	NA	"abundance"	156	74
+"Parvimonas"	"Year"	"Year"	"Year"	-0.946316365322007	0.0386099934801893	1.3588066000413	0.507805490587518	1	0.0106759151094276	0.305180203958984	NA	"abundance"	156	74
+"Phascolarctobacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.118345682467109	-0.0860366788594384	0.282838595863608	0.504493983751319	1	0.754473787861362	1	NA	"abundance"	156	155
+"Phascolarctobacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.0669871765196889	0.0669871765196889	0.230296856090189	1	1	1	1	NA	"abundance"	156	155
+"Prevotella"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.307337388225536	0.0669871765196889	0.34639603034248	0.314179357737053	1	0.529650046646038	1	NA	"abundance"	156	149
+"Providencia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.312203122123952	-0.0860366788594384	0.590604886645184	0.715499673260159	1	0.79780610827437	1	NA	"abundance"	156	85
+"Providencia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.555552654333347	0.0669871765196889	0.952278533488815	0.624321088999051	1	0.290979010255969	0.891510159082119	NA	"abundance"	156	85
+"Providencia"	"Year"	"Year"	"Year"	1.29367368571501	0.0386099934801893	1.44783525487806	0.413644974481519	1	0.384665110501995	0.961148054467757	NA	"abundance"	156	85
+"Pseudomonas"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.181614459047732	-0.0860366788594384	0.430514444767627	0.569910561760859	1	0.81502307511514	1	NA	"abundance"	156	66
+"Roseburia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.292032633197198	-0.0860366788594384	0.284327149960598	0.505913132425988	1	0.755878167290901	1	NA	"abundance"	156	139
+"Roseburia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.268386676805918	0.0669871765196889	0.23181358422041	0.443999174592008	1	0.690863082145632	1	NA	"abundance"	156	139
+"Roseburia"	"Year"	"Year"	"Year"	0.130392437081161	0.0386099934801893	0.252330688621775	0.730423241595076	1	0.572042487864803	1	NA	"abundance"	156	139
+"Ruminococcus"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.132953653252851	-0.0860366788594384	0.145063472689488	0.800103497188583	1	0.960041388163765	1	NA	"abundance"	156	154
+"Ruminococcus"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.000996626277753498	0.0669871765196889	0.118115639741134	0.703444887058909	1	0.912055064988497	1	NA	"abundance"	156	154
+"Ruminococcus"	"Year"	"Year"	"Year"	0.038780909828759	0.0386099934801893	0.127546145610852	0.999125038345718	1	0.999999234442104	1	NA	"abundance"	156	154
+"Sutterella"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.108487651387965	-0.0860366788594384	0.218931325274926	0.927173306669413	1	0.994696272738533	1	NA	"abundance"	156	154
+"Sutterella"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.0345798987336922	0.0669871765196889	0.17826137114182	0.633939645692429	1	0.865999817004216	1	NA	"abundance"	156	154
+"Sutterella"	"Year"	"Year"	"Year"	0.0390057719372443	0.0386099934801893	0.192493990213953	0.99850957223927	1	0.99999777862509	1	NA	"abundance"	156	154
+"Synergistes"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.00846776204160486	-0.0860366788594384	0.424748988054904	0.833264356181	1	0.339574893507474	0.939497016200267	NA	"abundance"	156	123
+"Synergistes"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.1130906832626	0.0669871765196889	0.376871368557923	0.65011725970018	1	0.132549107435664	0.722031469750483	NA	"abundance"	156	123
+"Synergistes"	"Year"	"Year"	"Year"	0.191291923168984	0.0386099934801893	0.39246178136636	0.70544204454652	1	0.819531777853241	1	NA	"abundance"	156	123
+"Unclassified [Barnesiellaceae]"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.0851602103764929	-0.0860366788594384	0.283726342047106	0.577023973624058	1	0.468391594971913	0.966204351483763	NA	"abundance"	156	153
+"Unclassified [Barnesiellaceae]"	"Year"	"Year"	"Year"	-0.112161516782255	0.0386099934801893	0.248055274362172	0.567458855528417	1	0.72824677034797	1	NA	"abundance"	156	153
+"Unclassified Christensenellaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.114855154301416	0.0669871765196889	0.19832244721354	0.43473092503178	1	0.680470872884573	1	NA	"abundance"	156	152
+"Unclassified Clostridiaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.0810611063418768	-0.0860366788594384	0.187813606298907	0.981835124595969	1	0.999670037301556	1	NA	"abundance"	156	154
+"Unclassified Clostridiaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.176604447640252	0.0669871765196889	0.152924260317204	0.575631552719588	1	0.819911420952812	1	NA	"abundance"	156	154
+"Unclassified Clostridiaceae"	"Year"	"Year"	"Year"	0.0425973395278045	0.0386099934801893	0.165133931599554	0.982839841575291	1	0.999705528962839	1	NA	"abundance"	156	154
+"Unclassified Coriobacteriaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.26893877592168	-0.0860366788594384	0.268522279772931	0.235681563866682	1	0.41581732818672	0.966204351483763	NA	"abundance"	156	149
+"Unclassified Coriobacteriaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.139496786613707	0.0669871765196889	0.218672529785654	0.769678969564427	1	0.946952222939096	1	NA	"abundance"	156	149
+"Unclassified Cyanobacteria"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.487153195989155	-0.0860366788594384	0.320079621240677	0.253268408078569	1	0.442391929626485	0.966204351483763	NA	"abundance"	156	140
+"Unclassified Cyanobacteria"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.00604731221211622	0.0669871765196889	0.338526491520346	0.841682434976145	1	0.289620524478253	0.891510159082119	NA	"abundance"	156	140
+"Unclassified Cyanobacteria"	"Year"	"Year"	"Year"	-0.114549313466654	0.0386099934801893	0.489393084753856	0.758348301349188	1	0.16520242133841	0.722031469750483	NA	"abundance"	156	140
+"Unclassified Enterobacteriaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.324547731302121	-0.0860366788594384	0.602377740282229	0.697914275294893	1	0.697914275294893	1	NA	"abundance"	156	156
+"Unclassified Enterobacteriaceae"	"Year"	"Year"	"Year"	-0.615764312794015	0.0386099934801893	0.529636837932535	0.233558217189434	1	0.233558217189434	0.764372347165422	NA	"abundance"	156	156
+"Unclassified Erysipelotrichaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.0675622640288381	-0.0860366788594384	0.13967025962604	0.404547929152016	1	0.645436831322847	1	NA	"abundance"	156	154
+"Unclassified Erysipelotrichaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.0140420644703214	0.0669871765196889	0.113724301250203	0.747743294005618	1	0.936366554280864	1	NA	"abundance"	156	154
+"Unclassified Erysipelotrichaceae"	"Year"	"Year"	"Year"	-0.0539309225297414	0.0386099934801893	0.122804196959359	0.549707270704457	1	0.797236457943571	1	NA	"abundance"	156	154
+"Unclassified Firmicutes"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.0829906393894461	-0.0860366788594384	0.128260013135947	0.985956520833992	1	0.985956520833992	1	NA	"abundance"	156	156
+"Unclassified Firmicutes"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.0620184294325295	0.0669871765196889	0.104433688397812	0.975085681265296	1	0.975085681265296	1	NA	"abundance"	156	156
+"Unclassified Lachnospiraceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.0890827183294307	-0.0860366788594384	0.0781006240383947	0.982925607589034	1	0.982925607589034	1	NA	"abundance"	156	156
+"Unclassified Lachnospiraceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.0789309420700456	0.0669871765196889	0.0635921986523989	0.931003816749817	1	0.931003816749817	1	NA	"abundance"	156	156
+"Unclassified Proteobacteria"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.313165226834073	-0.0860366788594384	0.563140018334195	0.489666973786503	1	0.739560202355774	1	NA	"abundance"	156	152
+"Unclassified Proteobacteria"	"Year"	"Year"	"Year"	0.0384390771316196	0.0386099934801893	0.495137317796722	0.999727081008354	1	0.999999925515224	1	NA	"abundance"	156	152
+"Unclassified Rikenellaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.020890851478688	0.0669871765196889	0.112524556287574	0.593617243102544	1	0.834853054896423	1	NA	"abundance"	156	154
+"Unclassified Rikenellaceae"	"Year"	"Year"	"Year"	0.0225749449195329	0.0386099934801893	0.121508662802876	0.915977107235606	1	0.992940153491503	1	NA	"abundance"	156	154
+"Unclassified Ruminococcaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.0426573356064645	-0.0860366788594384	0.128942203974335	0.464654604179326	1	0.464654604179326	0.966204351483763	NA	"abundance"	156	156
+"Unclassified Ruminococcaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.138243000752049	0.0669871765196889	0.104989151505153	0.658218584503348	1	0.658218584503348	1	NA	"abundance"	156	156
+"Unclassified S24-7"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.331497347944923	-0.0860366788594384	0.323687331126708	0.478598090214788	1	0.728140048472333	1	NA	"abundance"	156	153
+"Unclassified S24-7"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.111887007425146	0.0669871765196889	0.263557293116572	0.536330812186716	1	0.78501088427257	1	NA	"abundance"	156	153
+"Unclassified S24-7"	"Year"	"Year"	"Year"	0.0673549425056504	0.0386099934801893	0.284600049225671	0.922606622646392	1	0.994010265141802	1	NA	"abundance"	156	153
+"Unclassified Tenericutes"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.161189705979956	0.0669871765196889	0.231625315563792	0.716535393870689	1	0.919647817071955	1	NA	"abundance"	156	149
+"Unclassified Tenericutes"	"Year"	"Year"	"Year"	-0.00991735831053815	0.0386099934801893	0.250118581170167	0.859091395173016	1	0.980144765085713	1	NA	"abundance"	156	149
+"Veillonella"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.422901057952122	-0.0860366788594384	0.321643340384043	0.340319261075113	1	0.178210666316205	0.722031469750483	NA	"abundance"	156	91
+"Veillonella"	"Year"	"Year"	"Year"	0.0668777969183256	0.0386099934801893	0.231218804719952	0.90934054655121	1	0.566036633960022	1	NA	"abundance"	156	91
+"[Eubacterium]"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.232933895609714	0	0.459077756995896	0.611877483769551	1	0.849360912394945	1	NA	"prevalence"	156	57
+"[Eubacterium]"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.00146803547376431	0	0.36699925690336	0.996808386683322	1	0.429384924766011	0.966204351483763	NA	"prevalence"	156	57
+"[Prevotella]"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.647803744031831	0	1.2451495223142	0.602881109961307	1	0.842296587174437	1	NA	"prevalence"	156	82
+"[Prevotella]"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-1.00741409955742	0	2.41196546936884	0.676185837844276	1	0.895144388387386	1	NA	"prevalence"	156	82
+"[Ruminococcus]"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.999131394453343	1	NA	"prevalence"	156	155
+"[Ruminococcus]"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.754047031343397	1	NA	"prevalence"	156	155
+"Aggregatibacter"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.681672099690579	0	0.711454943276655	0.337993116983989	1	0.489117797631069	0.992013561392592	NA	"prevalence"	156	52
+"Aggregatibacter"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.538109355184821	0	0.586525336234906	0.358905377034622	1	0.358835665909824	0.939497016200267	NA	"prevalence"	156	52
+"Bilophila"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.658424347950487	1	NA	"prevalence"	156	153
+"Bilophila"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.101603144723081	0.703158686361191	NA	"prevalence"	156	153
+"Bilophila"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.716524157996935	1	NA	"prevalence"	156	153
+"Blautia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.965818403062849	1	NA	"prevalence"	156	155
+"Blautia"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.999334085795163	1	NA	"prevalence"	156	155
+"Clostridium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.54486615124183	1	NA	"prevalence"	156	146
+"Clostridium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.992004511365454	1	NA	"prevalence"	156	146
+"Clostridium"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.173732566088337	0.722031469750483	NA	"prevalence"	156	146
+"Coprococcus"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.820582922184341	1	NA	"prevalence"	156	155
+"Coprococcus"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.039108465470379	0.402258501981041	NA	"prevalence"	156	155
+"Coprococcus"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.024786159705231	0.305180203958984	NA	"prevalence"	156	155
+"Desulfovibrio"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.744307702812151	1	NA	"prevalence"	156	154
+"Desulfovibrio"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.722119258955194	1	NA	"prevalence"	156	154
+"Desulfovibrio"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.999118330448716	1	NA	"prevalence"	156	154
+"Dialister"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.469682670860163	0.966204351483763	NA	"prevalence"	156	153
+"Dialister"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.993156556213878	1	NA	"prevalence"	156	153
+"Dialister"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.0294288859480204	0.325981505885764	NA	"prevalence"	156	153
+"Dorea"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.158219120643493	0.722031469750483	NA	"prevalence"	156	154
+"Dorea"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.997944427741444	1	NA	"prevalence"	156	154
+"Dorea"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.00691198678224905	0.305180203958984	NA	"prevalence"	156	154
+"Erwinia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.0488191098285002	0	0.883464764641376	0.955932368603546	1	0.955932368603546	1	NA	"prevalence"	156	7
+"Erwinia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.555712007767068	0	0.844616177667857	0.510572699801892	1	0.510572699801892	1	NA	"prevalence"	156	7
+"Erwinia"	"Year"	"Year"	"Year"	-1.01982432419089	0	0.983295612800711	0.29966629753371	1	0.29966629753371	0.89899889260113	NA	"prevalence"	156	7
+"Faecalibacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.858726282313759	1	NA	"prevalence"	156	154
+"Faecalibacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.899037636588927	1	NA	"prevalence"	156	154
+"Faecalibacterium"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.00105323158418941	0.13904772085318	NA	"prevalence"	156	154
+"Lachnobacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-1.66025776826696	0	2.28346770420409	0.467178540591208	1	0.467178540591208	0.966204351483763	NA	"prevalence"	156	19
+"Lachnobacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.0467790730664136	0	1.5873147223512	0.976489288757146	1	0.976489288757146	1	NA	"prevalence"	156	19
+"Lachnobacterium"	"Year"	"Year"	"Year"	-1.4765468300116	0	1.60606683339583	0.357909509518415	1	0.357909509518415	0.939497016200267	NA	"prevalence"	156	19
+"Lachnospira"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.421787335987574	0.966204351483763	NA	"prevalence"	156	154
+"Lachnospira"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.345284387758374	0.939497016200267	NA	"prevalence"	156	154
+"Lachnospira"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.0242224898587301	0.305180203958984	NA	"prevalence"	156	154
+"Methanobrevibacter"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.068940946542959	0	0.51228417643728	0.892947440438855	1	0.147758020183393	0.722031469750483	NA	"prevalence"	156	46
+"Methanobrevibacter"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.211627057276815	0	0.423839883656897	0.617561734356643	1	0.274801505826739	0.879364818645564	NA	"prevalence"	156	46
+"Parabacteroides"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.110256280845241	0.703158686361191	NA	"prevalence"	156	154
+"Parabacteroides"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.387129077493958	0.961148054467757	NA	"prevalence"	156	154
+"Parabacteroides"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.0129513828581533	0.305180203958984	NA	"prevalence"	156	154
+"Parvimonas"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.525739522114535	0	0.669984215561946	0.432626937227105	1	0.678087807639705	1	NA	"prevalence"	156	74
+"Parvimonas"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.372860581490726	0	0.589243668813362	0.526878457682785	1	0.77615600619538	1	NA	"prevalence"	156	74
+"Phascolarctobacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.754473787861362	1	NA	"prevalence"	156	155
+"Phascolarctobacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	1	1	NA	"prevalence"	156	155
+"Phascolarctobacterium"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.00193121834518305	0.13904772085318	NA	"prevalence"	156	155
+"Prevotella"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.131669049282438	0.722031469750483	NA	"prevalence"	156	149
+"Prevotella"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.529650046646038	1	NA	"prevalence"	156	149
+"Prevotella"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.0741280269537343	0.667152242583609	NA	"prevalence"	156	149
+"Providencia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.926979408661731	0	1.55207847352164	0.550340248937455	1	0.79780610827437	1	NA	"prevalence"	156	85
+"Pseudomonas"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.102571471230398	0	0.443155785547054	0.816959853100019	1	0.81502307511514	1	NA	"prevalence"	156	66
+"Pseudomonas"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.136937205756724	0	0.362326080644007	0.705475808804367	1	0.118584842855399	0.711509057132392	NA	"prevalence"	156	66
+"Pseudomonas"	"Year"	"Year"	"Year"	0.0313715915726549	0	0.384466490512399	0.934966609192665	1	0.205809660133676	0.740914776481233	NA	"prevalence"	156	66
+"Roseburia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.189343907959063	0	0.657865708385663	0.773488018252838	1	0.755878167290901	1	NA	"prevalence"	156	139
+"Roseburia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.25919936350903	0	0.701382735313348	0.711714227257215	1	0.690863082145632	1	NA	"prevalence"	156	139
+"Roseburia"	"Year"	"Year"	"Year"	-1.12818904466234	0	1.19671648196932	0.345815383752264	1	0.572042487864803	1	NA	"prevalence"	156	139
+"Ruminococcus"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.960041388163765	1	NA	"prevalence"	156	154
+"Ruminococcus"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.912055064988497	1	NA	"prevalence"	156	154
+"Ruminococcus"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.999999234442104	1	NA	"prevalence"	156	154
+"Serratia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.157434463228903	0	0.512566519347483	0.758729710933392	1	0.0991898656883128	0.703158686361191	NA	"prevalence"	156	29
+"Serratia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	0.125023872445121	0	0.434783109274376	0.773687720226088	1	0.0867024823532613	0.703158686361191	NA	"prevalence"	156	29
+"Serratia"	"Year"	"Year"	"Year"	0.333330033965168	0	0.552170659611893	0.546061652031958	1	0.180854394731337	0.722031469750483	NA	"prevalence"	156	29
+"Sutterella"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.994696272738533	1	NA	"prevalence"	156	154
+"Sutterella"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.865999817004216	1	NA	"prevalence"	156	154
+"Sutterella"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.99999777862509	1	NA	"prevalence"	156	154
+"Synergistes"	"Year"	"Year"	"Year"	-0.261032065612234	0	0.465768984437732	0.575184484573881	1	0.819531777853241	1	NA	"prevalence"	156	123
+"Unclassified [Barnesiellaceae]"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.22272456280444	0	1.11053161168112	0.270885190777141	1	0.468391594971913	0.966204351483763	NA	"prevalence"	156	153
+"Unclassified [Barnesiellaceae]"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	1.62704206656227	0	2.2484979947289	0.469303443536275	1	0.30711357498716	0.902537853023492	NA	"prevalence"	156	153
+"Unclassified [Barnesiellaceae]"	"Year"	"Year"	"Year"	-0.827762534808578	0	1.16850538514162	0.478700441538619	1	0.72824677034797	1	NA	"prevalence"	156	153
+"Unclassified Burkholderiaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-1.23347850200251e-15	0	2.16784129638558	1	1	1	1	NA	"prevalence"	156	19
+"Unclassified Burkholderiaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-6.71487183103141e-16	0	1.76513051033822	1	1	1	1	NA	"prevalence"	156	19
+"Unclassified Burkholderiaceae"	"Year"	"Year"	"Year"	-2.03543894523166e-15	0	1.90606081961009	0.999999999999999	1	0.999999999999999	1	NA	"prevalence"	156	19
+"Unclassified Christensenellaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.18938467437411	0.722031469750483	NA	"prevalence"	156	152
+"Unclassified Christensenellaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.680470872884573	1	NA	"prevalence"	156	152
+"Unclassified Christensenellaceae"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.112310067960468	0.703158686361191	NA	"prevalence"	156	152
+"Unclassified Clostridiaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.999670037301556	1	NA	"prevalence"	156	154
+"Unclassified Clostridiaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.819911420952812	1	NA	"prevalence"	156	154
+"Unclassified Clostridiaceae"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.999705528962839	1	NA	"prevalence"	156	154
+"Unclassified Coriobacteriaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-0.114780474848907	0	0.951579340638729	0.903991215383043	1	0.41581732818672	0.966204351483763	NA	"prevalence"	156	149
+"Unclassified Coriobacteriaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.100374728324933	0	1.00725342981914	0.920620680525369	1	0.946952222939096	1	NA	"prevalence"	156	149
+"Unclassified Coriobacteriaceae"	"Year"	"Year"	"Year"	-1.0790428106935	0	1.95961592043907	0.581880517618361	1	0.378493799351349	0.961148054467757	NA	"prevalence"	156	149
+"Unclassified Cyanobacteria"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	-1.31255527974407	0	2.97075930314594	0.658615955758955	1	0.442391929626485	0.966204351483763	NA	"prevalence"	156	140
+"Unclassified Erysipelotrichaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.645436831322847	1	NA	"prevalence"	156	154
+"Unclassified Erysipelotrichaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.936366554280864	1	NA	"prevalence"	156	154
+"Unclassified Erysipelotrichaceae"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.797236457943571	1	NA	"prevalence"	156	154
+"Unclassified Proteobacteria"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.739560202355774	1	NA	"prevalence"	156	152
+"Unclassified Proteobacteria"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.211976855454936	0.744504077695385	NA	"prevalence"	156	152
+"Unclassified Proteobacteria"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.999999925515224	1	NA	"prevalence"	156	152
+"Unclassified Rikenellaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.159885080909888	0.722031469750483	NA	"prevalence"	156	154
+"Unclassified Rikenellaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.834853054896423	1	NA	"prevalence"	156	154
+"Unclassified Rikenellaceae"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.992940153491503	1	NA	"prevalence"	156	154
+"Unclassified S24-7"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.728140048472333	1	NA	"prevalence"	156	153
+"Unclassified S24-7"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.78501088427257	1	NA	"prevalence"	156	153
+"Unclassified S24-7"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.994010265141802	1	NA	"prevalence"	156	153
+"Unclassified Tenericutes"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	1.8050904907354e-16	0	2.16784129638559	1	1	0.194584601282987	0.722031469750483	NA	"prevalence"	156	149
+"Unclassified Tenericutes"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.919647817071955	1	NA	"prevalence"	156	149
+"Unclassified Tenericutes"	"Year"	"Year"	"Year"	4.92525544795721e-16	0	1.9060608196101	1	1	0.980144765085713	1	NA	"prevalence"	156	149
+"Veillonella"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-0.0809077382450577	0	0.391589667586233	0.836311663505525	1	0.110168523932196	0.703158686361191	NA	"prevalence"	156	91
+"Veillonella"	"Year"	"Year"	"Year"	-0.466190118224519	0	0.489841640014549	0.341241041017295	1	0.566036633960022	1	NA	"prevalence"	156	91
+"[Ruminococcus]"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.0194596848597868	0.305180203958984	"Prevalence association possibly induced by stronger abundance association"	"prevalence"	156	155
+"Blautia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	6.37669096144504e-16	0	1.76513051033823	1	1	0.0464416443166904	0.445839785440228	"Prevalence association possibly induced by stronger abundance association"	"prevalence"	156	155
+"Erwinia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	NA	NA	NA	NA	0.955932368603546	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	156	7
+"Erwinia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	NA	NA	NA	NA	0.510572699801892	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	156	7
+"Erwinia"	"Year"	"Year"	"Year"	-0.792368011117586	NA	NA	NA	NA	0.29966629753371	0.89899889260113	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	156	7
+"Lachnobacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	NA	NA	NA	NA	0.467178540591208	0.966204351483763	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	156	19
+"Lachnobacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	NA	NA	NA	NA	0.976489288757146	1	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	156	19
+"Lachnobacterium"	"Year"	"Year"	"Year"	NA	NA	NA	NA	NA	0.357909509518415	0.939497016200267	"Fitting error (NA p-value returned from fitting procedure)"	"abundance"	156	19
+"Unclassified Burkholderiaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	NA	NA	NA	NA	1	1	"0 (non-NA) cases"	"abundance"	156	19
+"Unclassified Burkholderiaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	NA	NA	NA	NA	1	1	"0 (non-NA) cases"	"abundance"	156	19
+"Unclassified Burkholderiaceae"	"Year"	"Year"	"Year"	NA	NA	NA	NA	NA	0.999999999999999	1	"0 (non-NA) cases"	"abundance"	156	19
+"Akkermansia"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	0	NA	NA	NA	0.733367639672903	1	"All logistic values are the same"	"prevalence"	156	156
+"Akkermansia"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	0	NA	NA	NA	0.400510520153986	0.966204351483763	"All logistic values are the same"	"prevalence"	156	156
+"Akkermansia"	"Year"	"Year"	"Year"	NA	0	NA	NA	NA	0.357193327650767	0.939497016200267	"All logistic values are the same"	"prevalence"	156	156
+"Bacteroides"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	0	NA	NA	NA	0.556405001050459	1	"All logistic values are the same"	"prevalence"	156	156
+"Bacteroides"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	0	NA	NA	NA	0.950244997522185	1	"All logistic values are the same"	"prevalence"	156	156
+"Bacteroides"	"Year"	"Year"	"Year"	NA	0	NA	NA	NA	0.223246310966617	0.754975143694509	"All logistic values are the same"	"prevalence"	156	156
+"Fusobacterium"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	0.606192897170697	0	1.00366736418541	0.545858341831132	NA	0.932201304373513	1	"glm.fit: fitted probabilities numerically 0 or 1 occurred"	"prevalence"	156	85
+"Fusobacterium"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	-5.05784213201246	0	2.33608479727167	0.0303805216576106	NA	0.663894247888639	1	"glm.fit: fitted probabilities numerically 0 or 1 occurred"	"prevalence"	156	85
+"Fusobacterium"	"Year"	"Year"	"Year"	-10.8863245302454	0	4.86044279559266	0.0251051826420642	NA	0.439959945718319	0.966204351483763	"glm.fit: fitted probabilities numerically 0 or 1 occurred"	"prevalence"	156	85
+"Oscillospira"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	0	NA	NA	NA	0.860684851958143	1	"All logistic values are the same"	"prevalence"	156	156
+"Oscillospira"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	0	NA	NA	NA	0.414110040003343	0.966204351483763	"All logistic values are the same"	"prevalence"	156	156
+"Oscillospira"	"Year"	"Year"	"Year"	NA	0	NA	NA	NA	0.456168451636814	0.966204351483763	"All logistic values are the same"	"prevalence"	156	156
+"Unclassified Enterobacteriaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	0	NA	NA	NA	0.697914275294893	1	"All logistic values are the same"	"prevalence"	156	156
+"Unclassified Enterobacteriaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	0	NA	NA	NA	0.18902905914175	0.722031469750483	"All logistic values are the same"	"prevalence"	156	156
+"Unclassified Enterobacteriaceae"	"Year"	"Year"	"Year"	NA	0	NA	NA	NA	0.233558217189434	0.764372347165422	"All logistic values are the same"	"prevalence"	156	156
+"Unclassified Firmicutes"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	0	NA	NA	NA	0.985956520833992	1	"All logistic values are the same"	"prevalence"	156	156
+"Unclassified Firmicutes"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	0	NA	NA	NA	0.975085681265296	1	"All logistic values are the same"	"prevalence"	156	156
+"Unclassified Firmicutes"	"Year"	"Year"	"Year"	NA	0	NA	NA	NA	0.225443966519888	0.754975143694509	"All logistic values are the same"	"prevalence"	156	156
+"Unclassified Lachnospiraceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	0	NA	NA	NA	0.982925607589034	1	"All logistic values are the same"	"prevalence"	156	156
+"Unclassified Lachnospiraceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	0	NA	NA	NA	0.931003816749817	1	"All logistic values are the same"	"prevalence"	156	156
+"Unclassified Lachnospiraceae"	"Year"	"Year"	"Year"	NA	0	NA	NA	NA	0.0980759616857756	0.703158686361191	"All logistic values are the same"	"prevalence"	156	156
+"Unclassified Ruminococcaceae"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	"Sum.Total.Cholesterol_mg.dL"	NA	0	NA	NA	NA	0.464654604179326	0.966204351483763	"All logistic values are the same"	"prevalence"	156	156
+"Unclassified Ruminococcaceae"	"Weight_lbs"	"Weight_lbs"	"Weight_lbs"	NA	0	NA	NA	NA	0.658218584503348	1	"All logistic values are the same"	"prevalence"	156	156
+"Unclassified Ruminococcaceae"	"Year"	"Year"	"Year"	NA	0	NA	NA	NA	0.165310282008736	0.722031469750483	"All logistic values are the same"	"prevalence"	156	156
