@@ -1,0 +1,305 @@
+---
+title: "Differential abundance of microbes"
+output: html_document
+date: "2025-11-22"
+author: "Cale Seymour"
+---
+
+```{r Libs}
+library('maaslin3')
+library('ANCOMBC')
+library('MicrobiomeStat')
+
+source('scripts/preprocessing.R')
+source('scripts/diversity.R')
+
+load('sanitized-data/diversity.RData')
+set.seed(42)
+
+```
+
+```{r}
+## load in metadata, taxonomy, and counts
+amplicon_metadata = fread('sanitized-data/amplicon-metadata.txt.xls', sep = '\t', header=TRUE) %>% dt2df()
+amplicon_matrix = fread('sanitized-data/amplicon-matrix.txt.xls', sep = '\t', header=TRUE) %>% dt2mat()
+amplicon_matrix = amplicon_matrix / 100
+amplicon_taxonomy = fread('sanitized-data/amplicon-taxonomy.txt.xls', sep = '\t', header=TRUE) %>% setkey(V1)
+
+dir.create('maaslin3')
+```
+
+## Total cholesterol
+```{r}
+## Set reference levels.
+reference_levels = c('Year,2019')
+numeric_vars = c('Weight_lbs', 'Sum.Total.Cholesterol_mg.dL')
+
+## Define fixed effect terms
+fixed_effect_terms = gsub(',.*', '', reference_levels) %>% c(numeric_vars)
+
+## Set response.
+response = 'Sum.Total.Cholesterol_mg.dL'
+
+## Define formula
+formula = paste0(fixed_effect_terms, collapse = ' + ') %>%
+  paste0('~',.) %>%
+  as.formula()
+
+## Run VIFs
+amplicon_metadata$dummy = sample(1:nrow(amplicon_metadata))
+f2 = paste0(fixed_effect_terms, collapse = ' + ') %>%
+  paste0('dummy ~',.) %>%
+  as.formula()
+
+lm(f2, data = amplicon_metadata, na.action = 'na.omit') %>% car::vif()
+
+
+maaslin3_out_cholesterol = maaslin3(input_data = agglomerate(amplicon_matrix, amplicon_taxonomy, rank = 'Genus'),
+                    input_metadata = amplicon_metadata,
+                    reference = reference_levels,
+                    output = paste0('maaslin3/', response, '.out'),
+                    formula = formula,
+                    normalization = 'TSS',
+                    transform = 'LOG',
+                    augment = TRUE,
+                    plot_associations = FALSE,
+                    coef_plot_vars = response,
+                    standardize = TRUE,
+                    max_significance = 0.1,
+                    median_comparison_abundance = TRUE,
+                    median_comparison_prevalence = FALSE,
+                    max_pngs = 10,
+                    cores = 1)
+
+```
+
+
+## Total SCFA
+```{r}
+## Set reference levels.
+reference_levels = c('Year,2019')
+numeric_vars = c('Weight_lbs', 'Total.SCFA_mg.mL')
+
+## Define fixed effect terms
+fixed_effect_terms = gsub(',.*', '', reference_levels) %>% c(numeric_vars)
+
+## Set response.
+response = 'Total.SCFA_mg.mL'
+
+## Define formula
+formula = paste0(fixed_effect_terms, collapse = ' + ') %>%
+  paste0('~',.) %>%
+  as.formula()
+
+## Run VIFs
+amplicon_metadata$dummy = sample(1:nrow(amplicon_metadata))
+f2 = paste0(fixed_effect_terms, collapse = ' + ') %>%
+  paste0('dummy ~',.) %>%
+  as.formula()
+
+lm(f2, data = amplicon_metadata, na.action = 'na.omit') %>% car::vif()
+
+
+maaslin3_out_cholesterol = maaslin3(input_data = agglomerate(amplicon_matrix, amplicon_taxonomy, rank = 'Genus'),
+                    input_metadata = amplicon_metadata,
+                    reference = reference_levels,
+                    output = paste0('maaslin3/', response, '.out'),
+                    formula = formula,
+                    normalization = 'TSS',
+                    transform = 'LOG',
+                    augment = TRUE,
+                    plot_associations = FALSE,
+                    coef_plot_vars = response,
+                    standardize = TRUE,
+                    max_significance = 0.1,
+                    median_comparison_abundance = TRUE,
+                    median_comparison_prevalence = FALSE,
+                    max_pngs = 10,
+                    cores = 1)
+
+```
+
+## Acetate
+```{r}
+## Set reference levels.
+reference_levels = c('Year,2019')
+numeric_vars = c('Weight_lbs', 'X..SCFA.Acetate')
+
+## Define fixed effect terms
+fixed_effect_terms = gsub(',.*', '', reference_levels) %>% c(numeric_vars)
+
+## Set response.
+response = c('X..SCFA.Acetate')
+
+## Define formula
+formula = paste0(fixed_effect_terms, collapse = ' + ') %>%
+  paste0('~',.) %>%
+  as.formula()
+
+## Run VIFs
+amplicon_metadata$dummy = sample(1:nrow(amplicon_metadata))
+f2 = paste0(fixed_effect_terms, collapse = ' + ') %>%
+  paste0('dummy ~',.) %>%
+  as.formula()
+
+lm(f2, data = amplicon_metadata, na.action = 'na.omit') %>% car::vif()
+
+maaslin3_out_acetate = maaslin3(input_data = agglomerate(amplicon_matrix, amplicon_taxonomy, rank = 'Genus'),
+                    input_metadata = amplicon_metadata,
+                    reference = reference_levels,
+                    output = paste0('maaslin3/', response, '.out'),
+                    formula = formula,
+                    normalization = 'TSS',
+                    transform = 'LOG',
+                    augment = TRUE,
+                    plot_associations = FALSE,
+                    coef_plot_vars = response,
+                    standardize = TRUE,
+                    max_significance = 0.1,
+                    median_comparison_abundance = TRUE,
+                    median_comparison_prevalence = FALSE,
+                    max_pngs = 10,
+                    cores = 1)
+
+```
+
+## Butyrate
+```{r}
+## Set reference levels.
+reference_levels = c('Year,2019')
+numeric_vars = c('Weight_lbs', 'X..SCFA.Butyrate')
+
+#"X..SCFA.Acetate"                                  
+#[11] "X..SCFA.Butyrate"                                  "X..SCFA.Propionate"                               
+# [13] "X..SCFA.Valerate"
+## Define fixed effect terms
+fixed_effect_terms = gsub(',.*', '', reference_levels) %>% c(numeric_vars)
+
+## Set response.
+response = c('X..SCFA.Butyrate')
+
+## Define formula
+formula = paste0(fixed_effect_terms, collapse = ' + ') %>%
+  paste0('~',.) %>%
+  as.formula()
+
+## Run VIFs
+amplicon_metadata$dummy = sample(1:nrow(amplicon_metadata))
+f2 = paste0(fixed_effect_terms, collapse = ' + ') %>%
+  paste0('dummy ~',.) %>%
+  as.formula()
+
+lm(f2, data = amplicon_metadata, na.action = 'na.omit') %>% car::vif()
+
+maaslin3_out_butyrate = maaslin3(input_data = agglomerate(amplicon_matrix, amplicon_taxonomy, rank = 'Genus'),
+                    input_metadata = amplicon_metadata,
+                    reference = reference_levels,
+                    output = paste0('maaslin3/', response, '.out'),
+                    formula = formula,
+                    normalization = 'TSS',
+                    transform = 'LOG',
+                    augment = TRUE,
+                    plot_associations = FALSE,
+                    coef_plot_vars = response,
+                    standardize = TRUE,
+                    max_significance = 0.1,
+                    median_comparison_abundance = TRUE,
+                    median_comparison_prevalence = FALSE,
+                    max_pngs = 10,
+                    cores = 1)
+
+```
+
+## Propionate
+```{r}
+## Set reference levels.
+reference_levels = c('Year,2019')
+numeric_vars = c('Weight_lbs', 'X..SCFA.Propionate')
+
+#"X..SCFA.Acetate"                                  
+#[11] "X..SCFA.Butyrate"                                  "X..SCFA.Propionate"                               
+# [13] "X..SCFA.Valerate"
+## Define fixed effect terms
+fixed_effect_terms = gsub(',.*', '', reference_levels) %>% c(numeric_vars)
+
+## Set response.
+response = c('X..SCFA.Propionate')
+
+## Define formula
+formula = paste0(fixed_effect_terms, collapse = ' + ') %>%
+  paste0('~',.) %>%
+  as.formula()
+
+## Run VIFs
+amplicon_metadata$dummy = sample(1:nrow(amplicon_metadata))
+f2 = paste0(fixed_effect_terms, collapse = ' + ') %>%
+  paste0('dummy ~',.) %>%
+  as.formula()
+
+lm(f2, data = amplicon_metadata, na.action = 'na.omit') %>% car::vif()
+
+maaslin3_out_propionoate = maaslin3(input_data = agglomerate(amplicon_matrix, amplicon_taxonomy, rank = 'Genus'),
+                    input_metadata = amplicon_metadata,
+                    reference = reference_levels,
+                    output = paste0('maaslin3/', response, '.out'),
+                    formula = formula,
+                    normalization = 'TSS',
+                    transform = 'LOG',
+                    augment = TRUE,
+                    plot_associations = FALSE,
+                    coef_plot_vars = response,
+                    standardize = TRUE,
+                    max_significance = 0.1,
+                    median_comparison_abundance = TRUE,
+                    median_comparison_prevalence = FALSE,
+                    max_pngs = 10,
+                    cores = 1)
+
+```
+
+## Valerate
+```{r}
+## Set reference levels.
+reference_levels = c('Year,2019')
+numeric_vars = c('Weight_lbs', 'X..SCFA.Valerate')
+
+#"X..SCFA.Acetate"                                  
+#[11] "X..SCFA.Butyrate"                                  "X..SCFA.Propionate"                               
+# [13] "X..SCFA.Valerate"
+## Define fixed effect terms
+fixed_effect_terms = gsub(',.*', '', reference_levels) %>% c(numeric_vars)
+
+## Set response.
+response = c('X..SCFA.Valerate')
+
+## Define formula
+formula = paste0(fixed_effect_terms, collapse = ' + ') %>%
+  paste0('~',.) %>%
+  as.formula()
+
+## Run VIFs
+amplicon_metadata$dummy = sample(1:nrow(amplicon_metadata))
+f2 = paste0(fixed_effect_terms, collapse = ' + ') %>%
+  paste0('dummy ~',.) %>%
+  as.formula()
+
+lm(f2, data = amplicon_metadata, na.action = 'na.omit') %>% car::vif()
+
+maaslin3_out_valerate = maaslin3(input_data = agglomerate(amplicon_matrix, amplicon_taxonomy, rank = 'Genus'),
+                    input_metadata = amplicon_metadata,
+                    reference = reference_levels,
+                    output = paste0('maaslin3/', response, '.out'),
+                    formula = formula,
+                    normalization = 'TSS',
+                    transform = 'LOG',
+                    augment = TRUE,
+                    plot_associations = FALSE,
+                    coef_plot_vars = response,
+                    standardize = TRUE,
+                    max_significance = 0.1,
+                    median_comparison_abundance = TRUE,
+                    median_comparison_prevalence = FALSE,
+                    max_pngs = 10,
+                    cores = 1)
+
+```

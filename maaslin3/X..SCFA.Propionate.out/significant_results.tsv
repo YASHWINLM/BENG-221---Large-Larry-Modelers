@@ -1,0 +1,9 @@
+"feature"	"metadata"	"value"	"name"	"coef"	"null_hypothesis"	"stderr"	"pval_individual"	"qval_individual"	"pval_joint"	"qval_joint"	"error"	"model"	"N"	"N_not_zero"
+"Dialister"	"Year"	"Year"	"Year"	1.0703638487569	-0.0208343276490904	0.226063046400743	0.000415252842678626	0.0694018916725176	0.0008303332504339	0.0458923805911574	NA	"abundance"	77	74
+"Unclassified Proteobacteria"	"X..SCFA.Propionate"	"X..SCFA.Propionate"	"X..SCFA.Propionate"	1.37588412281841	-0.109261594655994	0.383627839354339	0.000571208984958993	0.0694018916725176	0.000571208984958993	0.0458923805911574	NA	"abundance"	77	76
+"Phascolarctobacterium"	"Year"	"Year"	"Year"	-1.27135662104138	-0.0208343276490904	0.30786587656317	0.000976433629599094	0.0790911239975266	0.000976433629599094	0.0458923805911574	NA	"abundance"	77	76
+"Unclassified Proteobacteria"	"Year"	"Year"	"Year"	1.78265035012545	-0.0208343276490904	0.536191612473488	0.0026288687904199	0.159703779018009	0.0026288687904199	0.0926676248623016	NA	"abundance"	77	76
+"Dialister"	"Year"	"Year"	"Year"	1.12381973554462	0	0.991404190674189	0.25697763530661	0.770932905919829	0.0008303332504339	0.0458923805911574	NA	"prevalence"	77	74
+"Unclassified Proteobacteria"	"Year"	"Year"	"Year"	1.2000896861899	0	1.0063982294894	0.233080905193859	0.763117750053221	0.0026288687904199	0.0926676248623016	"Prevalence association possibly induced by stronger abundance association"	"prevalence"	77	76
+"Phascolarctobacterium"	"Year"	"Year"	"Year"	-8.12420488651041e-15	0	1.74141036388177	0.999999999999996	1	0.000976433629599094	0.0458923805911574	"Prevalence association possibly induced by stronger abundance association"	"prevalence"	77	76
+"Unclassified Proteobacteria"	"X..SCFA.Propionate"	"X..SCFA.Propionate"	"X..SCFA.Propionate"	0.0195658279024396	0	0.592952696952478	0.973676754374787	1	0.000571208984958993	0.0458923805911574	"Prevalence association possibly induced by stronger abundance association"	"prevalence"	77	76

@@ -9,6 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="Cale Seymour" />
 
 
 <title>Import and preprocess Larry’s data</title>
@@ -349,6 +350,7 @@ display: none;
 
 
 <h1 class="title toc-ignore">Import and preprocess Larry’s data</h1>
+<h4 class="author">Cale Seymour</h4>
 <h4 class="date">2025-10-9</h4>
 
 </div>
@@ -367,6 +369,8 @@ raw_biomarkers = fread(&#39;Data/LLM_Biomarkers_Wide.csv&#39;, sep = &#39;,&#39;
 biomarker_metadata = fread(&#39;Data/biomarker-metadata.txt.xls&#39;, sep=&#39;\t&#39;)
 
 raw_matrix = fread(&#39;Data/LS Gut Microbiome.csv&#39;, sep = &#39;,&#39;, skip = 6, header=FALSE)
+
+raw_diet = fread(&#39;Data/diet-symptoms.txt.xls&#39;,sep=&#39;\t&#39;)
 
 ## Read in GTDB taxonomy
 gtdb_taxonomy = lapply(
@@ -442,13 +446,21 @@ microbiome_sample_codes = make_code_from_date(microbiome_sample_dates)
 ## Reassign sample codes in biomarkers
 biomarker_sample_codes = event_match_key[make_code_from_date(biomarker_sample_dates)]
 
+## Match biomarker data to amplicon samples
+biomarker_data_matched = cbind(biomarker_sample_codes, biomarkers)[!is.na(biomarker_sample_codes),]
+
 (biomarker_sample_codes %in% microbiome_sample_codes) %&gt;% table()</code></pre>
 <pre><code>## .
 ## FALSE  TRUE 
 ## 14094 10728</code></pre>
+<pre class="r"><code>## bind data.
+amplicon_biomarker_samples = dcast(biomarker_data_matched, biomarker_sample_codes ~ variable, value.var = &#39;value&#39;) %&gt;% as.data.table()
+
+colnames(amplicon_biomarker_samples) = make.names(colnames(amplicon_biomarker_samples))
+setkey(amplicon_biomarker_samples, biomarker_sample_codes)</code></pre>
 </div>
 <div id="sanitize-the-amplicon-dataset" class="section level2">
-<h2>2. Sanitize the amplicon dataset</h2>
+<h2>3. Sanitize the amplicon dataset</h2>
 <p>Here, I grab the 16S portion of the dataset and sanitize it. Instead
 of a big, awful single table, I transform it into a taxonomy and
 abundance matrix.</p>
@@ -533,9 +545,10 @@ fwrite(amplicon_taxonomy, &#39;sanitized-data/amplicon-taxonomy.txt.xls&#39;, se
 <pre><code>## x being coerced from class: matrix to data.table</code></pre>
 <pre class="r"><code>fwrite(amplicon_matrix, &#39;sanitized-data/amplicon-matrix.txt.xls&#39;, sep=&#39;\t&#39;, row.names = TRUE)</code></pre>
 <pre><code>## x being coerced from class: matrix to data.table</code></pre>
+<pre class="r"><code>amplicon_biomarker_dt = amplicon_biomarker_samples[colnames(amplicon_matrix),]</code></pre>
 </div>
 <div id="sanitize-the-metagenome-except-not-dataset-metaphlan2-seriously-what-year-is-this" class="section level2">
-<h2>3. Sanitize the metagenome (except not?) dataset (MetaPhlan2?
+<h2>4. Sanitize the metagenome (except not?) dataset (MetaPhlan2?
 seriously? what year is this?)</h2>
 <p>First, we read the GTDB taxonomy from the file. We’re going to do our
 best to convert the batshit metaphlan taxonomy into something that isn’t
@@ -556,10 +569,12 @@ as.data.table()
 gtdb_reference_taxonomy[,g := gsub(&#39;_.*&#39;,&#39;&#39;,g)]
 
 fwrite(gtdb_reference_taxonomy, &#39;resources/gtdb-reference-taxonomy.txt.xls.gz&#39;, sep=&#39;\t&#39;)</code></pre>
-<p>Parse out the metagenome matrix and update the taxonomy to try to
+<ol start="5" style="list-style-type: decimal">
+<li>Parse out the metagenome matrix and update the taxonomy to try to
 match GTDB + ICTV. We do this because the existing taxonomy is
 poor-quality. There’s no way to fix it. I might just give up on using
-the metagenomic data at all.</p>
+the metagenomic data at all.</li>
+</ol>
 <pre class="r"><code>metageno_tabs = raw_matrix[56:233,]
 metageno_taxa = metageno_tabs[,1] %&gt;% unlist()
 
@@ -682,6 +697,47 @@ fwrite(metagenome_taxonomy, &#39;sanitized-data/metagenome-taxonomy.txt.xls&#39;
 <pre><code>## x being coerced from class: matrix to data.table</code></pre>
 <pre class="r"><code>fwrite(metagenome_matrix, &#39;sanitized-data/metagenome-matrix.txt.xls&#39;, sep=&#39;\t&#39;, row.names = TRUE)</code></pre>
 <pre><code>## x being coerced from class: matrix to data.table</code></pre>
+<ol start="6" style="list-style-type: decimal">
+<li>Match diet and medical information to the microbiome data.</li>
+</ol>
+<pre class="r"><code>## Define dates for amplicon data
+amplicon_dates = amplicon_matrix %&gt;%
+  colnames() %&gt;%
+  strsplit(&#39;\\.&#39;) %&gt;%
+  do.call(&#39;rbind&#39;,.) %&gt;%
+  as.data.table() %&gt;%
+  setNames(c(&#39;N&#39;,&#39;Year&#39;,&#39;Month&#39;,&#39;Day&#39;))
+
+amplicon_dates[,Date := as.Date(paste(Year, Month, Day, sep=&#39;-&#39;))]
+amplicon_metadata = copy(amplicon_biomarker_dt)
+amplicon_metadata[,V1 := NULL]</code></pre>
+<pre><code>## Warning in `[.data.table`(amplicon_metadata, , `:=`(V1, NULL)): Tried to assign
+## NULL to column &#39;V1&#39;, but this column does not exist to remove</code></pre>
+<pre class="r"><code>amplicon_metadata[,Date := NULL]</code></pre>
+<pre><code>## Warning in `[.data.table`(amplicon_metadata, , `:=`(Date, NULL)): Tried to
+## assign NULL to column &#39;Date&#39;, but this column does not exist to remove</code></pre>
+<pre class="r"><code>amplicon_metadata[,sample_code := NULL]</code></pre>
+<pre><code>## Warning in `[.data.table`(amplicon_metadata, , `:=`(sample_code, NULL)): Tried
+## to assign NULL to column &#39;sample_code&#39;, but this column does not exist to
+## remove</code></pre>
+<pre class="r"><code>## Date matrices.
+diet_dates = raw_diet[,Date] %&gt;% as.Date(format = &#39;%m/%d/%Y&#39;) %&gt;% as.matrix()
+diet_date_start_range = diet_dates
+diet_date_end_range = c(diet_dates[-1], as.Date(&#39;01/01/2099&#39;, format = &#39;%m/%d/%Y&#39;))
+diet_date_ranges = cbind(diet_date_start_range, diet_date_end_range) %&gt;% as.matrix()
+
+diet_date_grid = expand.grid(1:nrow(amplicon_dates), 1:nrow(diet_date_ranges)) %&gt;% as.data.table()
+diet_date_grid[,c(&#39;range.start&#39;, &#39;range.end&#39;) := as.data.table(diet_date_ranges[Var2,])]
+diet_date_grid[,point := as.data.table(amplicon_dates[Var1,Date])]
+
+diet_date_grid[, keep := point &gt;= range.start &amp; point &lt; range.end]
+
+diet_metadata = raw_diet[diet_date_grid[keep == TRUE, Var2],.(diet, probiotics, resection)]
+
+## Define amplicon metadata
+amplicon_metadata = cbind(sample_code = colnames(amplicon_matrix), amplicon_dates, diet_metadata, amplicon_metadata)
+
+fwrite(amplicon_metadata, &#39;sanitized-data/amplicon-metadata.txt.xls&#39;,sep=&#39;\t&#39;)</code></pre>
 </div>
 </div>
 <div id="exit" class="section level1">
@@ -731,13 +787,13 @@ fwrite(metagenome_taxonomy, &#39;sanitized-data/metagenome-taxonomy.txt.xls&#39;
 ## [46] dplyr_1.1.4          listenv_0.9.1        splines_4.5.1       
 ## [49] fastmap_1.2.0        grid_4.5.1           cli_3.6.5           
 ## [52] survival_3.8-3       future.apply_1.20.0  withr_3.0.2         
-## [55] scales_1.4.0         lubridate_1.9.4      timechange_0.3.0    
+## [55] scales_1.4.0         timechange_0.3.0     lubridate_1.9.4     
 ## [58] rmarkdown_2.29       globals_0.18.0       nnet_7.3-20         
 ## [61] timeDate_4041.110    R.methodsS3_1.8.2    evaluate_1.0.5      
 ## [64] knitr_1.50           hardhat_1.4.2        rlang_1.1.6         
 ## [67] Rcpp_1.1.0           glue_1.8.0           bayesm_3.1-6        
-## [70] pROC_1.19.0.1        ipred_0.9-15         jsonlite_2.0.0      
-## [73] R6_2.6.1             plyr_1.8.9</code></pre>
+## [70] pROC_1.19.0.1        ipred_0.9-15         rstudioapi_0.17.1   
+## [73] jsonlite_2.0.0       R6_2.6.1             plyr_1.8.9</code></pre>
 </div>
 
 

@@ -140,15 +140,8 @@ comparison[,table(amplicon,metagenome)]
 ```{r}
 
 ## Run DMM abundance
-amplicon_dates = amplicon_matrix %>%
-  colnames() %>%
-  strsplit('\\.') %>%
-  do.call('rbind',.) %>%
-  as.data.table() %>%
-  setNames(c('N','Year','Month','Day'))
-
-amplicon_metadata = amplicon_dmms_samples %>% data.frame(DMM = ., amplicon_dates)
-
+amplicon_metadata = fread('sanitized-data/amplicon-metadata.txt.xls', sep = '\t')
+amplicon_metadata = amplicon_dmms_samples %>% cbind(amplicon_metadata, DMM = .)
 
 maaslin3_otu_fit = maaslin3(input_data = amplicon_matrix,
                     input_metadata = amplicon_metadata,

@@ -1,0 +1,5 @@
+"feature"	"metadata"	"value"	"name"	"coef"	"null_hypothesis"	"stderr"	"pval_individual"	"qval_individual"	"pval_joint"	"qval_joint"	"error"	"model"	"N"	"N_not_zero"
+"Dialister"	"Year"	"Year"	"Year"	1.03493065529872	0.0305110276730486	0.214984333798166	0.000505584137554527	0.0721484910770205	0.00101091265978891	0.0712693425151179	NA	"abundance"	77	74
+"Prevotella"	"X..SCFA.Butyrate"	"X..SCFA.Butyrate"	"X..SCFA.Butyrate"	1.00524646066111	-0.0734346731765808	0.282031720078279	0.000593814741374654	0.0721484910770205	0.000593814741374654	0.0712693425151179	NA	"abundance"	77	73
+"Dialister"	"Year"	"Year"	"Year"	1.83546237229525	0	0.817797241492349	0.0248068145919983	0.317266102413451	0.00101091265978891	0.0712693425151179	NA	"prevalence"	77	74
+"Prevotella"	"X..SCFA.Butyrate"	"X..SCFA.Butyrate"	"X..SCFA.Butyrate"	0.385471663306657	0	1.00180984981318	0.700403917008233	0.975657847417679	0.000593814741374654	0.0712693425151179	"Prevalence association possibly induced by stronger abundance association"	"prevalence"	77	73

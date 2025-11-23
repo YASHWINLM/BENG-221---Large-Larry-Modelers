@@ -2,6 +2,7 @@
 title: "Import and preprocess Larry's data"
 output: html_document
 date: "2025-10-9"
+author: "Cale Seymour"
 ---
 
 # Libraries, deps, & setup
@@ -17,6 +18,8 @@ raw_biomarkers = fread('Data/LLM_Biomarkers_Wide.csv', sep = ',')
 biomarker_metadata = fread('Data/biomarker-metadata.txt.xls', sep='\t')
 
 raw_matrix = fread('Data/LS Gut Microbiome.csv', sep = ',', skip = 6, header=FALSE)
+
+raw_diet = fread('Data/diet-symptoms.txt.xls',sep='\t')
 
 ## Read in GTDB taxonomy
 gtdb_taxonomy = lapply(
@@ -39,8 +42,6 @@ biomarkers = raw_biomarkers %>%
   as.data.table() %>%
   na.omit() %>%
   setkey(variable)
-
-fwrite(amplicon_matrix, 'sanitized-data/biomarker-matrix.txt.xls', sep='\t', row.names = TRUE)
 
 ```
 
@@ -96,8 +97,16 @@ microbiome_sample_codes = make_code_from_date(microbiome_sample_dates)
 ## Reassign sample codes in biomarkers
 biomarker_sample_codes = event_match_key[make_code_from_date(biomarker_sample_dates)]
 
+## Match biomarker data to amplicon samples
+biomarker_data_matched = cbind(biomarker_sample_codes, biomarkers)[!is.na(biomarker_sample_codes),]
+
 (biomarker_sample_codes %in% microbiome_sample_codes) %>% table()
 
+## bind data.
+amplicon_biomarker_samples = dcast(biomarker_data_matched, biomarker_sample_codes ~ variable, value.var = 'value') %>% as.data.table()
+
+colnames(amplicon_biomarker_samples) = make.names(colnames(amplicon_biomarker_samples))
+setkey(amplicon_biomarker_samples, biomarker_sample_codes)
 ```
 
 ## 3. Sanitize the amplicon dataset
@@ -159,6 +168,7 @@ rownames(amplicon_matrix) = taxon_codes
 ## Write tables to files.
 fwrite(amplicon_taxonomy, 'sanitized-data/amplicon-taxonomy.txt.xls', sep='\t', row.names = TRUE)
 fwrite(amplicon_matrix, 'sanitized-data/amplicon-matrix.txt.xls', sep='\t', row.names = TRUE)
+amplicon_biomarker_dt = amplicon_biomarker_samples[colnames(amplicon_matrix),]
 
 ```
 ## 4. Sanitize the metagenome (except not?) dataset (MetaPhlan2? seriously? what year is this?)
@@ -184,7 +194,7 @@ fwrite(gtdb_reference_taxonomy, 'resources/gtdb-reference-taxonomy.txt.xls.gz', 
 
 ```
 
-Parse out the metagenome matrix and update the taxonomy to try to match GTDB + ICTV. We do this because the existing taxonomy is poor-quality. There's no way to fix it. I might just give up on using the metagenomic data at all.
+5. Parse out the metagenome matrix and update the taxonomy to try to match GTDB + ICTV. We do this because the existing taxonomy is poor-quality. There's no way to fix it. I might just give up on using the metagenomic data at all.
 ```{r FindUnionMetagenomeTables}
 metageno_tabs = raw_matrix[56:233,]
 metageno_taxa = metageno_tabs[,1] %>% unlist()
@@ -309,6 +319,41 @@ fwrite(metagenome_taxonomy, 'sanitized-data/metagenome-taxonomy.txt.xls', sep='\
 fwrite(metagenome_matrix, 'sanitized-data/metagenome-matrix.txt.xls', sep='\t', row.names = TRUE)
 ```
 
+6. Match diet and medical information to the microbiome data.
+```{r}
+## Define dates for amplicon data
+amplicon_dates = amplicon_matrix %>%
+  colnames() %>%
+  strsplit('\\.') %>%
+  do.call('rbind',.) %>%
+  as.data.table() %>%
+  setNames(c('N','Year','Month','Day'))
+
+amplicon_dates[,Date := as.Date(paste(Year, Month, Day, sep='-'))]
+amplicon_metadata = copy(amplicon_biomarker_dt)
+amplicon_metadata[,V1 := NULL]
+amplicon_metadata[,Date := NULL]
+amplicon_metadata[,sample_code := NULL]
+
+## Date matrices.
+diet_dates = raw_diet[,Date] %>% as.Date(format = '%m/%d/%Y') %>% as.matrix()
+diet_date_start_range = diet_dates
+diet_date_end_range = c(diet_dates[-1], as.Date('01/01/2099', format = '%m/%d/%Y'))
+diet_date_ranges = cbind(diet_date_start_range, diet_date_end_range) %>% as.matrix()
+
+diet_date_grid = expand.grid(1:nrow(amplicon_dates), 1:nrow(diet_date_ranges)) %>% as.data.table()
+diet_date_grid[,c('range.start', 'range.end') := as.data.table(diet_date_ranges[Var2,])]
+diet_date_grid[,point := as.data.table(amplicon_dates[Var1,Date])]
+
+diet_date_grid[, keep := point >= range.start & point < range.end]
+
+diet_metadata = raw_diet[diet_date_grid[keep == TRUE, Var2],.(diet, probiotics, resection)]
+
+## Define amplicon metadata
+amplicon_metadata = cbind(sample_code = colnames(amplicon_matrix), amplicon_dates, diet_metadata, amplicon_metadata)
+
+fwrite(amplicon_metadata, 'sanitized-data/amplicon-metadata.txt.xls',sep='\t')
+```
 # Exit
 ```{r}
 sessionInfo()

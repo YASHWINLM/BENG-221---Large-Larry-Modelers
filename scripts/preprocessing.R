@@ -118,3 +118,30 @@ clrtrans = function(x, pseudocount)
   colnames(tr) = colnames(x)
   return(tr)
 }
+
+
+## data.table to a matrix
+## Params: x = a data table; typefun = cast entries as this type
+## Returns: a matrix of type where the rownames are the first column of the dt.
+dt2mat = function(x, typefun = NULL)
+{
+  if(is.null(typefun))
+  {
+    ty = x[1,2] %>% unlist() %>% class()
+    typefun = paste0('as.', ty) %>% get()
+  }
+  
+  mat = x[,-1] %>% apply(2, typefun) %>% as.matrix()
+  rownames(mat) = x[,1] %>% unlist() %>% as.character()
+  return(mat)
+}
+
+## data.table to a data.frame
+## Params: x = a data table
+## Returns: a data.frame where the rownames are the first column of the dt.
+dt2df = function(x)
+{
+  df = x[,-1] %>% as.data.frame()
+  rownames(df) = x[,1] %>% unlist() %>% as.character()
+  return(df)
+}
