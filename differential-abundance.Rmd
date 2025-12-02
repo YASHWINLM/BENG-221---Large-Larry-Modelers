@@ -216,7 +216,7 @@ maaslin3_out_cholesterol = maaslin3(input_data = amplicon_matrix,
 ```{r}
 ## Set reference levels.
 reference_levels = c('Year,2019')
-numeric_vars = c('Weight_lbs', 'Total.SCFA_mg.mL', 'Sum.Total.Cholesterol_mg.dL')
+numeric_vars = c('Weight_lbs', 'Total.SCFA_mg.mL')
 
 ## Define fixed effect terms
 fixed_effect_terms = gsub(',.*', '', reference_levels) %>% c(numeric_vars)
@@ -261,7 +261,7 @@ maaslin3_out_scfa = maaslin3(input_data = amplicon_matrix,
 ```{r}
 ## Set reference levels.
 reference_levels = c('Year,2019')
-numeric_vars = c('Weight_lbs', 'X..SCFA.Acetate' ,'Sum.Total.Cholesterol_mg.dL')
+numeric_vars = c('Weight_lbs', 'X..SCFA.Acetate')
 
 ## Define fixed effect terms
 fixed_effect_terms = gsub(',.*', '', reference_levels) %>% c(numeric_vars)
@@ -305,11 +305,8 @@ maaslin3_out_acetate = maaslin3(input_data = amplicon_matrix,
 ```{r}
 ## Set reference levels.
 reference_levels = c('Year,2019')
-numeric_vars = c('Weight_lbs', 'X..SCFA.Butyrate', 'Sum.Total.Cholesterol_mg.dL')
+numeric_vars = c('Weight_lbs', 'X..SCFA.Butyrate')
 
-#"X..SCFA.Acetate"                                  
-#[11] "X..SCFA.Butyrate"                                  "X..SCFA.Propionate"                               
-# [13] "X..SCFA.Valerate"
 ## Define fixed effect terms
 fixed_effect_terms = gsub(',.*', '', reference_levels) %>% c(numeric_vars)
 
@@ -352,11 +349,8 @@ maaslin3_out_butyrate = maaslin3(input_data = amplicon_matrix,
 ```{r}
 ## Set reference levels.
 reference_levels = c('Year,2019')
-numeric_vars = c('Weight_lbs', 'X..SCFA.Propionate', 'Sum.Total.Cholesterol_mg.dL')
+numeric_vars = c('Weight_lbs', 'X..SCFA.Propionate')
 
-#"X..SCFA.Acetate"                                  
-#[11] "X..SCFA.Butyrate"                                  "X..SCFA.Propionate"                               
-# [13] "X..SCFA.Valerate"
 ## Define fixed effect terms
 fixed_effect_terms = gsub(',.*', '', reference_levels) %>% c(numeric_vars)
 
@@ -399,11 +393,8 @@ maaslin3_out_propionoate = maaslin3(input_data = amplicon_matrix,
 ```{r}
 ## Set reference levels.
 reference_levels = c('Year,2019')
-numeric_vars = c('Weight_lbs', 'X..SCFA.Valerate', 'Sum.Total.Cholesterol_mg.dL')
+numeric_vars = c('Weight_lbs', 'X..SCFA.Valerate')
 
-#"X..SCFA.Acetate"                                  
-#[11] "X..SCFA.Butyrate"                                  "X..SCFA.Propionate"                               
-# [13] "X..SCFA.Valerate"
 ## Define fixed effect terms
 fixed_effect_terms = gsub(',.*', '', reference_levels) %>% c(numeric_vars)
 
