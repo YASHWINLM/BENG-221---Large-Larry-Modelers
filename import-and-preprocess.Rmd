@@ -5,6 +5,10 @@ date: "2025-10-9"
 author: "Cale Seymour"
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE)
+```
+
 # Libraries, deps, & setup
 ```{r Libraries}
 source('scripts/preprocessing.R')
@@ -354,7 +358,9 @@ amplicon_metadata = cbind(sample_code = colnames(amplicon_matrix), amplicon_date
 
 fwrite(amplicon_metadata, 'sanitized-data/amplicon-metadata.txt.xls',sep='\t')
 ```
+
 # Exit
 ```{r}
+#save(list = ls(all.names = TRUE), file = 'sanitized-data/import-and-preprocess.RData')
 sessionInfo()
 ```
