@@ -76,6 +76,6 @@ ggplot(data = laplace_scores, aes(x = nDMMs, y = laplace)) +
 
 # Exit
 ```{r}
-#save(list = ls(all.names = TRUE), file = 'sanitized-data/diversity-calc.RData')
+save(list = ls(all.names = TRUE), file = 'sanitized-data/diversity-calc.RData')
 sessionInfo()
 ```
