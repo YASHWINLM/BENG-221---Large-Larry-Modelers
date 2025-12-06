@@ -30,7 +30,7 @@ Data from Patient LS were obtained from the repository [ConanMinihan/LargeLarryM
 | `resources/`                | Directory |Taxonomic ref data for data cleansing.       |
 | `sanitized-data/`           | Directory |Directory containing cleansed datasets.      |
 | `scripts/`                  | Directory |Scripts for miscellanous ecology functions.  |
-| `main.R`                    | R script  |'source' to run the all analyses.            |
+| `main.R`                    | R script  |'source' this to run all analyses.           |
 | `betadiversity.Rmd`         | Rmarkdown |Code used for covariate analysis.            |
 | `differential-abundance.Rmd`| Rmarkdown |Code used for diffabund analysis.            |
 | `diversity.Rmd`             | Rmarkdown |Preliminary analysis of overall ecology.     |
