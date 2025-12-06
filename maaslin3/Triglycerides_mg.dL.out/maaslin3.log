@@ -1,312 +1,311 @@
-2025-12-06 14:43:15.413273 INFO::Writing function arguments to log file
-2025-12-06 14:43:15.415424 DEBUG::Function arguments
-2025-12-06 14:43:15.416876 DEBUG::Output folder: maaslin3/Triglycerides_mg.dL.out
-2025-12-06 14:43:15.418192 DEBUG::Formula: ~Year + Weight_lbs + Triglycerides_mg.dL
-2025-12-06 14:43:15.419401 DEBUG::Fixed effects:
-2025-12-06 14:43:15.420782 DEBUG::Reference: Year,2019
-2025-12-06 14:43:15.422537 DEBUG::Random effects:
-2025-12-06 14:43:15.424224 DEBUG::Group effects:
-2025-12-06 14:43:15.425445 DEBUG::Ordered effects:
-2025-12-06 14:43:15.426569 DEBUG::Strata effects:
-2025-12-06 14:43:15.427704 DEBUG::Min Abundance: 0.000000
-2025-12-06 14:43:15.429055 DEBUG::Min Prevalence: 0.000000
-2025-12-06 14:43:15.43716 DEBUG::Zero Threshold: 0.000000
-2025-12-06 14:43:15.438414 DEBUG::Min variance: 0.000000
-2025-12-06 14:43:15.439705 DEBUG::Max significance: 0.100000
-2025-12-06 14:43:15.441592 DEBUG::Normalization: TSS
-2025-12-06 14:43:15.443142 DEBUG::Transform: LOG
-2025-12-06 14:43:15.445127 DEBUG::Correction method: BH
-2025-12-06 14:43:15.44667 DEBUG::Standardize: TRUE
-2025-12-06 14:43:15.448206 DEBUG::Abundance median comparison: TRUE
-2025-12-06 14:43:15.450236 DEBUG::Prevalence median comparison: FALSE
-2025-12-06 14:43:15.452945 DEBUG::Abundance median comparison threshold: 0
-2025-12-06 14:43:15.454147 DEBUG::Prevalence median comparison threshold: 0
-2025-12-06 14:43:15.455323 DEBUG::Subtract median: FALSE
-2025-12-06 14:43:15.460704 DEBUG::Warn prevalence: TRUE
-2025-12-06 14:43:15.462089 DEBUG::Small random effects: FALSE
-2025-12-06 14:43:15.463317 DEBUG::Augment: TRUE
-2025-12-06 14:43:15.464452 DEBUG::Evaluate only:
-2025-12-06 14:43:15.465882 DEBUG::Cores: 1
-2025-12-06 14:43:15.467098 DEBUG::Balanced Summary plot: FALSE
-2025-12-06 14:43:15.468189 INFO::Verifying options selected are valid
-2025-12-06 14:43:15.469987 WARNING::Input is a matrix,
+2025-12-06 15:31:14.02096 INFO::Writing function arguments to log file
+2025-12-06 15:31:14.023382 DEBUG::Function arguments
+2025-12-06 15:31:14.024548 DEBUG::Output folder: maaslin3/Triglycerides_mg.dL.out
+2025-12-06 15:31:14.025649 DEBUG::Formula: ~Year + Weight_lbs + Triglycerides_mg.dL
+2025-12-06 15:31:14.026704 DEBUG::Fixed effects:
+2025-12-06 15:31:14.027825 DEBUG::Reference: Year,2019
+2025-12-06 15:31:14.029252 DEBUG::Random effects:
+2025-12-06 15:31:14.031195 DEBUG::Group effects:
+2025-12-06 15:31:14.033246 DEBUG::Ordered effects:
+2025-12-06 15:31:14.034698 DEBUG::Strata effects:
+2025-12-06 15:31:14.036012 DEBUG::Min Abundance: 0.000000
+2025-12-06 15:31:14.037546 DEBUG::Min Prevalence: 0.000000
+2025-12-06 15:31:14.039248 DEBUG::Zero Threshold: 0.000000
+2025-12-06 15:31:14.040622 DEBUG::Min variance: 0.000000
+2025-12-06 15:31:14.042199 DEBUG::Max significance: 0.100000
+2025-12-06 15:31:14.04359 DEBUG::Normalization: TSS
+2025-12-06 15:31:14.04512 DEBUG::Transform: LOG
+2025-12-06 15:31:14.046562 DEBUG::Correction method: BH
+2025-12-06 15:31:14.048026 DEBUG::Standardize: TRUE
+2025-12-06 15:31:14.04972 DEBUG::Abundance median comparison: TRUE
+2025-12-06 15:31:14.050984 DEBUG::Prevalence median comparison: FALSE
+2025-12-06 15:31:14.052107 DEBUG::Abundance median comparison threshold: 0
+2025-12-06 15:31:14.053196 DEBUG::Prevalence median comparison threshold: 0
+2025-12-06 15:31:14.054244 DEBUG::Subtract median: FALSE
+2025-12-06 15:31:14.055291 DEBUG::Warn prevalence: TRUE
+2025-12-06 15:31:14.056566 DEBUG::Small random effects: FALSE
+2025-12-06 15:31:14.057709 DEBUG::Augment: TRUE
+2025-12-06 15:31:14.058756 DEBUG::Evaluate only:
+2025-12-06 15:31:14.059812 DEBUG::Cores: 1
+2025-12-06 15:31:14.060909 DEBUG::Balanced Summary plot: FALSE
+2025-12-06 15:31:14.062153 INFO::Verifying options selected are valid
+2025-12-06 15:31:14.063957 WARNING::Input is a matrix,
                         passing through as.data.frame() .
-2025-12-06 14:43:15.473149 INFO::Determining format of input files
-2025-12-06 14:43:15.475348 INFO::Input format is data samples as columns and metadata samples as rows
-2025-12-06 14:43:15.479051 DEBUG::Transformed data so samples are rows
-2025-12-06 14:43:15.480474 DEBUG::A total of 156 samples were found in both the data and metadata
-2025-12-06 14:43:15.482223 DEBUG::Reordering data/metadata to use same sample ordering
-2025-12-06 14:43:15.485508 INFO::Running selected normalization method: TSS
-2025-12-06 14:43:15.490272 INFO::Writing normalized data to file maaslin3/Triglycerides_mg.dL.out/features/data_norm.tsv
-2025-12-06 14:43:15.519167 INFO::Filter data based on min abundance and min prevalence
-2025-12-06 14:43:15.525978 INFO::Total samples in data: 156
-2025-12-06 14:43:15.52813 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
-2025-12-06 14:43:15.536699 INFO::Total filtered features: 0
-2025-12-06 14:43:15.538694 INFO::Filtered feature names from abundance and prevalence filtering:
-2025-12-06 14:43:15.541857 INFO::Total features filtered by non-zero variance filtering: 0
-2025-12-06 14:43:15.543798 INFO::Filtered feature names from variance filtering:
-2025-12-06 14:43:15.545605 INFO::Writing filtered data to file maaslin3/Triglycerides_mg.dL.out/features/filtered_data.tsv
-2025-12-06 14:43:15.576522 INFO::Running selected transform method: LOG
-2025-12-06 14:43:15.579704 INFO::Writing normalized, filtered, transformed data to file maaslin3/Triglycerides_mg.dL.out/features/data_transformed.tsv
-2025-12-06 14:43:15.609624 INFO::Applying z-score to standardize continuous metadata
-2025-12-06 14:43:15.702783 INFO::Running the linear model component
-2025-12-06 14:43:15.710735 DEBUG::Object: augment, Size: 56
-2025-12-06 14:43:15.712037 DEBUG::Object: cluster, Size: 0
-2025-12-06 14:43:15.713444 DEBUG::Object: cores, Size: 56
-2025-12-06 14:43:15.71485 DEBUG::Object: correction, Size: 112
-2025-12-06 14:43:15.716249 DEBUG::Object: extract_out, Size: 1696
-2025-12-06 14:43:15.717518 DEBUG::Object: feature_specific_covariate, Size: 0
-2025-12-06 14:43:15.718995 DEBUG::Object: feature_specific_covariate_name, Size: 0
-2025-12-06 14:43:15.720241 DEBUG::Object: feature_specific_covariate_record, Size: 0
-2025-12-06 14:43:15.7214 DEBUG::Object: features, Size: 84072
-2025-12-06 14:43:15.722563 DEBUG::Object: formula, Size: 1288
-2025-12-06 14:43:15.723676 DEBUG::Object: fun_list, Size: 58768
-2025-12-06 14:43:15.724955 DEBUG::Object: func_to_run, Size: 435336
-2025-12-06 14:43:15.726314 DEBUG::Object: groups, Size: 48
-2025-12-06 14:43:15.727675 DEBUG::Object: median_comparison, Size: 56
-2025-12-06 14:43:15.728847 DEBUG::Object: median_comparison_threshold, Size: 56
-2025-12-06 14:43:15.73025 DEBUG::Object: metadata, Size: 354576
-2025-12-06 14:43:15.731903 DEBUG::Object: model, Size: 112
-2025-12-06 14:43:15.733683 DEBUG::Object: model_function, Size: 8864
-2025-12-06 14:43:15.735278 DEBUG::Object: ordereds, Size: 48
-2025-12-06 14:43:15.736844 DEBUG::Object: random_effects_formula, Size: 0
-2025-12-06 14:43:15.738411 DEBUG::Object: ranef_function, Size: 0
-2025-12-06 14:43:15.740049 DEBUG::Object: save_models, Size: 56
-2025-12-06 14:43:15.741464 DEBUG::Object: small_random_effects, Size: 56
-2025-12-06 14:43:15.742606 DEBUG::Object: strata, Size: 48
-2025-12-06 14:43:15.743764 DEBUG::Object: subtract_median, Size: 56
-2025-12-06 14:43:15.744931 DEBUG::Object: summary_function, Size: 49424
-2025-12-06 14:43:15.74627 DEBUG::Object: func_to_run, Size: 435336
-2025-12-06 14:43:15.74785 INFO::Fitting model to feature number 1, Unclassified Proteobacteria;T01
-2025-12-06 14:43:15.756441 INFO::Fitting model to feature number 2, Unclassified Enterobacteriaceae;T02
-2025-12-06 14:43:15.765759 INFO::Fitting model to feature number 3, Unclassified Enterobacteriaceae;T03
-2025-12-06 14:43:15.777606 INFO::Fitting model to feature number 4, Bacteroides;T04
-2025-12-06 14:43:15.786653 INFO::Fitting model to feature number 5, Unclassified Ruminococcaceae;T05
-2025-12-06 14:43:15.795322 INFO::Fitting model to feature number 6, Akkermansia;T06
-2025-12-06 14:43:15.806603 INFO::Fitting model to feature number 7, Unclassified Firmicutes;T07
-2025-12-06 14:43:15.816027 INFO::Fitting model to feature number 8, Coprococcus;T08
-2025-12-06 14:43:15.826623 INFO::Fitting model to feature number 9, Prevotella;T09
-2025-12-06 14:43:15.835665 INFO::Fitting model to feature number 10, Unclassified Rikenellaceae;T10
-2025-12-06 14:43:15.846428 INFO::Fitting model to feature number 11, Faecalibacterium;T11
-2025-12-06 14:43:15.854965 INFO::Fitting model to feature number 12, Unclassified Lachnospiraceae;T12
-2025-12-06 14:43:15.864909 INFO::Fitting model to feature number 13, Lachnospira;T13
-2025-12-06 14:43:15.875467 INFO::Fitting model to feature number 14, Blautia;T14
-2025-12-06 14:43:15.886673 INFO::Fitting model to feature number 15, Unclassified Christensenellaceae;T15
-2025-12-06 14:43:15.895066 INFO::Fitting model to feature number 16, Methanobrevibacter;T16
-2025-12-06 14:43:15.904446 INFO::Fitting model to feature number 17, Parabacteroides;T17
-2025-12-06 14:43:15.913266 INFO::Fitting model to feature number 18, Providencia;T18
-2025-12-06 14:43:15.922561 INFO::Fitting model to feature number 19, Ruminococcus;T19
-2025-12-06 14:43:15.93365 INFO::Fitting model to feature number 20, [Prevotella];T20
-2025-12-06 14:43:15.945064 INFO::Fitting model to feature number 21, [Ruminococcus];T21
-2025-12-06 14:43:15.95483 INFO::Fitting model to feature number 22, Serratia;T22
-2025-12-06 14:43:15.963643 INFO::Fitting model to feature number 23, Dialister;T23
-2025-12-06 14:43:15.973057 INFO::Fitting model to feature number 24, Dorea;T24
-2025-12-06 14:43:15.98156 INFO::Fitting model to feature number 25, Roseburia;T25
-2025-12-06 14:43:15.99049 INFO::Fitting model to feature number 26, Unclassified Erysipelotrichaceae;T26
-2025-12-06 14:43:15.999425 INFO::Fitting model to feature number 27, Unclassified S24-7;T27
-2025-12-06 14:43:16.007616 INFO::Fitting model to feature number 28, Pseudomonas;T28
-2025-12-06 14:43:16.017872 INFO::Fitting model to feature number 29, Unclassified Proteobacteria;T29
-2025-12-06 14:43:16.02895 INFO::Fitting model to feature number 30, Fusobacterium;T30
-2025-12-06 14:43:16.040817 INFO::Fitting model to feature number 31, Unclassified [Barnesiellaceae];T31
-2025-12-06 14:43:16.052868 INFO::Fitting model to feature number 32, Phascolarctobacterium;T32
-2025-12-06 14:43:16.064775 INFO::Fitting model to feature number 33, Erwinia;T33
-2025-12-06 14:43:16.074966 INFO::Fitting model to feature number 34, Sutterella;T34
-2025-12-06 14:43:16.086387 INFO::Fitting model to feature number 35, Bilophila;T35
-2025-12-06 14:43:16.094873 INFO::Fitting model to feature number 36, Unclassified Cyanobacteria;T36
-2025-12-06 14:43:16.105722 INFO::Fitting model to feature number 37, Unclassified Firmicutes;T37
-2025-12-06 14:43:16.116578 INFO::Fitting model to feature number 38, Oscillospira;T38
-2025-12-06 14:43:16.124627 INFO::Fitting model to feature number 39, [Eubacterium];T39
-2025-12-06 14:43:16.134534 INFO::Fitting model to feature number 40, Desulfovibrio;T40
-2025-12-06 14:43:16.148172 INFO::Fitting model to feature number 41, Unclassified Lachnospiraceae;T41
-2025-12-06 14:43:16.15653 INFO::Fitting model to feature number 42, Unclassified Tenericutes;T42
-2025-12-06 14:43:16.165644 INFO::Fitting model to feature number 43, Unclassified Burkholderiaceae;T43
-2025-12-06 14:43:16.171171 WARNING::Fitting problem for feature 43 returning NA
-2025-12-06 14:43:16.175868 INFO::Fitting model to feature number 44, Synergistes;T44
-2025-12-06 14:43:16.186533 INFO::Fitting model to feature number 45, Parvimonas;T45
-2025-12-06 14:43:16.195194 INFO::Fitting model to feature number 46, Unclassified Clostridiaceae;T46
-2025-12-06 14:43:16.204041 INFO::Fitting model to feature number 47, Unclassified Coriobacteriaceae;T47
-2025-12-06 14:43:16.21243 INFO::Fitting model to feature number 48, Clostridium;T48
-2025-12-06 14:43:16.22389 INFO::Fitting model to feature number 49, Veillonella;T49
-2025-12-06 14:43:16.23288 INFO::Fitting model to feature number 50, Aggregatibacter;T50
-2025-12-06 14:43:16.241559 INFO::Fitting model to feature number 51, Bifidobacterium;T51
-2025-12-06 14:43:16.251528 INFO::Fitting model to feature number 52, Lachnobacterium;T52
-2025-12-06 14:43:16.264708 INFO::Performing tests against medians
-2025-12-06 14:43:17.653529 INFO::Counting total values for each feature
-2025-12-06 14:43:17.662218 INFO::Running the logistic model component
-2025-12-06 14:43:17.671301 DEBUG::Object: augment, Size: 56
-2025-12-06 14:43:17.673102 DEBUG::Object: cluster, Size: 0
-2025-12-06 14:43:17.675072 DEBUG::Object: cores, Size: 56
-2025-12-06 14:43:17.676771 DEBUG::Object: correction, Size: 112
-2025-12-06 14:43:17.678476 DEBUG::Object: extract_out, Size: 1696
-2025-12-06 14:43:17.680143 DEBUG::Object: feature_specific_covariate, Size: 0
-2025-12-06 14:43:17.681886 DEBUG::Object: feature_specific_covariate_name, Size: 0
-2025-12-06 14:43:17.683479 DEBUG::Object: feature_specific_covariate_record, Size: 0
-2025-12-06 14:43:17.684922 DEBUG::Object: features, Size: 81048
-2025-12-06 14:43:17.68633 DEBUG::Object: formula, Size: 1288
-2025-12-06 14:43:17.687803 DEBUG::Object: fun_list, Size: 70920
-2025-12-06 14:43:17.689173 DEBUG::Object: func_to_run, Size: 435336
-2025-12-06 14:43:17.690451 DEBUG::Object: groups, Size: 48
-2025-12-06 14:43:17.691626 DEBUG::Object: median_comparison, Size: 56
-2025-12-06 14:43:17.692806 DEBUG::Object: median_comparison_threshold, Size: 56
-2025-12-06 14:43:17.694302 DEBUG::Object: metadata, Size: 354576
-2025-12-06 14:43:17.695667 DEBUG::Object: model, Size: 120
-2025-12-06 14:43:17.697156 DEBUG::Object: model_function, Size: 21016
-2025-12-06 14:43:17.698454 DEBUG::Object: ordereds, Size: 48
-2025-12-06 14:43:17.699774 DEBUG::Object: random_effects_formula, Size: 0
-2025-12-06 14:43:17.701133 DEBUG::Object: ranef_function, Size: 0
-2025-12-06 14:43:17.702485 DEBUG::Object: save_models, Size: 56
-2025-12-06 14:43:17.704188 DEBUG::Object: small_random_effects, Size: 56
-2025-12-06 14:43:17.705841 DEBUG::Object: strata, Size: 48
-2025-12-06 14:43:17.707437 DEBUG::Object: subtract_median, Size: 56
-2025-12-06 14:43:17.709163 DEBUG::Object: summary_function, Size: 49424
-2025-12-06 14:43:17.710638 DEBUG::Object: func_to_run, Size: 435336
-2025-12-06 14:43:17.711974 INFO::Fitting model to feature number 1, Unclassified Proteobacteria;T01
-2025-12-06 14:43:17.733263 INFO::Fitting model to feature number 2, Unclassified Enterobacteriaceae;T02
-2025-12-06 14:43:17.753964 INFO::Fitting model to feature number 3, Unclassified Enterobacteriaceae;T03
-2025-12-06 14:43:17.758065 INFO::Fitting model to feature number 4, Bacteroides;T04
-2025-12-06 14:43:17.762476 INFO::Fitting model to feature number 5, Unclassified Ruminococcaceae;T05
-2025-12-06 14:43:17.766708 INFO::Fitting model to feature number 6, Akkermansia;T06
-2025-12-06 14:43:17.770805 INFO::Fitting model to feature number 7, Unclassified Firmicutes;T07
-2025-12-06 14:43:17.775373 INFO::Fitting model to feature number 8, Coprococcus;T08
-2025-12-06 14:43:17.795194 INFO::Fitting model to feature number 9, Prevotella;T09
-2025-12-06 14:43:17.815686 INFO::Fitting model to feature number 10, Unclassified Rikenellaceae;T10
-2025-12-06 14:43:17.833823 INFO::Fitting model to feature number 11, Faecalibacterium;T11
-2025-12-06 14:43:17.851757 INFO::Fitting model to feature number 12, Unclassified Lachnospiraceae;T12
-2025-12-06 14:43:17.855303 INFO::Fitting model to feature number 13, Lachnospira;T13
-2025-12-06 14:43:17.876992 INFO::Fitting model to feature number 14, Blautia;T14
-2025-12-06 14:43:17.8953 INFO::Fitting model to feature number 15, Unclassified Christensenellaceae;T15
-2025-12-06 14:43:17.913035 INFO::Fitting model to feature number 16, Methanobrevibacter;T16
-2025-12-06 14:43:17.92993 INFO::Fitting model to feature number 17, Parabacteroides;T17
-2025-12-06 14:43:17.947619 INFO::Fitting model to feature number 18, Providencia;T18
-2025-12-06 14:43:17.968633 INFO::Fitting model to feature number 19, Ruminococcus;T19
-2025-12-06 14:43:17.986864 INFO::Fitting model to feature number 20, [Prevotella];T20
-2025-12-06 14:43:18.005447 INFO::Fitting model to feature number 21, [Ruminococcus];T21
-2025-12-06 14:43:18.026733 INFO::Fitting model to feature number 22, Serratia;T22
-2025-12-06 14:43:18.044689 INFO::Fitting model to feature number 23, Dialister;T23
-2025-12-06 14:43:18.061549 INFO::Fitting model to feature number 24, Dorea;T24
-2025-12-06 14:43:18.081329 INFO::Fitting model to feature number 25, Roseburia;T25
-2025-12-06 14:43:18.098267 INFO::Fitting model to feature number 26, Unclassified Erysipelotrichaceae;T26
-2025-12-06 14:43:18.115563 INFO::Fitting model to feature number 27, Unclassified S24-7;T27
-2025-12-06 14:43:18.133507 INFO::Fitting model to feature number 28, Pseudomonas;T28
-2025-12-06 14:43:18.151201 INFO::Fitting model to feature number 29, Unclassified Proteobacteria;T29
-2025-12-06 14:43:18.169148 INFO::Fitting model to feature number 30, Fusobacterium;T30
-2025-12-06 14:43:18.183235 WARNING::Fitting problem for feature 30 a warning was issued
-2025-12-06 14:43:18.189908 INFO::Fitting model to feature number 31, Unclassified [Barnesiellaceae];T31
-2025-12-06 14:43:18.21076 INFO::Fitting model to feature number 32, Phascolarctobacterium;T32
-2025-12-06 14:43:18.228931 INFO::Fitting model to feature number 33, Erwinia;T33
-2025-12-06 14:43:18.246145 INFO::Fitting model to feature number 34, Sutterella;T34
-2025-12-06 14:43:18.264514 INFO::Fitting model to feature number 35, Bilophila;T35
-2025-12-06 14:43:18.28186 INFO::Fitting model to feature number 36, Unclassified Cyanobacteria;T36
-2025-12-06 14:43:18.301914 INFO::Fitting model to feature number 37, Unclassified Firmicutes;T37
-2025-12-06 14:43:18.320732 INFO::Fitting model to feature number 38, Oscillospira;T38
-2025-12-06 14:43:18.324486 INFO::Fitting model to feature number 39, [Eubacterium];T39
-2025-12-06 14:43:18.341328 INFO::Fitting model to feature number 40, Desulfovibrio;T40
-2025-12-06 14:43:18.358109 INFO::Fitting model to feature number 41, Unclassified Lachnospiraceae;T41
-2025-12-06 14:43:18.377924 INFO::Fitting model to feature number 42, Unclassified Tenericutes;T42
-2025-12-06 14:43:18.396721 INFO::Fitting model to feature number 43, Unclassified Burkholderiaceae;T43
-2025-12-06 14:43:18.413124 INFO::Fitting model to feature number 44, Synergistes;T44
-2025-12-06 14:43:18.429968 INFO::Fitting model to feature number 45, Parvimonas;T45
-2025-12-06 14:43:18.449227 INFO::Fitting model to feature number 46, Unclassified Clostridiaceae;T46
-2025-12-06 14:43:18.468736 INFO::Fitting model to feature number 47, Unclassified Coriobacteriaceae;T47
-2025-12-06 14:43:18.487849 INFO::Fitting model to feature number 48, Clostridium;T48
-2025-12-06 14:43:18.507136 INFO::Fitting model to feature number 49, Veillonella;T49
-2025-12-06 14:43:18.526622 INFO::Fitting model to feature number 50, Aggregatibacter;T50
-2025-12-06 14:43:18.545841 INFO::Fitting model to feature number 51, Bifidobacterium;T51
-2025-12-06 14:43:18.563006 INFO::Fitting model to feature number 52, Lachnobacterium;T52
-2025-12-06 14:43:18.623703 INFO::Counting total values for each feature
-2025-12-06 14:43:18.631555 INFO::Re-running abundances for warn_prevalence
-2025-12-06 14:43:18.634087 INFO::Running selected normalization method: TSS
-2025-12-06 14:43:18.640072 INFO::Running selected transform method: LOG
-2025-12-06 14:43:18.652287 DEBUG::Object: augment, Size: 56
-2025-12-06 14:43:18.653508 DEBUG::Object: cluster, Size: 0
-2025-12-06 14:43:18.654719 DEBUG::Object: cores, Size: 56
-2025-12-06 14:43:18.656278 DEBUG::Object: correction, Size: 112
-2025-12-06 14:43:18.657952 DEBUG::Object: extract_out, Size: 1696
-2025-12-06 14:43:18.65972 DEBUG::Object: feature_specific_covariate, Size: 0
-2025-12-06 14:43:18.661033 DEBUG::Object: feature_specific_covariate_name, Size: 0
-2025-12-06 14:43:18.662417 DEBUG::Object: feature_specific_covariate_record, Size: 0
-2025-12-06 14:43:18.663663 DEBUG::Object: features, Size: 84072
-2025-12-06 14:43:18.664813 DEBUG::Object: formula, Size: 1288
-2025-12-06 14:43:18.66605 DEBUG::Object: fun_list, Size: 58768
-2025-12-06 14:43:18.66732 DEBUG::Object: func_to_run, Size: 435336
-2025-12-06 14:43:18.668553 DEBUG::Object: groups, Size: 48
-2025-12-06 14:43:18.669783 DEBUG::Object: median_comparison, Size: 56
-2025-12-06 14:43:18.670966 DEBUG::Object: median_comparison_threshold, Size: 56
-2025-12-06 14:43:18.672629 DEBUG::Object: metadata, Size: 354576
-2025-12-06 14:43:18.674433 DEBUG::Object: model, Size: 112
-2025-12-06 14:43:18.675966 DEBUG::Object: model_function, Size: 8864
-2025-12-06 14:43:18.677567 DEBUG::Object: ordereds, Size: 48
-2025-12-06 14:43:18.679523 DEBUG::Object: random_effects_formula, Size: 0
-2025-12-06 14:43:18.680961 DEBUG::Object: ranef_function, Size: 0
-2025-12-06 14:43:18.682153 DEBUG::Object: save_models, Size: 56
-2025-12-06 14:43:18.683451 DEBUG::Object: small_random_effects, Size: 56
-2025-12-06 14:43:18.684669 DEBUG::Object: strata, Size: 48
-2025-12-06 14:43:18.685853 DEBUG::Object: subtract_median, Size: 56
-2025-12-06 14:43:18.687205 DEBUG::Object: summary_function, Size: 49424
-2025-12-06 14:43:18.688455 DEBUG::Object: func_to_run, Size: 435336
-2025-12-06 14:43:18.689657 INFO::Fitting model to feature number 1, Unclassified Proteobacteria;T01
-2025-12-06 14:43:18.698758 INFO::Fitting model to feature number 2, Unclassified Enterobacteriaceae;T02
-2025-12-06 14:43:18.707393 INFO::Fitting model to feature number 3, Unclassified Enterobacteriaceae;T03
-2025-12-06 14:43:18.716257 INFO::Fitting model to feature number 4, Bacteroides;T04
-2025-12-06 14:43:18.725058 INFO::Fitting model to feature number 5, Unclassified Ruminococcaceae;T05
-2025-12-06 14:43:18.734984 INFO::Fitting model to feature number 6, Akkermansia;T06
-2025-12-06 14:43:18.743421 INFO::Fitting model to feature number 7, Unclassified Firmicutes;T07
-2025-12-06 14:43:18.75245 INFO::Fitting model to feature number 8, Coprococcus;T08
-2025-12-06 14:43:18.761107 INFO::Fitting model to feature number 9, Prevotella;T09
-2025-12-06 14:43:18.769904 INFO::Fitting model to feature number 10, Unclassified Rikenellaceae;T10
-2025-12-06 14:43:18.779959 INFO::Fitting model to feature number 11, Faecalibacterium;T11
-2025-12-06 14:43:18.789253 INFO::Fitting model to feature number 12, Unclassified Lachnospiraceae;T12
-2025-12-06 14:43:18.79831 INFO::Fitting model to feature number 13, Lachnospira;T13
-2025-12-06 14:43:18.808271 INFO::Fitting model to feature number 14, Blautia;T14
-2025-12-06 14:43:18.820431 INFO::Fitting model to feature number 15, Unclassified Christensenellaceae;T15
-2025-12-06 14:43:18.829675 INFO::Fitting model to feature number 16, Methanobrevibacter;T16
-2025-12-06 14:43:18.839896 INFO::Fitting model to feature number 17, Parabacteroides;T17
-2025-12-06 14:43:18.849952 INFO::Fitting model to feature number 18, Providencia;T18
-2025-12-06 14:43:18.858086 INFO::Fitting model to feature number 19, Ruminococcus;T19
-2025-12-06 14:43:18.867344 INFO::Fitting model to feature number 20, [Prevotella];T20
-2025-12-06 14:43:18.8773 INFO::Fitting model to feature number 21, [Ruminococcus];T21
-2025-12-06 14:43:18.890114 INFO::Fitting model to feature number 22, Serratia;T22
-2025-12-06 14:43:18.90025 INFO::Fitting model to feature number 23, Dialister;T23
-2025-12-06 14:43:18.909479 INFO::Fitting model to feature number 24, Dorea;T24
-2025-12-06 14:43:18.919211 INFO::Fitting model to feature number 25, Roseburia;T25
-2025-12-06 14:43:18.92776 INFO::Fitting model to feature number 26, Unclassified Erysipelotrichaceae;T26
-2025-12-06 14:43:18.938267 INFO::Fitting model to feature number 27, Unclassified S24-7;T27
-2025-12-06 14:43:18.947466 INFO::Fitting model to feature number 28, Pseudomonas;T28
-2025-12-06 14:43:18.956005 INFO::Fitting model to feature number 29, Unclassified Proteobacteria;T29
-2025-12-06 14:43:18.96516 INFO::Fitting model to feature number 30, Fusobacterium;T30
-2025-12-06 14:43:18.97403 INFO::Fitting model to feature number 31, Unclassified [Barnesiellaceae];T31
-2025-12-06 14:43:18.98313 INFO::Fitting model to feature number 32, Phascolarctobacterium;T32
-2025-12-06 14:43:18.991872 INFO::Fitting model to feature number 33, Erwinia;T33
-2025-12-06 14:43:19.000575 INFO::Fitting model to feature number 34, Sutterella;T34
-2025-12-06 14:43:19.009087 INFO::Fitting model to feature number 35, Bilophila;T35
-2025-12-06 14:43:19.018495 INFO::Fitting model to feature number 36, Unclassified Cyanobacteria;T36
-2025-12-06 14:43:19.026739 INFO::Fitting model to feature number 37, Unclassified Firmicutes;T37
-2025-12-06 14:43:19.037956 INFO::Fitting model to feature number 38, Oscillospira;T38
-2025-12-06 14:43:19.154036 INFO::Fitting model to feature number 39, [Eubacterium];T39
-2025-12-06 14:43:19.162644 INFO::Fitting model to feature number 40, Desulfovibrio;T40
-2025-12-06 14:43:19.171109 INFO::Fitting model to feature number 41, Unclassified Lachnospiraceae;T41
-2025-12-06 14:43:19.182124 INFO::Fitting model to feature number 42, Unclassified Tenericutes;T42
-2025-12-06 14:43:19.192904 INFO::Fitting model to feature number 43, Unclassified Burkholderiaceae;T43
-2025-12-06 14:43:19.198711 WARNING::Fitting problem for feature 43 returning NA
-2025-12-06 14:43:19.204897 INFO::Fitting model to feature number 44, Synergistes;T44
-2025-12-06 14:43:19.215698 INFO::Fitting model to feature number 45, Parvimonas;T45
-2025-12-06 14:43:19.223798 INFO::Fitting model to feature number 46, Unclassified Clostridiaceae;T46
-2025-12-06 14:43:19.233075 INFO::Fitting model to feature number 47, Unclassified Coriobacteriaceae;T47
-2025-12-06 14:43:19.241584 INFO::Fitting model to feature number 48, Clostridium;T48
-2025-12-06 14:43:19.250625 INFO::Fitting model to feature number 49, Veillonella;T49
-2025-12-06 14:43:19.260282 INFO::Fitting model to feature number 50, Aggregatibacter;T50
-2025-12-06 14:43:19.269515 INFO::Fitting model to feature number 51, Bifidobacterium;T51
-2025-12-06 14:43:19.278399 INFO::Fitting model to feature number 52, Lachnobacterium;T52
-2025-12-06 14:43:19.357145 WARNING::Deleting existing residuals file: maaslin3/Triglycerides_mg.dL.out/fits/residuals_linear.rds
-2025-12-06 14:43:19.360304 INFO::Writing residuals to file maaslin3/Triglycerides_mg.dL.out/fits/residuals_linear.rds
-2025-12-06 14:43:19.364908 WARNING::Deleting existing fitted file: maaslin3/Triglycerides_mg.dL.out/fits/fitted_linear.rds
-2025-12-06 14:43:19.367642 INFO::Writing fitted values to file maaslin3/Triglycerides_mg.dL.out/fits/fitted_linear.rds
-2025-12-06 14:43:19.37189 WARNING::Deleting existing residuals file: maaslin3/Triglycerides_mg.dL.out/fits/residuals_logistic.rds
-2025-12-06 14:43:19.375921 INFO::Writing residuals to file maaslin3/Triglycerides_mg.dL.out/fits/residuals_logistic.rds
-2025-12-06 14:43:19.383174 WARNING::Deleting existing fitted file: maaslin3/Triglycerides_mg.dL.out/fits/fitted_logistic.rds
-2025-12-06 14:43:19.387482 INFO::Writing fitted values to file maaslin3/Triglycerides_mg.dL.out/fits/fitted_logistic.rds
-2025-12-06 14:43:19.396137 INFO::Writing all the results to file (ordered 
+2025-12-06 15:31:14.066989 INFO::Determining format of input files
+2025-12-06 15:31:14.068891 INFO::Input format is data samples as columns and metadata samples as rows
+2025-12-06 15:31:14.071854 DEBUG::Transformed data so samples are rows
+2025-12-06 15:31:14.073189 DEBUG::A total of 156 samples were found in both the data and metadata
+2025-12-06 15:31:14.074692 DEBUG::Reordering data/metadata to use same sample ordering
+2025-12-06 15:31:14.077803 INFO::Running selected normalization method: TSS
+2025-12-06 15:31:14.082599 INFO::Creating output feature tables folder
+2025-12-06 15:31:14.085105 INFO::Writing normalized data to file maaslin3/Triglycerides_mg.dL.out/features/data_norm.tsv
+2025-12-06 15:31:14.114928 INFO::Filter data based on min abundance and min prevalence
+2025-12-06 15:31:14.116809 INFO::Total samples in data: 156
+2025-12-06 15:31:14.119534 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
+2025-12-06 15:31:14.130633 INFO::Total filtered features: 0
+2025-12-06 15:31:14.133242 INFO::Filtered feature names from abundance and prevalence filtering:
+2025-12-06 15:31:14.137131 INFO::Total features filtered by non-zero variance filtering: 0
+2025-12-06 15:31:14.139678 INFO::Filtered feature names from variance filtering:
+2025-12-06 15:31:14.142277 INFO::Writing filtered data to file maaslin3/Triglycerides_mg.dL.out/features/filtered_data.tsv
+2025-12-06 15:31:14.170779 INFO::Running selected transform method: LOG
+2025-12-06 15:31:14.174859 INFO::Writing normalized, filtered, transformed data to file maaslin3/Triglycerides_mg.dL.out/features/data_transformed.tsv
+2025-12-06 15:31:14.209538 INFO::Applying z-score to standardize continuous metadata
+2025-12-06 15:31:14.320713 INFO::Running the linear model component
+2025-12-06 15:31:14.329596 DEBUG::Object: augment, Size: 56
+2025-12-06 15:31:14.330867 DEBUG::Object: cluster, Size: 0
+2025-12-06 15:31:14.333037 DEBUG::Object: cores, Size: 56
+2025-12-06 15:31:14.334442 DEBUG::Object: correction, Size: 112
+2025-12-06 15:31:14.335663 DEBUG::Object: extract_out, Size: 1696
+2025-12-06 15:31:14.33706 DEBUG::Object: feature_specific_covariate, Size: 0
+2025-12-06 15:31:14.338899 DEBUG::Object: feature_specific_covariate_name, Size: 0
+2025-12-06 15:31:14.340567 DEBUG::Object: feature_specific_covariate_record, Size: 0
+2025-12-06 15:31:14.342448 DEBUG::Object: features, Size: 84072
+2025-12-06 15:31:14.343641 DEBUG::Object: formula, Size: 1288
+2025-12-06 15:31:14.344805 DEBUG::Object: fun_list, Size: 58768
+2025-12-06 15:31:14.346817 DEBUG::Object: func_to_run, Size: 435336
+2025-12-06 15:31:14.348478 DEBUG::Object: groups, Size: 48
+2025-12-06 15:31:14.34991 DEBUG::Object: median_comparison, Size: 56
+2025-12-06 15:31:14.351185 DEBUG::Object: median_comparison_threshold, Size: 56
+2025-12-06 15:31:14.352672 DEBUG::Object: metadata, Size: 354576
+2025-12-06 15:31:14.354576 DEBUG::Object: model, Size: 112
+2025-12-06 15:31:14.356461 DEBUG::Object: model_function, Size: 8864
+2025-12-06 15:31:14.358061 DEBUG::Object: ordereds, Size: 48
+2025-12-06 15:31:14.359726 DEBUG::Object: random_effects_formula, Size: 0
+2025-12-06 15:31:14.361556 DEBUG::Object: ranef_function, Size: 0
+2025-12-06 15:31:14.363088 DEBUG::Object: save_models, Size: 56
+2025-12-06 15:31:14.365043 DEBUG::Object: small_random_effects, Size: 56
+2025-12-06 15:31:14.366766 DEBUG::Object: strata, Size: 48
+2025-12-06 15:31:14.368545 DEBUG::Object: subtract_median, Size: 56
+2025-12-06 15:31:14.369826 DEBUG::Object: summary_function, Size: 49424
+2025-12-06 15:31:14.371189 DEBUG::Object: func_to_run, Size: 435336
+2025-12-06 15:31:14.372529 INFO::Fitting model to feature number 1, Unclassified Proteobacteria;T01
+2025-12-06 15:31:14.383852 INFO::Fitting model to feature number 2, Unclassified Enterobacteriaceae;T02
+2025-12-06 15:31:14.394606 INFO::Fitting model to feature number 3, Unclassified Enterobacteriaceae;T03
+2025-12-06 15:31:14.406264 INFO::Fitting model to feature number 4, Bacteroides;T04
+2025-12-06 15:31:14.418839 INFO::Fitting model to feature number 5, Unclassified Ruminococcaceae;T05
+2025-12-06 15:31:14.428914 INFO::Fitting model to feature number 6, Akkermansia;T06
+2025-12-06 15:31:14.439028 INFO::Fitting model to feature number 7, Unclassified Firmicutes;T07
+2025-12-06 15:31:14.450551 INFO::Fitting model to feature number 8, Coprococcus;T08
+2025-12-06 15:31:14.46093 INFO::Fitting model to feature number 9, Prevotella;T09
+2025-12-06 15:31:14.469649 INFO::Fitting model to feature number 10, Unclassified Rikenellaceae;T10
+2025-12-06 15:31:14.478062 INFO::Fitting model to feature number 11, Faecalibacterium;T11
+2025-12-06 15:31:14.486431 INFO::Fitting model to feature number 12, Unclassified Lachnospiraceae;T12
+2025-12-06 15:31:14.495262 INFO::Fitting model to feature number 13, Lachnospira;T13
+2025-12-06 15:31:14.504106 INFO::Fitting model to feature number 14, Blautia;T14
+2025-12-06 15:31:14.512882 INFO::Fitting model to feature number 15, Unclassified Christensenellaceae;T15
+2025-12-06 15:31:14.523282 INFO::Fitting model to feature number 16, Methanobrevibacter;T16
+2025-12-06 15:31:14.532683 INFO::Fitting model to feature number 17, Parabacteroides;T17
+2025-12-06 15:31:14.544164 INFO::Fitting model to feature number 18, Providencia;T18
+2025-12-06 15:31:14.556876 INFO::Fitting model to feature number 19, Ruminococcus;T19
+2025-12-06 15:31:14.568709 INFO::Fitting model to feature number 20, [Prevotella];T20
+2025-12-06 15:31:14.578139 INFO::Fitting model to feature number 21, [Ruminococcus];T21
+2025-12-06 15:31:14.586578 INFO::Fitting model to feature number 22, Serratia;T22
+2025-12-06 15:31:14.595265 INFO::Fitting model to feature number 23, Dialister;T23
+2025-12-06 15:31:14.603948 INFO::Fitting model to feature number 24, Dorea;T24
+2025-12-06 15:31:14.618252 INFO::Fitting model to feature number 25, Roseburia;T25
+2025-12-06 15:31:14.627041 INFO::Fitting model to feature number 26, Unclassified Erysipelotrichaceae;T26
+2025-12-06 15:31:14.636259 INFO::Fitting model to feature number 27, Unclassified S24-7;T27
+2025-12-06 15:31:14.64475 INFO::Fitting model to feature number 28, Pseudomonas;T28
+2025-12-06 15:31:14.655903 INFO::Fitting model to feature number 29, Unclassified Proteobacteria;T29
+2025-12-06 15:31:14.667677 INFO::Fitting model to feature number 30, Fusobacterium;T30
+2025-12-06 15:31:14.676628 INFO::Fitting model to feature number 31, Unclassified [Barnesiellaceae];T31
+2025-12-06 15:31:14.685138 INFO::Fitting model to feature number 32, Phascolarctobacterium;T32
+2025-12-06 15:31:14.693071 INFO::Fitting model to feature number 33, Erwinia;T33
+2025-12-06 15:31:14.702352 INFO::Fitting model to feature number 34, Sutterella;T34
+2025-12-06 15:31:14.712743 INFO::Fitting model to feature number 35, Bilophila;T35
+2025-12-06 15:31:14.720841 INFO::Fitting model to feature number 36, Unclassified Cyanobacteria;T36
+2025-12-06 15:31:14.729163 INFO::Fitting model to feature number 37, Unclassified Firmicutes;T37
+2025-12-06 15:31:14.737664 INFO::Fitting model to feature number 38, Oscillospira;T38
+2025-12-06 15:31:14.745636 INFO::Fitting model to feature number 39, [Eubacterium];T39
+2025-12-06 15:31:14.754341 INFO::Fitting model to feature number 40, Desulfovibrio;T40
+2025-12-06 15:31:14.762448 INFO::Fitting model to feature number 41, Unclassified Lachnospiraceae;T41
+2025-12-06 15:31:14.770815 INFO::Fitting model to feature number 42, Unclassified Tenericutes;T42
+2025-12-06 15:31:14.77927 INFO::Fitting model to feature number 43, Unclassified Burkholderiaceae;T43
+2025-12-06 15:31:14.784578 WARNING::Fitting problem for feature 43 returning NA
+2025-12-06 15:31:14.78798 INFO::Fitting model to feature number 44, Synergistes;T44
+2025-12-06 15:31:14.799133 INFO::Fitting model to feature number 45, Parvimonas;T45
+2025-12-06 15:31:14.809725 INFO::Fitting model to feature number 46, Unclassified Clostridiaceae;T46
+2025-12-06 15:31:14.818131 INFO::Fitting model to feature number 47, Unclassified Coriobacteriaceae;T47
+2025-12-06 15:31:14.827325 INFO::Fitting model to feature number 48, Clostridium;T48
+2025-12-06 15:31:14.835948 INFO::Fitting model to feature number 49, Veillonella;T49
+2025-12-06 15:31:14.844194 INFO::Fitting model to feature number 50, Aggregatibacter;T50
+2025-12-06 15:31:14.852626 INFO::Fitting model to feature number 51, Bifidobacterium;T51
+2025-12-06 15:31:14.86387 INFO::Fitting model to feature number 52, Lachnobacterium;T52
+2025-12-06 15:31:14.877917 INFO::Performing tests against medians
+2025-12-06 15:31:16.448775 INFO::Counting total values for each feature
+2025-12-06 15:31:16.455608 INFO::Running the logistic model component
+2025-12-06 15:31:16.46659 DEBUG::Object: augment, Size: 56
+2025-12-06 15:31:16.468089 DEBUG::Object: cluster, Size: 0
+2025-12-06 15:31:16.470801 DEBUG::Object: cores, Size: 56
+2025-12-06 15:31:16.472351 DEBUG::Object: correction, Size: 112
+2025-12-06 15:31:16.473922 DEBUG::Object: extract_out, Size: 1696
+2025-12-06 15:31:16.475431 DEBUG::Object: feature_specific_covariate, Size: 0
+2025-12-06 15:31:16.477093 DEBUG::Object: feature_specific_covariate_name, Size: 0
+2025-12-06 15:31:16.478872 DEBUG::Object: feature_specific_covariate_record, Size: 0
+2025-12-06 15:31:16.480143 DEBUG::Object: features, Size: 81048
+2025-12-06 15:31:16.481409 DEBUG::Object: formula, Size: 1288
+2025-12-06 15:31:16.482639 DEBUG::Object: fun_list, Size: 70920
+2025-12-06 15:31:16.483856 DEBUG::Object: func_to_run, Size: 435336
+2025-12-06 15:31:16.485008 DEBUG::Object: groups, Size: 48
+2025-12-06 15:31:16.486149 DEBUG::Object: median_comparison, Size: 56
+2025-12-06 15:31:16.487553 DEBUG::Object: median_comparison_threshold, Size: 56
+2025-12-06 15:31:16.489738 DEBUG::Object: metadata, Size: 354576
+2025-12-06 15:31:16.491344 DEBUG::Object: model, Size: 120
+2025-12-06 15:31:16.492828 DEBUG::Object: model_function, Size: 21016
+2025-12-06 15:31:16.494356 DEBUG::Object: ordereds, Size: 48
+2025-12-06 15:31:16.495925 DEBUG::Object: random_effects_formula, Size: 0
+2025-12-06 15:31:16.497375 DEBUG::Object: ranef_function, Size: 0
+2025-12-06 15:31:16.498568 DEBUG::Object: save_models, Size: 56
+2025-12-06 15:31:16.499704 DEBUG::Object: small_random_effects, Size: 56
+2025-12-06 15:31:16.500827 DEBUG::Object: strata, Size: 48
+2025-12-06 15:31:16.501979 DEBUG::Object: subtract_median, Size: 56
+2025-12-06 15:31:16.50304 DEBUG::Object: summary_function, Size: 49424
+2025-12-06 15:31:16.504222 DEBUG::Object: func_to_run, Size: 435336
+2025-12-06 15:31:16.505427 INFO::Fitting model to feature number 1, Unclassified Proteobacteria;T01
+2025-12-06 15:31:16.520805 INFO::Fitting model to feature number 2, Unclassified Enterobacteriaceae;T02
+2025-12-06 15:31:16.538017 INFO::Fitting model to feature number 3, Unclassified Enterobacteriaceae;T03
+2025-12-06 15:31:16.541518 INFO::Fitting model to feature number 4, Bacteroides;T04
+2025-12-06 15:31:16.544958 INFO::Fitting model to feature number 5, Unclassified Ruminococcaceae;T05
+2025-12-06 15:31:16.548292 INFO::Fitting model to feature number 6, Akkermansia;T06
+2025-12-06 15:31:16.551801 INFO::Fitting model to feature number 7, Unclassified Firmicutes;T07
+2025-12-06 15:31:16.555388 INFO::Fitting model to feature number 8, Coprococcus;T08
+2025-12-06 15:31:16.571584 INFO::Fitting model to feature number 9, Prevotella;T09
+2025-12-06 15:31:16.588228 INFO::Fitting model to feature number 10, Unclassified Rikenellaceae;T10
+2025-12-06 15:31:16.604513 INFO::Fitting model to feature number 11, Faecalibacterium;T11
+2025-12-06 15:31:16.622085 INFO::Fitting model to feature number 12, Unclassified Lachnospiraceae;T12
+2025-12-06 15:31:16.625362 INFO::Fitting model to feature number 13, Lachnospira;T13
+2025-12-06 15:31:16.642378 INFO::Fitting model to feature number 14, Blautia;T14
+2025-12-06 15:31:16.658209 INFO::Fitting model to feature number 15, Unclassified Christensenellaceae;T15
+2025-12-06 15:31:16.675789 INFO::Fitting model to feature number 16, Methanobrevibacter;T16
+2025-12-06 15:31:16.692964 INFO::Fitting model to feature number 17, Parabacteroides;T17
+2025-12-06 15:31:16.709711 INFO::Fitting model to feature number 18, Providencia;T18
+2025-12-06 15:31:16.726026 INFO::Fitting model to feature number 19, Ruminococcus;T19
+2025-12-06 15:31:16.742617 INFO::Fitting model to feature number 20, [Prevotella];T20
+2025-12-06 15:31:16.766139 INFO::Fitting model to feature number 21, [Ruminococcus];T21
+2025-12-06 15:31:16.782928 INFO::Fitting model to feature number 22, Serratia;T22
+2025-12-06 15:31:16.801091 INFO::Fitting model to feature number 23, Dialister;T23
+2025-12-06 15:31:16.820711 INFO::Fitting model to feature number 24, Dorea;T24
+2025-12-06 15:31:16.839845 INFO::Fitting model to feature number 25, Roseburia;T25
+2025-12-06 15:31:16.856272 INFO::Fitting model to feature number 26, Unclassified Erysipelotrichaceae;T26
+2025-12-06 15:31:16.875548 INFO::Fitting model to feature number 27, Unclassified S24-7;T27
+2025-12-06 15:31:16.891501 INFO::Fitting model to feature number 28, Pseudomonas;T28
+2025-12-06 15:31:16.910786 INFO::Fitting model to feature number 29, Unclassified Proteobacteria;T29
+2025-12-06 15:31:16.926821 INFO::Fitting model to feature number 30, Fusobacterium;T30
+2025-12-06 15:31:16.940871 WARNING::Fitting problem for feature 30 a warning was issued
+2025-12-06 15:31:16.94696 INFO::Fitting model to feature number 31, Unclassified [Barnesiellaceae];T31
+2025-12-06 15:31:16.963129 INFO::Fitting model to feature number 32, Phascolarctobacterium;T32
+2025-12-06 15:31:16.98079 INFO::Fitting model to feature number 33, Erwinia;T33
+2025-12-06 15:31:16.997925 INFO::Fitting model to feature number 34, Sutterella;T34
+2025-12-06 15:31:17.014397 INFO::Fitting model to feature number 35, Bilophila;T35
+2025-12-06 15:31:17.032264 INFO::Fitting model to feature number 36, Unclassified Cyanobacteria;T36
+2025-12-06 15:31:17.048947 INFO::Fitting model to feature number 37, Unclassified Firmicutes;T37
+2025-12-06 15:31:17.066686 INFO::Fitting model to feature number 38, Oscillospira;T38
+2025-12-06 15:31:17.069998 INFO::Fitting model to feature number 39, [Eubacterium];T39
+2025-12-06 15:31:17.087985 INFO::Fitting model to feature number 40, Desulfovibrio;T40
+2025-12-06 15:31:17.105963 INFO::Fitting model to feature number 41, Unclassified Lachnospiraceae;T41
+2025-12-06 15:31:17.124625 INFO::Fitting model to feature number 42, Unclassified Tenericutes;T42
+2025-12-06 15:31:17.143058 INFO::Fitting model to feature number 43, Unclassified Burkholderiaceae;T43
+2025-12-06 15:31:17.160152 INFO::Fitting model to feature number 44, Synergistes;T44
+2025-12-06 15:31:17.1777 INFO::Fitting model to feature number 45, Parvimonas;T45
+2025-12-06 15:31:17.196645 INFO::Fitting model to feature number 46, Unclassified Clostridiaceae;T46
+2025-12-06 15:31:17.227747 INFO::Fitting model to feature number 47, Unclassified Coriobacteriaceae;T47
+2025-12-06 15:31:17.245604 INFO::Fitting model to feature number 48, Clostridium;T48
+2025-12-06 15:31:17.263392 INFO::Fitting model to feature number 49, Veillonella;T49
+2025-12-06 15:31:17.280264 INFO::Fitting model to feature number 50, Aggregatibacter;T50
+2025-12-06 15:31:17.297028 INFO::Fitting model to feature number 51, Bifidobacterium;T51
+2025-12-06 15:31:17.313419 INFO::Fitting model to feature number 52, Lachnobacterium;T52
+2025-12-06 15:31:17.372254 INFO::Counting total values for each feature
+2025-12-06 15:31:17.379491 INFO::Re-running abundances for warn_prevalence
+2025-12-06 15:31:17.381283 INFO::Running selected normalization method: TSS
+2025-12-06 15:31:17.385926 INFO::Running selected transform method: LOG
+2025-12-06 15:31:17.394634 DEBUG::Object: augment, Size: 56
+2025-12-06 15:31:17.395899 DEBUG::Object: cluster, Size: 0
+2025-12-06 15:31:17.396958 DEBUG::Object: cores, Size: 56
+2025-12-06 15:31:17.397997 DEBUG::Object: correction, Size: 112
+2025-12-06 15:31:17.399237 DEBUG::Object: extract_out, Size: 1696
+2025-12-06 15:31:17.400389 DEBUG::Object: feature_specific_covariate, Size: 0
+2025-12-06 15:31:17.401418 DEBUG::Object: feature_specific_covariate_name, Size: 0
+2025-12-06 15:31:17.402376 DEBUG::Object: feature_specific_covariate_record, Size: 0
+2025-12-06 15:31:17.40343 DEBUG::Object: features, Size: 84072
+2025-12-06 15:31:17.404408 DEBUG::Object: formula, Size: 1288
+2025-12-06 15:31:17.405442 DEBUG::Object: fun_list, Size: 58768
+2025-12-06 15:31:17.406562 DEBUG::Object: func_to_run, Size: 435336
+2025-12-06 15:31:17.407655 DEBUG::Object: groups, Size: 48
+2025-12-06 15:31:17.408839 DEBUG::Object: median_comparison, Size: 56
+2025-12-06 15:31:17.410493 DEBUG::Object: median_comparison_threshold, Size: 56
+2025-12-06 15:31:17.411906 DEBUG::Object: metadata, Size: 354576
+2025-12-06 15:31:17.413149 DEBUG::Object: model, Size: 112
+2025-12-06 15:31:17.414261 DEBUG::Object: model_function, Size: 8864
+2025-12-06 15:31:17.415326 DEBUG::Object: ordereds, Size: 48
+2025-12-06 15:31:17.416382 DEBUG::Object: random_effects_formula, Size: 0
+2025-12-06 15:31:17.417462 DEBUG::Object: ranef_function, Size: 0
+2025-12-06 15:31:17.41852 DEBUG::Object: save_models, Size: 56
+2025-12-06 15:31:17.419587 DEBUG::Object: small_random_effects, Size: 56
+2025-12-06 15:31:17.420703 DEBUG::Object: strata, Size: 48
+2025-12-06 15:31:17.422131 DEBUG::Object: subtract_median, Size: 56
+2025-12-06 15:31:17.423459 DEBUG::Object: summary_function, Size: 49424
+2025-12-06 15:31:17.424762 DEBUG::Object: func_to_run, Size: 435336
+2025-12-06 15:31:17.42598 INFO::Fitting model to feature number 1, Unclassified Proteobacteria;T01
+2025-12-06 15:31:17.434323 INFO::Fitting model to feature number 2, Unclassified Enterobacteriaceae;T02
+2025-12-06 15:31:17.442272 INFO::Fitting model to feature number 3, Unclassified Enterobacteriaceae;T03
+2025-12-06 15:31:17.450775 INFO::Fitting model to feature number 4, Bacteroides;T04
+2025-12-06 15:31:17.458612 INFO::Fitting model to feature number 5, Unclassified Ruminococcaceae;T05
+2025-12-06 15:31:17.46946 INFO::Fitting model to feature number 6, Akkermansia;T06
+2025-12-06 15:31:17.480865 INFO::Fitting model to feature number 7, Unclassified Firmicutes;T07
+2025-12-06 15:31:17.488761 INFO::Fitting model to feature number 8, Coprococcus;T08
+2025-12-06 15:31:17.496893 INFO::Fitting model to feature number 9, Prevotella;T09
+2025-12-06 15:31:17.505079 INFO::Fitting model to feature number 10, Unclassified Rikenellaceae;T10
+2025-12-06 15:31:17.512992 INFO::Fitting model to feature number 11, Faecalibacterium;T11
+2025-12-06 15:31:17.522213 INFO::Fitting model to feature number 12, Unclassified Lachnospiraceae;T12
+2025-12-06 15:31:17.533505 INFO::Fitting model to feature number 13, Lachnospira;T13
+2025-12-06 15:31:17.543553 INFO::Fitting model to feature number 14, Blautia;T14
+2025-12-06 15:31:17.554602 INFO::Fitting model to feature number 15, Unclassified Christensenellaceae;T15
+2025-12-06 15:31:17.565388 INFO::Fitting model to feature number 16, Methanobrevibacter;T16
+2025-12-06 15:31:17.575852 INFO::Fitting model to feature number 17, Parabacteroides;T17
+2025-12-06 15:31:17.587097 INFO::Fitting model to feature number 18, Providencia;T18
+2025-12-06 15:31:17.598183 INFO::Fitting model to feature number 19, Ruminococcus;T19
+2025-12-06 15:31:17.608057 INFO::Fitting model to feature number 20, [Prevotella];T20
+2025-12-06 15:31:17.61926 INFO::Fitting model to feature number 21, [Ruminococcus];T21
+2025-12-06 15:31:17.632557 INFO::Fitting model to feature number 22, Serratia;T22
+2025-12-06 15:31:17.643834 INFO::Fitting model to feature number 23, Dialister;T23
+2025-12-06 15:31:17.65375 INFO::Fitting model to feature number 24, Dorea;T24
+2025-12-06 15:31:17.662905 INFO::Fitting model to feature number 25, Roseburia;T25
+2025-12-06 15:31:17.672396 INFO::Fitting model to feature number 26, Unclassified Erysipelotrichaceae;T26
+2025-12-06 15:31:17.682082 INFO::Fitting model to feature number 27, Unclassified S24-7;T27
+2025-12-06 15:31:17.690521 INFO::Fitting model to feature number 28, Pseudomonas;T28
+2025-12-06 15:31:17.701208 INFO::Fitting model to feature number 29, Unclassified Proteobacteria;T29
+2025-12-06 15:31:17.70982 INFO::Fitting model to feature number 30, Fusobacterium;T30
+2025-12-06 15:31:17.718467 INFO::Fitting model to feature number 31, Unclassified [Barnesiellaceae];T31
+2025-12-06 15:31:17.728972 INFO::Fitting model to feature number 32, Phascolarctobacterium;T32
+2025-12-06 15:31:17.739517 INFO::Fitting model to feature number 33, Erwinia;T33
+2025-12-06 15:31:17.748063 INFO::Fitting model to feature number 34, Sutterella;T34
+2025-12-06 15:31:17.756839 INFO::Fitting model to feature number 35, Bilophila;T35
+2025-12-06 15:31:17.766034 INFO::Fitting model to feature number 36, Unclassified Cyanobacteria;T36
+2025-12-06 15:31:17.774828 INFO::Fitting model to feature number 37, Unclassified Firmicutes;T37
+2025-12-06 15:31:17.784054 INFO::Fitting model to feature number 38, Oscillospira;T38
+2025-12-06 15:31:17.792484 INFO::Fitting model to feature number 39, [Eubacterium];T39
+2025-12-06 15:31:17.801634 INFO::Fitting model to feature number 40, Desulfovibrio;T40
+2025-12-06 15:31:17.810581 INFO::Fitting model to feature number 41, Unclassified Lachnospiraceae;T41
+2025-12-06 15:31:17.819621 INFO::Fitting model to feature number 42, Unclassified Tenericutes;T42
+2025-12-06 15:31:17.829057 INFO::Fitting model to feature number 43, Unclassified Burkholderiaceae;T43
+2025-12-06 15:31:17.834626 WARNING::Fitting problem for feature 43 returning NA
+2025-12-06 15:31:17.838516 INFO::Fitting model to feature number 44, Synergistes;T44
+2025-12-06 15:31:17.847333 INFO::Fitting model to feature number 45, Parvimonas;T45
+2025-12-06 15:31:17.856228 INFO::Fitting model to feature number 46, Unclassified Clostridiaceae;T46
+2025-12-06 15:31:17.865157 INFO::Fitting model to feature number 47, Unclassified Coriobacteriaceae;T47
+2025-12-06 15:31:17.874171 INFO::Fitting model to feature number 48, Clostridium;T48
+2025-12-06 15:31:17.883339 INFO::Fitting model to feature number 49, Veillonella;T49
+2025-12-06 15:31:17.891832 INFO::Fitting model to feature number 50, Aggregatibacter;T50
+2025-12-06 15:31:17.900539 INFO::Fitting model to feature number 51, Bifidobacterium;T51
+2025-12-06 15:31:17.909889 INFO::Fitting model to feature number 52, Lachnobacterium;T52
+2025-12-06 15:31:18.010022 INFO::Creating fits folder
+2025-12-06 15:31:18.012938 INFO::Writing residuals to file maaslin3/Triglycerides_mg.dL.out/fits/residuals_linear.rds
+2025-12-06 15:31:18.022542 INFO::Writing fitted values to file maaslin3/Triglycerides_mg.dL.out/fits/fitted_linear.rds
+2025-12-06 15:31:18.033051 INFO::Writing residuals to file maaslin3/Triglycerides_mg.dL.out/fits/residuals_logistic.rds
+2025-12-06 15:31:18.050032 INFO::Writing fitted values to file maaslin3/Triglycerides_mg.dL.out/fits/fitted_logistic.rds
+2025-12-06 15:31:18.060192 INFO::Writing all the results to file (ordered 
             by increasing individual q-values): maaslin3/Triglycerides_mg.dL.out/all_results.tsv
-2025-12-06 14:43:19.412062 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): maaslin3/Triglycerides_mg.dL.out/significant_results.tsv
-2025-12-06 14:43:19.415751 INFO::Writing summary plot of significant
+2025-12-06 15:31:18.087962 INFO::Writing the significant results without errors (those which have joint q-values less than or equal to the threshold of 0.100000 ) to file (ordered by increasing individual q-values): maaslin3/Triglycerides_mg.dL.out/significant_results.tsv
+2025-12-06 15:31:18.093198 INFO::Creating output figures folder
+2025-12-06 15:31:18.096888 INFO::Writing summary plot of significant
                         results to file: maaslin3/Triglycerides_mg.dL.out/figures/summary_plot.pdf

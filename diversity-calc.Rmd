@@ -4,6 +4,10 @@ output: html_document
 date: "2025-10-9"
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE)
+```
+
 ```{r DiversityFuns}
 library('vegan')
 library('data.table')
@@ -69,47 +73,9 @@ ggplot(data = laplace_scores, aes(x = nDMMs, y = laplace)) +
   theme_bw()
 ```
 
-```{r Metagenome}
-## Read in metagenome taxonomy (in this case, it's important)
-metagenome_taxonomy = fread('sanitized-data/metagenome-taxonomy.txt.xls', sep = '\t',header=TRUE)
-
-## Exclude viruses.
-exclude_taxa = metagenome_taxonomy[d == 'Viruses',V1]
-metagenome_dt = fread('sanitized-data/metagenome-matrix.txt.xls', sep = '\t')
-metagenome_dt = metagenome_dt[!(V1 %in% exclude_taxa),]
-
-## Make metagenome proportional abundance matrix
-metagenome_matrix = metagenome_dt[,-1] %>% as.matrix()
-rownames(metagenome_matrix) = metagenome_dt[,V1]
-metagenome_matrix = metagenome_matrix / 100
-
-## Exclude zero-abundance taxa
-metagenome_matrix = metagenome_matrix[rowSums(metagenome_matrix) > 0,]
-
-```
-
-```{r}
-## We don't have the original proportions, but we can still run effective
-## microbial richness.
-metagenome_emr = EMR(metagenome_matrix)
-
-## Run shapiro test.
-metagenome_emr %>% log2() %>% shapiro.test()
-
-## Bray-curtis
-metagenome_bray = vegdist(metagenome_matrix %>% t(), method = 'bray')
-metagenome_jacc = vegdist(metagenome_matrix %>% t(), method = 'jaccard')
-
-## Centered log-ratio transformation for aitchison distance
-metagenome_clr = metagenome_matrix %>%
-  t() %>%
-  clrtrans(pseudocount = 1e-5) %>%
-  t()
-metagenome_aitc = vegdist(metagenome_clr %>% t(), method = 'euclidean')
-```
 
 # Exit
 ```{r}
-save.image(file = 'sanitized-data/diversity-calc.RData')
+#save(list = ls(all.names = TRUE), file = 'sanitized-data/diversity-calc.RData')
 sessionInfo()
 ```

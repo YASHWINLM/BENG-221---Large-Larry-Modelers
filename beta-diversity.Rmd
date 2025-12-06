@@ -4,6 +4,9 @@ output: html_document
 date: "2025-10-9"
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE)
+```
 
 ```{r}
 library('vegan')
@@ -84,6 +87,6 @@ dev.off()
 
 # Exit
 ```{r}
-save.image(file = 'sanitized-data/beta-diversity.RData')
+save(list = ls(all.names = TRUE), file = 'sanitized-data/beta-diversity.RData')
 sessionInfo()
 ```

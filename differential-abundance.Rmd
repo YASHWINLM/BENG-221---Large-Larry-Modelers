@@ -5,6 +5,10 @@ date: "2025-11-22"
 author: "Cale Seymour"
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE)
+```
+
 ```{r Libs}
 library('maaslin3')
 library('dplyr')
@@ -340,4 +344,10 @@ maaslin3_out_valerate = maaslin3(input_data = amplicon_matrix,
                     max_pngs = 10,
                     cores = 1)
 
+```
+
+# Exit
+```{r}
+save(list = ls(all.names = TRUE), file = 'sanitized-data/differential-abundance.RData')
+sessionInfo()
 ```
