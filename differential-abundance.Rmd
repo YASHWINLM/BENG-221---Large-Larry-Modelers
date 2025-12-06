@@ -7,13 +7,12 @@ author: "Cale Seymour"
 
 ```{r Libs}
 library('maaslin3')
-library('ANCOMBC')
-library('MicrobiomeStat')
+library('dplyr')
 
 source('scripts/preprocessing.R')
 source('scripts/diversity.R')
 
-load('sanitized-data/diversity.RData')
+load('sanitized-data/diversity-calc.RData')
 set.seed(42)
 
 ```
@@ -87,96 +86,6 @@ fixed_effect_terms = gsub(',.*', '', reference_levels) %>% c(numeric_vars)
 
 ## Set response.
 response = "Triglycerides_mg.dL"
-
-## Define formula
-formula = paste0(fixed_effect_terms, collapse = ' + ') %>%
-  paste0('~',.) %>%
-  as.formula()
-
-## Run VIFs
-amplicon_metadata$dummy = sample(1:nrow(amplicon_metadata))
-f2 = paste0(fixed_effect_terms, collapse = ' + ') %>%
-  paste0('dummy ~',.) %>%
-  as.formula()
-
-lm(f2, data = amplicon_metadata, na.action = 'na.omit') %>% car::vif()
-
-
-maaslin3_out_cholesterol = maaslin3(input_data = amplicon_matrix,
-                    input_metadata = amplicon_metadata,
-                    reference = reference_levels,
-                    output = paste0('maaslin3/', response, '.out'),
-                    formula = formula,
-                    normalization = 'TSS',
-                    transform = 'LOG',
-                    augment = TRUE,
-                    plot_associations = FALSE,
-                    coef_plot_vars = response,
-                    standardize = TRUE,
-                    max_significance = 0.1,
-                    median_comparison_abundance = TRUE,
-                    median_comparison_prevalence = FALSE,
-                    max_pngs = 10,
-                    cores = 1)
-
-```
-
-## HDL concentration
-```{r}
-## Set reference levels.
-reference_levels = c('Year,2019')
-numeric_vars = c('Weight_lbs', 'UCSD.HDL.Particle.._μmol.L')
-
-## Define fixed effect terms
-fixed_effect_terms = gsub(',.*', '', reference_levels) %>% c(numeric_vars)
-
-## Set response.
-response = "UCSD.HDL.Particle.._μmol.L"
-
-## Define formula
-formula = paste0(fixed_effect_terms, collapse = ' + ') %>%
-  paste0('~',.) %>%
-  as.formula()
-
-## Run VIFs
-amplicon_metadata$dummy = sample(1:nrow(amplicon_metadata))
-f2 = paste0(fixed_effect_terms, collapse = ' + ') %>%
-  paste0('dummy ~',.) %>%
-  as.formula()
-
-lm(f2, data = amplicon_metadata, na.action = 'na.omit') %>% car::vif()
-
-
-maaslin3_out_cholesterol = maaslin3(input_data = amplicon_matrix,
-                    input_metadata = amplicon_metadata,
-                    reference = reference_levels,
-                    output = paste0('maaslin3/', response, '.out'),
-                    formula = formula,
-                    normalization = 'TSS',
-                    transform = 'LOG',
-                    augment = TRUE,
-                    plot_associations = FALSE,
-                    coef_plot_vars = response,
-                    standardize = TRUE,
-                    max_significance = 0.1,
-                    median_comparison_abundance = TRUE,
-                    median_comparison_prevalence = FALSE,
-                    max_pngs = 10,
-                    cores = 1)
-
-```
-
-## LDL concentration
-```{r}
-## Set reference levels.
-reference_levels = c('Year,2019')
-numeric_vars = c('Weight_lbs', 'UCSD.LDL.Particle...by.NMR_nmol.L')
-
-## Define fixed effect terms
-fixed_effect_terms = gsub(',.*', '', reference_levels) %>% c(numeric_vars)
-
-## Set response.
-response = "UCSD.LDL.Particle...by.NMR_nmol.L"
 
 ## Define formula
 formula = paste0(fixed_effect_terms, collapse = ' + ') %>%

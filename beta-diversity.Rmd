@@ -1,0 +1,89 @@
+---
+title: "Beta diversity plots of bacteria in Larry's data"
+output: html_document
+date: "2025-10-9"
+---
+
+
+```{r}
+library('vegan')
+library('ape')
+library('data.table')
+library('magrittr')
+library('maaslin3')
+library('ggh4x')
+library('ggrepel')
+
+source('scripts/preprocessing.R')
+source('scripts/diversity.R')
+
+load('sanitized-data/diversity-calc.RData')
+
+set.seed(42)
+
+```
+
+```{r}
+## load in metadata, taxonomy, and counts
+amplicon_metadata = fread('sanitized-data/amplicon-metadata.txt.xls', sep = '\t', header=TRUE) %>% dt2df()
+amplicon_matrix = fread('sanitized-data/amplicon-matrix.txt.xls', sep = '\t', header=TRUE) %>% dt2mat()
+amplicon_matrix = amplicon_matrix / 100
+amplicon_taxonomy = fread('sanitized-data/amplicon-taxonomy.txt.xls', sep = '\t', header=TRUE) %>% setkey(V1)
+
+## reassign names in the matrix to reflect genera.
+rownames(amplicon_matrix) = paste0(amplicon_taxonomy[rownames(amplicon_matrix),Genus], ';', rownames(amplicon_matrix))
+dir.create('beta-diversity')
+
+## Define dates for amplicon data
+amplicon_dates = amplicon_matrix %>%
+  colnames() %>%
+  strsplit('\\.') %>%
+  do.call('rbind',.) %>%
+  as.data.table() %>%
+  setNames(c('N','Year','Month','Day'))
+```
+
+```{r AitcPCoA}
+## Aitchison
+amplicon_pcoa_aitc = ape::pcoa(amplicon_aitc)
+amplicon_aitc_pcoa_coords = amplicon_pcoa_aitc$vectors
+amplicon_aitc_pcoa_data = data.frame(amplicon_aitc_pcoa_coords
+                             , amplicon_metadata[rownames(amplicon_aitc_pcoa_coords),]
+                             , DMM = amplicon_dmms_samples[rownames(amplicon_aitc_pcoa_coords)])
+
+## Plot amplicon pcoa
+amplicon_aitc_pcoa_plot = ggplot(data = amplicon_aitc_pcoa_data, aes(x = Axis.1, y = Axis.2)) +
+  stat_centroid(funx = median, funy = median, aes(group = Year)) +
+  stat_centroid(geom = 'text',funx = median, funy = median, aes(group = Year, label = Year)) +
+  geom_point(aes(color = DMM)) +
+  stat_ellipse(geom='polygon',fill = 'gray', alpha = 0.2, aes(group = Year)) +
+  theme_bw()
+
+plot(amplicon_aitc_pcoa_plot)
+
+## Run Adonis2 to tease apart covariates
+adonis2(amplicon_aitc ~ Year
+      , data = amplicon_aitc_pcoa_data
+      , by = 'terms')
+
+adonis2(amplicon_aitc ~ Year + Weight_lbs
+      , data = amplicon_aitc_pcoa_data
+      , by = 'terms', na.action = 'na.omit')
+
+adonis2(amplicon_aitc ~ Year + Weight_lbs + Sum.Total.Cholesterol_mg.dL
+      , data = amplicon_aitc_pcoa_data
+      , by = 'terms', na.action = 'na.omit')
+
+## Year + weight are significant. Total cholesterol is not.
+
+pdf('beta-diversity/amplicon-aitchison-pcoa.pdf')
+  plot(amplicon_aitc_pcoa_plot)
+dev.off()
+
+```
+
+# Exit
+```{r}
+save.image(file = 'sanitized-data/beta-diversity.RData')
+sessionInfo()
+```

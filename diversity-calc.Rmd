@@ -1,0 +1,115 @@
+---
+title: "Ecology of bacteria in Larry's data"
+output: html_document
+date: "2025-10-9"
+---
+
+```{r DiversityFuns}
+library('vegan')
+library('data.table')
+library('magrittr')
+library('ape')
+library('ggplot2')
+library('maaslin3')
+
+source('scripts/diversity.R')
+
+## set a seed here; dmms use randomness.
+set.seed(42)
+```
+
+```{r AmpliconData}
+amplicon_dt = fread('sanitized-data/amplicon-matrix.txt.xls', sep = '\t')
+amplicon_matrix = amplicon_dt[,-1] %>% as.matrix()
+rownames(amplicon_matrix) = amplicon_dt[,V1]
+
+amplicon_matrix = amplicon_matrix / 100
+
+## amplicon data
+amplicon_taxonomy_dt = fread('sanitized-data/amplicon-taxonomy.txt.xls', sep = '\t', header=TRUE)
+amplicon_taxonomy = amplicon_taxonomy_dt %>% setkey(V1)
+
+```
+
+```{r}
+## We don't have the original proportions, but we can still run effective
+## microbial richness.
+amplicon_emr = EMR(amplicon_matrix)
+
+## Run shapiro test.
+amplicon_emr %>% log2() %>% shapiro.test()
+
+## Bray-curtis
+amplicon_bray = vegdist(amplicon_matrix %>% t(), method = 'bray')
+amplicon_jacc = vegdist(amplicon_matrix %>% t(), method = 'jaccard')
+
+## Centered log-ratio transformation for aitchison distance
+amplicon_clr = amplicon_matrix %>%
+  t() %>%
+  clrtrans(pseudocount = 1e-5) %>%
+  t()
+amplicon_aitc = vegdist(amplicon_clr %>% t(), method = 'euclidean')
+```
+
+# DMMs
+Run DMMs and report laplace for all attempted DMM configurations
+```{r DMMs}
+## Generate DMMs.
+if(!exists('amplicon_dmms')) amplicon_dmms = generate.dmms(amplicon_matrix);
+
+amplicon_dmms_samples = amplicon_dmms[[1]]
+laplace_scores = amplicon_dmms[[3]] %>% vapply(laplace, numeric(1)) %>% data.frame(laplace=.)
+laplace_scores$nDMMs = (1:nrow(laplace_scores))+1
+
+## Plot laplace scores
+ggplot(data = laplace_scores, aes(x = nDMMs, y = laplace)) + 
+  geom_point() + 
+  geom_line() +
+  annotate(geom='text', x = amplicon_dmms[[2]] + 1, y = min(laplace_scores$laplace)* (1 + 1e-3), label = '*') +
+  theme_bw()
+```
+
+```{r Metagenome}
+## Read in metagenome taxonomy (in this case, it's important)
+metagenome_taxonomy = fread('sanitized-data/metagenome-taxonomy.txt.xls', sep = '\t',header=TRUE)
+
+## Exclude viruses.
+exclude_taxa = metagenome_taxonomy[d == 'Viruses',V1]
+metagenome_dt = fread('sanitized-data/metagenome-matrix.txt.xls', sep = '\t')
+metagenome_dt = metagenome_dt[!(V1 %in% exclude_taxa),]
+
+## Make metagenome proportional abundance matrix
+metagenome_matrix = metagenome_dt[,-1] %>% as.matrix()
+rownames(metagenome_matrix) = metagenome_dt[,V1]
+metagenome_matrix = metagenome_matrix / 100
+
+## Exclude zero-abundance taxa
+metagenome_matrix = metagenome_matrix[rowSums(metagenome_matrix) > 0,]
+
+```
+
+```{r}
+## We don't have the original proportions, but we can still run effective
+## microbial richness.
+metagenome_emr = EMR(metagenome_matrix)
+
+## Run shapiro test.
+metagenome_emr %>% log2() %>% shapiro.test()
+
+## Bray-curtis
+metagenome_bray = vegdist(metagenome_matrix %>% t(), method = 'bray')
+metagenome_jacc = vegdist(metagenome_matrix %>% t(), method = 'jaccard')
+
+## Centered log-ratio transformation for aitchison distance
+metagenome_clr = metagenome_matrix %>%
+  t() %>%
+  clrtrans(pseudocount = 1e-5) %>%
+  t()
+metagenome_aitc = vegdist(metagenome_clr %>% t(), method = 'euclidean')
+```
+
+# Exit
+```{r}
+save.image(file = 'sanitized-data/diversity-calc.RData')
+sessionInfo()
+```
