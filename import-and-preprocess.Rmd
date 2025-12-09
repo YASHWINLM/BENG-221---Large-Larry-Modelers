@@ -1,5 +1,5 @@
 ---
-title: "Import and preprocess Larry's data"
+title: "Import and preprocess LS's data"
 output: html_document
 date: "2025-10-9"
 author: "Cale Seymour"
